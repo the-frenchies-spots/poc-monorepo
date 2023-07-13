@@ -1,0 +1,31 @@
+{
+  "name": "@jf/ui-manga-maker",
+  "version": "0.0.0",
+  "main": "./index.tsx",
+  "types": "./index.tsx",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint \"**/*.ts*\"",
+    "generate:component": "turbo gen react-component"
+  },
+  "devDependencies": {
+    "@jf/hooks": "workspace:*",
+    "@jf/icons": "workspace:*",
+    "@jf/material": "workspace:*",
+    "@jf/types": "workspace:*",
+    "@jf/utils": "workspace:*",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "eslint": "^7.32.0",
+    "eslint-config-custom": "workspace:*",
+    "react": "18.2.0",
+    "svg-loader": "^0.0.2",
+    "tsconfig": "workspace:*",
+    "typescript": "^4.5.2",
+    "webpack": "^5.88.1",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "framer-motion": "^10.12.18"
+  }
+}

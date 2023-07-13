@@ -1,0 +1,35 @@
+{
+  "name": "@jf/material",
+  "version": "1.0.0",
+  "main": "./index.tsx",
+  "types": "./index.tsx",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint \"**/*.ts*\"",
+    "generate:component": "turbo gen react-component"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "eslint": "^7.32.0",
+    "eslint-config-custom": "workspace:*",
+    "react": "18.2.0",
+    "tsconfig": "workspace:*",
+    "typescript": "^4.5.2"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/server": "^11.11.0",
+    "@mantine/carousel": "^6.0.15",
+    "@mantine/core": "^6.0.15",
+    "@mantine/dates": "^6.0.15",
+    "@mantine/dropzone": "^6.0.15",
+    "@mantine/form": "^6.0.15",
+    "@mantine/hooks": "^6.0.15",
+    "@mantine/modals": "^6.0.15",
+    "@mantine/next": "^6.0.15",
+    "@mantine/nprogress": "^6.0.15",
+    "dayjs": "^1.11.8",
+    "embla-carousel-react": "8.0.0-rc07"
+  }
+}

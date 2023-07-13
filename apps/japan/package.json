@@ -1,0 +1,31 @@
+{
+  "name": "japan",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@jf/material": "workspace:*",
+    "@jf/icons": "workspace:*",
+    "@types/d3": "^7.4.0",
+    "@types/node": "18.16.3",
+    "@types/react": "18.2.4",
+    "@types/react-dom": "18.2.3",
+    "canvg": "^4.0.1",
+    "cloudinary": "^1.37.3",
+    "d3": "^7.8.4",
+    "d3-transform": "^1.0.5",
+    "eslint": "8.39.0",
+    "eslint-config-next": "13.3.4",
+    "next": "13.3.4",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "svg-crowbar": "^0.7.0",
+    "svg.js": "^2.7.1",
+    "typescript": "5.0.4"
+  }
+}
