@@ -1,13 +1,13 @@
+import React from "react";
 import { Badge, Button, Card, Grid, Group, Image, Text } from "@jf/material";
-import React, { useState } from "react";
-import { JapanLocation, japanData } from "./japanData";
+import { japanData } from "../assets/japanData";
 import { IconMapPin } from "@jf/icons";
 
 interface LocationCardListProps {
   tag: string;
 }
 
-export const LocationCardList = (props: LocationCardListProps) => {
+const LocationCardList = (props: LocationCardListProps) => {
   const { tag } = props;
 
   return (
@@ -62,3 +62,4 @@ export const LocationCardList = (props: LocationCardListProps) => {
     </Grid>
   );
 };
+export default LocationCardList;

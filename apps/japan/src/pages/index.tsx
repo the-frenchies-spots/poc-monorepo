@@ -2,7 +2,7 @@ import Head from "next/head";
 import { Box, Divider, Select } from "@jf/material";
 import { useState } from "react";
 
-import { LocationCardList } from "./LocationCardList";
+import LocationCardList from "./LocationCardList";
 
 export default function Home() {
   const [currentTag, setCuurentTag] = useState<string | null>("");
