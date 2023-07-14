@@ -1,13 +1,15 @@
 import { useState } from "react";
 import Head from "next/head";
-import { Box, Divider, Select } from "@jf/material";
-
 import LocationCardList from "./LocationCardList";
-import MapViewer from "../components/MapViewer/MapViewer";
 import { Drawer } from "../components/Drawer/Drawer";
 import { JapanLocation } from "../assets/japanData";
+import neighborhoods from "./api/tokyo.json";
 
-export default function Home() {
+export default function Home({
+  neighborhoodsData,
+}: {
+  neighborhoodsData: any;
+}) {
   const [currentTag, setCuurentTag] = useState<string | null>("");
   const [view, setView] = useState<string>("map");
   const [currentLocation, setCurrentLocation] = useState<JapanLocation | null>(
@@ -36,8 +38,17 @@ export default function Home() {
           tag={currentTag || ""}
           view={view}
           onLocationChange={setCurrentLocation}
+          neighborhoods={neighborhoodsData}
         />
       </main>
     </>
   );
+}
+
+export async function getStaticProps() {
+  return {
+    props: {
+      neighborhoodsData: neighborhoods,
+    },
+  };
 }

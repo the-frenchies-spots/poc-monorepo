@@ -1,16 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 
-import {
-  ActionIcon,
-  Box,
-  Flex,
-  MapBox,
-  MapBoxMarker,
-  useMapBox,
-} from "@jf/material";
+import { Box, Flex, MapBox, MapBoxMarker, useMapBox } from "@jf/material";
 import {
   IconBuilding,
-  IconBuildingBank,
   IconBuildingSkyscraper,
   IconCurrencyYen,
   IconFlower,
@@ -25,11 +17,12 @@ import { JapanLocation } from "../../assets/japanData";
 
 interface MapViewerProps {
   list: JapanLocation[];
+  neighborhoods: any;
   onLocationChange: (data: JapanLocation) => void;
 }
 
 const MapViewer = (props: MapViewerProps) => {
-  const { list, onLocationChange } = props;
+  const { list, neighborhoods, onLocationChange } = props;
 
   const [fetch, { viewport, onViewportChange, onCoordinateClick }] =
     useMapBox();
@@ -40,6 +33,7 @@ const MapViewer = (props: MapViewerProps) => {
         viewport={viewport}
         onViewportChange={onViewportChange}
         onCoordinateClick={onCoordinateClick}
+        neighborhoods={neighborhoods}
       >
         {/* {currentLocation && currentLocation.lat && currentLocation.lng && (
         <LocationMarker lat={currentLocation.lat} lng={currentLocation.lng} />

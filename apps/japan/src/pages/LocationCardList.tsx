@@ -17,15 +17,17 @@ import CardLoacation from "../components/CardLocation/CardLoacation";
 interface LocationCardListProps {
   tag: string;
   view: string;
+  neighborhoods: any;
   onLocationChange: (data: JapanLocation) => void;
 }
 
 const LocationCardList = (props: LocationCardListProps) => {
-  const { tag, view, onLocationChange } = props;
+  const { tag, view, neighborhoods, onLocationChange } = props;
   return (
     <>
       {view === "map" && (
         <MapViewer
+          neighborhoods={neighborhoods}
           list={japanData.filter((japanLocation) =>
             japanLocation.tag.includes(tag)
           )}
