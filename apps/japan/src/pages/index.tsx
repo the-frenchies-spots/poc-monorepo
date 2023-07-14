@@ -1,11 +1,18 @@
+import { useState } from "react";
 import Head from "next/head";
 import { Box, Divider, Select } from "@jf/material";
-import { useState } from "react";
 
 import LocationCardList from "./LocationCardList";
+import MapViewer from "../components/MapViewer/MapViewer";
+import { Drawer } from "../components/Drawer/Drawer";
+import { JapanLocation } from "../assets/japanData";
 
 export default function Home() {
   const [currentTag, setCuurentTag] = useState<string | null>("");
+  const [view, setView] = useState<string>("map");
+  const [currentLocation, setCurrentLocation] = useState<JapanLocation | null>(
+    null
+  );
 
   return (
     <>
@@ -16,39 +23,20 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <Box
-          sx={{
-            position: "sticky",
-            top: 0,
-            zIndex: 100,
-            backgroundColor: "white",
-            borderBottomLeftRadius: 8,
-            borderBottomRightRadius: 8,
-            borderRight: "1px solid gray",
-            borderLeft: "1px solid gray",
-            borderBottom: "1px solid gray",
-          }}
-          p="md"
-          mb="md"
-        >
-          <Select
-            label="Tag"
-            placeholder="Choisit un tag"
-            onChange={setCuurentTag}
-            data={[
-              { value: "", label: "Tout" },
-              { value: "neighborhood", label: "Quartier" },
-              { value: "sanctuary", label: "Sanctuaire" },
-              { value: "park", label: "Parc/Jardin" },
-              { value: "activity", label: "Activité" },
-              { value: "restaurant", label: "Restaurant" },
-              { value: "building", label: "Batiment" },
-              { value: "street", label: "Rue" },
-            ]}
-          />
-          <Divider />
-        </Box>
-        <LocationCardList tag={currentTag || ""} />
+        <Drawer
+          onTagChange={setCuurentTag}
+          tag={currentTag || ""}
+          onViewChange={setView}
+          view={view}
+          currentLocation={currentLocation}
+          onCurrentLocationChange={setCurrentLocation}
+        />
+
+        <LocationCardList
+          tag={currentTag || ""}
+          view={view}
+          onLocationChange={setCurrentLocation}
+        />
       </main>
     </>
   );

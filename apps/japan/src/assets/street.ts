@@ -9,6 +9,8 @@ export const street: JapanLocation[] = [
     picture: `https://res.cloudinary.com/db00tntyg/image/upload/v1689281607/JAPAN/cucfvnbdovqgremcoftm.png`,
     links: [""],
     address: `1 Chome Jingumae, Shibuya, Tokyo 150-0001, Japon`,
+    lat: 35.671336,
+    lng: 139.704281,
   },
   //   {
   //     name: "",

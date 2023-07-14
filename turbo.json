@@ -1,15 +1,25 @@
 {
   "$schema": "https://turbo.build/schema.json",
-  "globalDependencies": ["**/.env.*local"],
+  "globalDependencies": ["**/.env.*local", ".env"],
+  "globalEnv": [
+    "NEXT_PUBLIC_MAPBOX_API_KEY",
+    "NEXT_PUBLIC_MAPBOX_API_URL",
+    "NEXT_PUBLIC_MAPBOX_STYLE"
+  ],
   "pipeline": {
     "build": {
       "dependsOn": ["^build"],
       "outputs": [".next/**", "!.next/cache/**"]
     },
+
     "lint": {},
     "dev": {
       "cache": false,
-      "persistent": true
+      "env": [
+        "NEXT_PUBLIC_MAPBOX_API_KEY",
+        "NEXT_PUBLIC_MAPBOX_API_URL",
+        "NEXT_PUBLIC_MAPBOX_STYLE"
+      ]
     }
   }
 }

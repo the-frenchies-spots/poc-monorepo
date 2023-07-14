@@ -15,6 +15,8 @@ export interface JapanLocation {
   links: string[];
   address: string;
   price?: number;
+  lat?: number;
+  lng?: number;
 }
 
 export const japanData: JapanLocation[] = [

@@ -13,6 +13,8 @@ export const neighborhood: JapanLocation[] = [
     address: `秋葉原
     Taitō, Tokyo 110-0006
     Japon`,
+    lat: 35.702302,
+    lng: 139.774397,
   },
   {
     name: "UENO",
@@ -24,6 +26,8 @@ export const neighborhood: JapanLocation[] = [
       "https://t2.gstatic.com/licensed-image?q=tbn:ANd9GcS6zl5rGhYK0USYLSYen4m-C8-RJJ23DEsMTVNIAqaTZV94UkAS_MxSsiL3KttB9Lxe",
     links: [""],
     address: `Ueno, Taitō, Tokyo, Japon`,
+    lat: 35.71315,
+    lng: 139.773395,
   },
   {
     name: "TSUKIJI",
@@ -35,6 +39,8 @@ export const neighborhood: JapanLocation[] = [
       "https://res.cloudinary.com/db00tntyg/image/upload/v1689276905/JAPAN/ocvxfwazzt8cso1ngk1o.png",
     links: [""],
     address: `TSUKIJI, Tokyo, Japon`,
+    lat: 35.663865,
+    lng: 139.771648,
   },
   {
     name: "Kabukichō",
@@ -47,6 +53,9 @@ export const neighborhood: JapanLocation[] = [
     links: [""],
     address: `Shinjuku, Tokyo 160-0021
     Japon`,
+    lat: 35.696113,
+    lng: 139.702632,
+    // 35.696113, 139.702632
   },
   {
     name: "SHIBUYA",
@@ -57,5 +66,7 @@ export const neighborhood: JapanLocation[] = [
       "https://res.cloudinary.com/db00tntyg/image/upload/v1689281945/JAPAN/pxuuxo6s9ta7hd8jij6d.png",
     links: [""],
     address: `Shibuya, Tokyo, Japon`,
+    lat: 35.668341,
+    lng: 139.696198,
   },
 ];

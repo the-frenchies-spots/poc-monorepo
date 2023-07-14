@@ -9,8 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@jf/material": "workspace:*",
     "@jf/icons": "workspace:*",
+    "@jf/material": "workspace:*",
     "@types/d3": "^7.4.0",
     "@types/node": "18.16.3",
     "@types/react": "18.2.4",

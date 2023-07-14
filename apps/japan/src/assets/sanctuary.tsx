@@ -9,6 +9,8 @@ export const sanctuary: JapanLocation[] = [
     picture: `https://blog.japanwondertravel.com/wp-content/uploads/2021/03/1582531_l-scaled.jpg`,
     links: [""],
     address: `1-1 Yoyogikamizonocho, Shibuya City, Tokyo 151-8557, Japon`,
+    lat: 35.676046,
+    lng: 139.703697,
   },
   {
     name: "ASAKUSA - Sensō-ji",
@@ -18,6 +20,8 @@ export const sanctuary: JapanLocation[] = [
     picture: `https://res.cloudinary.com/db00tntyg/image/upload/v1689276015/JAPAN/mrhwxjlwmlvitlmnvoou.png`,
     links: [""],
     address: `2 Chome-3-1 Asakusa, Taito City, Tokyo 111-0032, Japon`,
+    lat: 35.713428,
+    lng: 139.796721,
   },
   {
     name: "Kanda Myojin",
@@ -27,6 +31,8 @@ export const sanctuary: JapanLocation[] = [
     picture: `https://res.cloudinary.com/db00tntyg/image/upload/v1689278966/JAPAN/tonwtmnqvmb5cogvnm6m.png`,
     links: [""],
     address: `2 Chome-16-2 Sotokanda, Chiyoda City, Tokyo 101-0021, Japon`,
+    lat: 35.702314,
+    lng: 139.768055,
   },
   // {
   //   name: "",
