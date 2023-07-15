@@ -20,6 +20,8 @@ interface DrawerProps {
   onCurrentLocationChange: (val: JapanLocation | null) => void;
   view: string;
   tag: string;
+  km: string | null;
+  onKmChange: (km: string | null) => void;
   currentLocation?: JapanLocation | null;
 }
 
@@ -29,6 +31,8 @@ export const Drawer = (props: DrawerProps) => {
     onViewChange,
     view,
     tag,
+    km,
+    onKmChange,
     currentLocation = null,
     onCurrentLocationChange,
   } = props;
@@ -68,7 +72,7 @@ export const Drawer = (props: DrawerProps) => {
                   onChange={onViewChange}
                   data={[
                     { label: "Vue Carte", value: "map" },
-                    { label: "Vue List", value: "list" },
+                    { label: "Vue Liste", value: "list" },
                   ]}
                 />
               </Flex>
@@ -89,6 +93,27 @@ export const Drawer = (props: DrawerProps) => {
                   { value: "street", label: "Rue" },
                 ]}
               />
+
+              <Select
+                label="Combien de km autour de moi"
+                placeholder="Tout le japon"
+                onChange={onKmChange}
+                sx={{ width: "100%" }}
+                value={km}
+                data={[
+                  { value: "", label: "Tout le japon" },
+                  { value: "1", label: "1km" },
+                  { value: "3", label: "3km" },
+                  { value: "5", label: "5km" },
+                  { value: "10", label: "10km" },
+                  { value: "15", label: "15km" },
+                  { value: "20", label: "20km" },
+                  { value: "25", label: "25km" },
+                  { value: "30", label: "30km" },
+                  { value: "35", label: "35km" },
+                  { value: "40", label: "40km" },
+                ]}
+              />
             </>
           )}
 
@@ -99,7 +124,7 @@ export const Drawer = (props: DrawerProps) => {
             gradient={{ from: "teal", to: "blue", deg: 60 }}
             onClick={handleClose}
           >
-            <IconX /> FERMÉ
+            <IconX /> FERMER
           </Button>
         </Box>
       )}

@@ -16,6 +16,7 @@ export default function Home({
 }) {
   const [currentTag, setCuurentTag] = useState<string | null>("");
   const [view, setView] = useState<string>("map");
+  const [km, setKm] = useState<string | null>(null);
   const [currentLocation, setCurrentLocation] = useState<JapanLocation | null>(
     null
   );
@@ -24,6 +25,10 @@ export default function Home({
 
   const [fetch, { viewport, onViewportChange, onCoordinateClick }] =
     useMapBox();
+
+  const handleKmChange = (km: string | null) => {
+    setKm(km === "" || null ? null : km);
+  };
 
   const SetCurrentLocationToViewPortClick = useCallback(() => {
     getLocation();
@@ -54,12 +59,15 @@ export default function Home({
           view={view}
           currentLocation={currentLocation}
           onCurrentLocationChange={setCurrentLocation}
+          km={km}
+          onKmChange={handleKmChange}
         />
 
         <LocationCardList
           tag={currentTag || ""}
           view={view}
           viewport={viewport}
+          km={km}
           currentPosition={currentPosition}
           onViewportChange={onViewportChange}
           onCoordinateClick={onCoordinateClick}

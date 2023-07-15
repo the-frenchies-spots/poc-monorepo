@@ -5,6 +5,7 @@ import ReactMapGL, { Layer, Marker, Popup, Source } from "react-map-gl";
 import { TViewport } from "../viewport-type";
 import { TCoordinate } from "../coordinate-type";
 import { Text } from "@mantine/core";
+import DetectionCircle from "./DetectionCircle";
 
 const labels = [
   { id: 1, lat: 35.698763, lng: 139.711656, name: "Shinjuku" },
@@ -26,6 +27,7 @@ interface MapBoxProps {
   onCoordinateClick?: (coordinate: TCoordinate | undefined) => void;
   children?: ReactNode;
   neighborhoods?: any;
+  km: number | null;
 }
 
 export const MapBox = (props: MapBoxProps) => {
@@ -33,6 +35,7 @@ export const MapBox = (props: MapBoxProps) => {
     children,
     viewport,
     neighborhoods = null,
+    km,
     onViewportChange,
     onCoordinateClick,
   } = props;
@@ -63,6 +66,12 @@ export const MapBox = (props: MapBoxProps) => {
       ref={mapRef}
       style={{ width: "100%", height: "100%" }}
     >
+      <DetectionCircle
+        lat={35.689966}
+        lng={139.754537}
+        radius={km === null ? 0 : +km}
+      />
+
       {labels.map((label) => (
         <Marker key={label.id} latitude={label.lat} longitude={label.lng}>
           <Text

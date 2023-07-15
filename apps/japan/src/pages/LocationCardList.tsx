@@ -15,6 +15,7 @@ import { JapanLocation, japanData } from "../assets/japanData";
 import { IconMapPin } from "@jf/icons";
 import MapViewer from "../components/MapViewer/MapViewer";
 import CardLoacation from "../components/CardLocation/CardLoacation";
+import { checkCoordinatesWithinRadius } from "../utils/checkCoordinatesWithinRadius";
 
 interface LocationCardListProps {
   tag: string;
@@ -24,6 +25,7 @@ interface LocationCardListProps {
   currentLocation: JapanLocation | null;
   onLocationChange: (data: JapanLocation) => void;
   viewport: TViewport;
+  km: string | null;
   onViewportChange?: (newViewport: TViewport) => void;
   onCoordinateClick?: (coordinate: TCoordinate | undefined) => void;
 }
@@ -36,10 +38,28 @@ const LocationCardList = (props: LocationCardListProps) => {
     currentLocation,
     currentPosition,
     viewport,
+    km,
     onViewportChange,
     onCoordinateClick,
     onLocationChange,
   } = props;
+
+  let filterList = japanData.filter((japanLocation) =>
+    japanLocation.tag.includes(tag)
+  );
+
+  if (km) {
+    filterList = filterList.filter((japanLocation) =>
+      checkCoordinatesWithinRadius(
+        35.689966,
+        139.754537,
+        japanLocation.lat as number,
+        japanLocation.lng as number,
+        +km
+      )
+    );
+  }
+
   return (
     <>
       {view === "map" && (
@@ -50,25 +70,20 @@ const LocationCardList = (props: LocationCardListProps) => {
           onCoordinateClick={onCoordinateClick}
           neighborhoods={neighborhoods}
           currentLocation={currentLocation}
-          list={japanData.filter((japanLocation) =>
-            japanLocation.tag.includes(tag)
-          )}
+          list={filterList}
           onLocationChange={onLocationChange}
+          km={km}
         />
       )}
       {view === "list" && (
         <Grid mt={20}>
-          {japanData
-            .filter((japanLocation) => {
-              return japanLocation.tag.includes(tag);
-            })
-            .map((japanLocation, key) => {
-              return (
-                <Grid.Col key={key} sm={12} md={4}>
-                  <CardLoacation data={japanLocation} />
-                </Grid.Col>
-              );
-            })}
+          {filterList.map((japanLocation, key) => {
+            return (
+              <Grid.Col key={key} sm={12} md={4}>
+                <CardLoacation data={japanLocation} />
+              </Grid.Col>
+            );
+          })}
         </Grid>
       )}
     </>

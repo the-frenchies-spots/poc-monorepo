@@ -31,6 +31,7 @@ interface MapViewerProps {
   neighborhoods: any;
   currentLocation: JapanLocation | null;
   viewport: TViewport;
+  km: number | null;
   currentPosition: TCoordinate | null;
   onViewportChange?: (newViewport: TViewport) => void;
   onCoordinateClick?: (coordinate: TCoordinate | undefined) => void;
@@ -44,6 +45,7 @@ const MapViewer = (props: MapViewerProps) => {
     currentLocation,
     currentPosition,
     viewport,
+    km,
     onViewportChange,
     onCoordinateClick,
     onLocationChange,
@@ -56,6 +58,7 @@ const MapViewer = (props: MapViewerProps) => {
         onViewportChange={onViewportChange}
         onCoordinateClick={onCoordinateClick}
         neighborhoods={neighborhoods}
+        km={km}
       >
         {currentPosition && currentPosition.lat && currentPosition.lng && (
           <MapBoxMarker lat={currentPosition.lat} lng={currentPosition.lng}>
