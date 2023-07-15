@@ -1,4 +1,4 @@
-import { useCallback, useState } from "react";
+import { useCallback, useState, useEffect } from "react";
 import Head from "next/head";
 import LocationCardList from "./LocationCardList";
 import { Drawer } from "../components/Drawer/Drawer";
@@ -8,6 +8,19 @@ import { useMapBox } from "@jf/material";
 import { useGeoloc } from "@jf/hooks";
 import { RecenterViewport } from "../components/RecenterViewport/RecenterViewport";
 import React from "react";
+
+const zoomKm = {
+  1: 13,
+  3: 12,
+  5: 11,
+  10: 10,
+  15: 9,
+  20: 9,
+  25: 8,
+  30: 8,
+  35: 8,
+  40: 8,
+};
 
 export default function Home({
   neighborhoodsData,
@@ -29,6 +42,17 @@ export default function Home({
   const handleKmChange = (km: string | null) => {
     setKm(km === "" || null ? null : km);
   };
+  useEffect(() => {
+    if (km) {
+      onViewportChange((current) => ({
+        ...current,
+        latitude: 35.689966,
+        longitude: 139.754537,
+        zoom: zoomKm[+km],
+        transitionDuration: 1000,
+      }));
+    }
+  }, [km]);
 
   const SetCurrentLocationToViewPortClick = useCallback(() => {
     getLocation();
@@ -39,6 +63,7 @@ export default function Home({
         latitude: currentPosition?.lat,
         longitude: currentPosition?.lng,
         zoom: 12,
+        transitionDuration: 1000,
       };
     });
   }, [currentPosition]);

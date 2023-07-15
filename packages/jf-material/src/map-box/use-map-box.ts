@@ -1,5 +1,4 @@
 import React, { useState, useCallback } from "react";
-
 import Axios from "axios";
 
 import { TViewport } from "./viewport-type";
@@ -11,11 +10,12 @@ const API = Axios.create({
 // 35.867019, 137.950139
 const japanViewPort = {
   bearing: 0,
-  latitude: 35.867019,
-  longitude: 137.950139,
+  latitude: 35.689966,
+  longitude: 139.754537,
   padding: { top: 0, bottom: 0, left: 0, right: 0 },
   pitch: 0,
   zoom: 5,
+  transitionDuration: 1000, // Transition duration in milliseconds
 };
 
 export const useMapBox = (defaultViewport = japanViewPort) => {
