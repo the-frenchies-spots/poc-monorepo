@@ -9,7 +9,7 @@ import { useGeoloc } from "@jf/hooks";
 import { RecenterViewport } from "../components/RecenterViewport/RecenterViewport";
 import React from "react";
 
-const zoomKm = {
+const zoomKm: Record<number, number> = {
   1: 13,
   3: 12,
   5: 11,
