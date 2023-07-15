@@ -27,7 +27,7 @@ interface MapBoxProps {
   onCoordinateClick?: (coordinate: TCoordinate | undefined) => void;
   children?: ReactNode;
   neighborhoods?: any;
-  km: number | null;
+  km: string | null;
 }
 
 export const MapBox = (props: MapBoxProps) => {
