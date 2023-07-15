@@ -91,8 +91,8 @@ export const building: JapanLocation[] = [
     picture: `https://res.cloudinary.com/db00tntyg/image/upload/v1689419881/JAPAN/hvuwsqifqvefjic4wcvb.png`,
     links: [""],
     address: ``,
-    lat: 0,
-    lng: 0,
+    lat: 35.697087,
+    lng: 139.792159,
   },
 
   //   {

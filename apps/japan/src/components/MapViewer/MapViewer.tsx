@@ -22,12 +22,14 @@ import {
 } from "@jf/icons";
 
 import { JapanLocation } from "../../assets/japanData";
+import { CurrentLocationMarker } from "./CurrentLocationMarker/CurrentLocationMarker";
 
 interface MapViewerProps {
   list: JapanLocation[];
   neighborhoods: any;
   currentLocation: JapanLocation | null;
   viewport: TViewport;
+  currentPosition: TCoordinate | null;
   onViewportChange?: (newViewport: TViewport) => void;
   onCoordinateClick?: (coordinate: TCoordinate | undefined) => void;
   onLocationChange: (data: JapanLocation) => void;
@@ -38,6 +40,7 @@ const MapViewer = (props: MapViewerProps) => {
     list,
     neighborhoods,
     currentLocation,
+    currentPosition,
     viewport,
     onViewportChange,
     onCoordinateClick,
@@ -52,9 +55,11 @@ const MapViewer = (props: MapViewerProps) => {
         onCoordinateClick={onCoordinateClick}
         neighborhoods={neighborhoods}
       >
-        {/* {currentLocation && currentLocation.lat && currentLocation.lng && (
-        <LocationMarker lat={currentLocation.lat} lng={currentLocation.lng} />
-      )} */}
+        {currentPosition && currentPosition.lat && currentPosition.lng && (
+          <MapBoxMarker lat={currentPosition.lat} lng={currentPosition.lng}>
+            <CurrentLocationMarker />
+          </MapBoxMarker>
+        )}
 
         {list.map((location, index) => {
           const isSelected =

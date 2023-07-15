@@ -5,6 +5,7 @@ import { Drawer } from "../components/Drawer/Drawer";
 import { JapanLocation } from "../assets/japanData";
 import neighborhoods from "./api/tokyo.json";
 import { useMapBox } from "@jf/material";
+import { useGeoloc } from "@jf/hooks";
 
 export default function Home({
   neighborhoodsData,
@@ -16,6 +17,8 @@ export default function Home({
   const [currentLocation, setCurrentLocation] = useState<JapanLocation | null>(
     null
   );
+
+  const currentPosition = useGeoloc();
 
   const [fetch, { viewport, onViewportChange, onCoordinateClick }] =
     useMapBox();
@@ -42,6 +45,7 @@ export default function Home({
           tag={currentTag || ""}
           view={view}
           viewport={viewport}
+          currentPosition={currentPosition}
           onViewportChange={onViewportChange}
           onCoordinateClick={onCoordinateClick}
           onLocationChange={setCurrentLocation}

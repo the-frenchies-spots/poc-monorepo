@@ -20,6 +20,7 @@ interface LocationCardListProps {
   tag: string;
   view: string;
   neighborhoods: any;
+  currentPosition: TCoordinate | null;
   currentLocation: JapanLocation | null;
   onLocationChange: (data: JapanLocation) => void;
   viewport: TViewport;
@@ -33,6 +34,7 @@ const LocationCardList = (props: LocationCardListProps) => {
     view,
     neighborhoods,
     currentLocation,
+    currentPosition,
     viewport,
     onViewportChange,
     onCoordinateClick,
@@ -43,6 +45,7 @@ const LocationCardList = (props: LocationCardListProps) => {
       {view === "map" && (
         <MapViewer
           viewport={viewport}
+          currentPosition={currentPosition}
           onViewportChange={onViewportChange}
           onCoordinateClick={onCoordinateClick}
           neighborhoods={neighborhoods}

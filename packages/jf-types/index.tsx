@@ -9,3 +9,8 @@ export interface CloudinaryImage {
   url: string;
   secure_url: string;
 }
+
+export interface TCoordinate {
+  lat: number
+  lng: number
+}
