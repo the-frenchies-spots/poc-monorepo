@@ -20,12 +20,13 @@ export default function Home({
     null
   );
 
-  const currentPosition = useGeoloc();
+  const { location: currentPosition, getLocation } = useGeoloc();
 
   const [fetch, { viewport, onViewportChange, onCoordinateClick }] =
     useMapBox();
 
   const SetCurrentLocationToViewPortClick = useCallback(() => {
+    getLocation();
     onViewportChange((current) => {
       if (!currentPosition) return current;
       return {

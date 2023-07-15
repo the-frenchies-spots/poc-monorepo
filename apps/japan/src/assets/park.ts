@@ -9,7 +9,7 @@ export const park: JapanLocation[] = [
     tag: "park",
     picture:
       "https://media.tacdn.com/media/attractions-splice-spp-674x446/09/d1/61/c5.jpg",
-    links: [""],
+    links: [],
     address: `11 Naitomachi, Shinjuku City, Tokyo 160-0014, Japon`,
     lat: 35.69355,
     lng: 139.70352,
@@ -22,7 +22,7 @@ export const park: JapanLocation[] = [
     tag: "park",
     picture:
       "https://japon-fr.com/images/photos/tokyo-palais-imperial/palais-imperial-6.jpg",
-    links: [""],
+    links: [],
     address: `Jardins Est du Palais Impérial, 1-1 Chiyoda, Chiyoda City, Tokyo 100-8111, Japon`,
     lat: 35.686708,
     lng: 139.757214,
@@ -35,7 +35,7 @@ export const park: JapanLocation[] = [
     tag: "park",
     picture:
       "https://duncontinentàlautre.com/wp-content/uploads/2016/11/IMG_2684.jpg",
-    links: [""],
+    links: [],
     address: `2-1 Yoyogikamizonocho, Shibuya City, Tokyo 151-0052, Japon`,
     lat: 35.672885,
     lng: 139.692297,
@@ -47,7 +47,7 @@ export const park: JapanLocation[] = [
   //   city: "Tokyo",
   //   tag: "park",
   //   picture: "",
-  //   links: [""],
+  //   links: [],
   //   address: ``,
   // },
 ];

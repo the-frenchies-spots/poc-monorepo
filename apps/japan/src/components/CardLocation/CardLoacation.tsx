@@ -1,4 +1,4 @@
-import { IconMapPin } from "@jf/icons";
+import { IconInfoHexagon, IconMapPin } from "@jf/icons";
 import { Badge, Button, Card, Group, Image, Text } from "@jf/material";
 import React from "react";
 import { JapanLocation } from "../../assets/japanData";
@@ -28,6 +28,21 @@ const CardLoacation = ({ data }: { data: JapanLocation }) => {
       <Text size="sm" color="dimmed">
         {data.description}
       </Text>
+      {data.links?.map((dataLink, index) => (
+        <Button
+          component="a"
+          variant="light"
+          color="blue"
+          fullWidth
+          mt="md"
+          radius="md"
+          target="_blank"
+          href={dataLink.link}
+          sx={{ width: "fit-content" }}
+        >
+          <IconInfoHexagon /> &nbsp; {dataLink.label}
+        </Button>
+      ))}
       <Button
         component="a"
         variant="light"

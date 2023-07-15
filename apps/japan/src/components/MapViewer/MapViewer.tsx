@@ -10,6 +10,8 @@ import {
   useMapBox,
 } from "@jf/material";
 import {
+  IconBathFilled,
+  IconBedFilled,
   IconBuilding,
   IconBuildingSkyscraper,
   IconCurrencyYen,
@@ -89,6 +91,12 @@ const MapViewer = (props: MapViewerProps) => {
               break;
             case "street":
               Icon = IconRoad;
+              break;
+            case "hotel":
+              Icon = IconBedFilled;
+              break;
+            case "onsen":
+              Icon = IconBathFilled;
               break;
             default:
               Icon = IconCurrencyYen;

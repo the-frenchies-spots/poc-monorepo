@@ -9,7 +9,7 @@ export const neighborhood: JapanLocation[] = [
     tag: "neighborhood",
     picture:
       "https://cdn.generationvoyage.fr/2020/02/Akihabara-755x504.jpg.webp",
-    links: [""],
+    links: [],
     address: `秋葉原
     Taitō, Tokyo 110-0006
     Japon`,
@@ -24,7 +24,7 @@ export const neighborhood: JapanLocation[] = [
     tag: "neighborhood",
     picture:
       "https://t2.gstatic.com/licensed-image?q=tbn:ANd9GcS6zl5rGhYK0USYLSYen4m-C8-RJJ23DEsMTVNIAqaTZV94UkAS_MxSsiL3KttB9Lxe",
-    links: [""],
+    links: [],
     address: `Ueno, Taitō, Tokyo, Japon`,
     lat: 35.71315,
     lng: 139.773395,
@@ -37,7 +37,7 @@ export const neighborhood: JapanLocation[] = [
     tag: "neighborhood",
     picture:
       "https://res.cloudinary.com/db00tntyg/image/upload/v1689276905/JAPAN/ocvxfwazzt8cso1ngk1o.png",
-    links: [""],
+    links: [],
     address: `TSUKIJI, Tokyo, Japon`,
     lat: 35.663865,
     lng: 139.771648,
@@ -50,7 +50,7 @@ export const neighborhood: JapanLocation[] = [
     tag: "neighborhood",
     picture:
       "https://res.cloudinary.com/db00tntyg/image/upload/v1689280130/JAPAN/r0iguoggw3nlcx3pa1dt.png",
-    links: [""],
+    links: [],
     address: `Shinjuku, Tokyo 160-0021
     Japon`,
     lat: 35.696113,
@@ -64,7 +64,7 @@ export const neighborhood: JapanLocation[] = [
     tag: "neighborhood",
     picture:
       "https://res.cloudinary.com/db00tntyg/image/upload/v1689281945/JAPAN/pxuuxo6s9ta7hd8jij6d.png",
-    links: [""],
+    links: [],
     address: `Shibuya, Tokyo, Japon`,
     lat: 35.668341,
     lng: 139.696198,

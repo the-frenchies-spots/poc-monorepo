@@ -5,16 +5,22 @@ import { neighborhood } from "./neighborhood";
 import { restaurant } from "./restaurant";
 import { building } from "./building";
 import { street } from "./street";
+import { hotel } from "./hotel";
+import { onsen } from "./onsen";
 
+interface TLinks {
+  label: string;
+  link: string;
+}
 export interface JapanLocation {
   name: string;
   description: string;
   city: string;
   tag: string;
   picture: string;
-  links: string[];
+  links: TLinks[];
   address: string;
-  price?: number;
+  price?: string;
   lat?: number;
   lng?: number;
 }
@@ -27,4 +33,6 @@ export const japanData: JapanLocation[] = [
   ...restaurant,
   ...street,
   ...building,
+  ...hotel,
+  ...onsen,
 ];
