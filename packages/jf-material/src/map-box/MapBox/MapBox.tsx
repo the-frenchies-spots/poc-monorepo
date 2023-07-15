@@ -12,7 +12,13 @@ const labels = [
   { id: 3, lat: 35.715977, lng: 139.782562, name: "UENO" },
   { id: 4, lat: 35.694653, lng: 139.756662, name: "Akihabara" },
   { id: 5, lat: 35.670995, lng: 139.779234, name: "TSUKIJI" },
+  { id: 6, lat: 35.731218, lng: 139.715321, name: "IKEBUKURO" },
+  { id: 7, lat: 35.622617, lng: 139.790518, name: "Odaiba" },
+  { id: 8, lat: 35.714452, lng: 139.666402, name: "Nakano" },
+  { id: 9, lat: 35.663072, lng: 139.745454, name: "MINATO" },
 ];
+
+// 35.663072, 139.745454
 
 interface MapBoxProps {
   viewport: TViewport;

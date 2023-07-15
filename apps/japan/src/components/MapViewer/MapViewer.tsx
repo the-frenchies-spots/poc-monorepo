@@ -1,6 +1,14 @@
 import React, { useState } from "react";
 
-import { Box, Flex, MapBox, MapBoxMarker, useMapBox } from "@jf/material";
+import {
+  Box,
+  Flex,
+  MapBox,
+  MapBoxMarker,
+  TCoordinate,
+  TViewport,
+  useMapBox,
+} from "@jf/material";
 import {
   IconBuilding,
   IconBuildingSkyscraper,
@@ -18,14 +26,23 @@ import { JapanLocation } from "../../assets/japanData";
 interface MapViewerProps {
   list: JapanLocation[];
   neighborhoods: any;
+  currentLocation: JapanLocation | null;
+  viewport: TViewport;
+  onViewportChange?: (newViewport: TViewport) => void;
+  onCoordinateClick?: (coordinate: TCoordinate | undefined) => void;
   onLocationChange: (data: JapanLocation) => void;
 }
 
 const MapViewer = (props: MapViewerProps) => {
-  const { list, neighborhoods, onLocationChange } = props;
-
-  const [fetch, { viewport, onViewportChange, onCoordinateClick }] =
-    useMapBox();
+  const {
+    list,
+    neighborhoods,
+    currentLocation,
+    viewport,
+    onViewportChange,
+    onCoordinateClick,
+    onLocationChange,
+  } = props;
 
   return (
     <Box sx={{ position: "absolute", top: 0, left: 0, right: 0, bottom: 0 }}>
@@ -40,6 +57,10 @@ const MapViewer = (props: MapViewerProps) => {
       )} */}
 
         {list.map((location, index) => {
+          const isSelected =
+            currentLocation &&
+            currentLocation.lat === location.lat &&
+            currentLocation.lng === location.lng;
           let Icon = IconCurrencyYen;
 
           switch (location.tag) {
@@ -95,11 +116,14 @@ const MapViewer = (props: MapViewerProps) => {
                       border: "1px solid",
                       marginTop: 9,
                     }}
-                    size={25}
+                    size={isSelected ? 50 : 25}
                   />
                 </Flex>
                 <Box>
-                  <IconMapPinFilled size={50} style={{ color: "purple" }} />
+                  <IconMapPinFilled
+                    size={isSelected ? 80 : 50}
+                    style={{ color: isSelected ? "orange" : "purple" }}
+                  />
                 </Box>
               </Box>
             </MapBoxMarker>

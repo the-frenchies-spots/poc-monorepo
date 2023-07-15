@@ -7,6 +7,8 @@ import {
   Group,
   Image,
   ScrollArea,
+  TCoordinate,
+  TViewport,
   Text,
 } from "@jf/material";
 import { JapanLocation, japanData } from "../assets/japanData";
@@ -18,16 +20,33 @@ interface LocationCardListProps {
   tag: string;
   view: string;
   neighborhoods: any;
+  currentLocation: JapanLocation | null;
   onLocationChange: (data: JapanLocation) => void;
+  viewport: TViewport;
+  onViewportChange?: (newViewport: TViewport) => void;
+  onCoordinateClick?: (coordinate: TCoordinate | undefined) => void;
 }
 
 const LocationCardList = (props: LocationCardListProps) => {
-  const { tag, view, neighborhoods, onLocationChange } = props;
+  const {
+    tag,
+    view,
+    neighborhoods,
+    currentLocation,
+    viewport,
+    onViewportChange,
+    onCoordinateClick,
+    onLocationChange,
+  } = props;
   return (
     <>
       {view === "map" && (
         <MapViewer
+          viewport={viewport}
+          onViewportChange={onViewportChange}
+          onCoordinateClick={onCoordinateClick}
           neighborhoods={neighborhoods}
+          currentLocation={currentLocation}
           list={japanData.filter((japanLocation) =>
             japanLocation.tag.includes(tag)
           )}

@@ -45,6 +45,56 @@ export const building: JapanLocation[] = [
     lat: 35.662344,
     lng: 139.698764,
   },
+  {
+    name: "Sunshine city",
+    description: `Sunshine City est un complexe de bâtiments localisés dans l'est d'Ikebukuro, Toshima, Tokyo. Sunshine City est la plus vieille « ville dans une autre ville » de Tokyo, avec le gigantesque et prestigieux gratte-ciel du Sunshine 60 localisé en son centre.`,
+    city: "Tokyo",
+    tag: "building",
+    picture: `https://res.cloudinary.com/db00tntyg/image/upload/v1689414764/JAPAN/tn8gv37gphzxkcdf0htk.png`,
+    links: [""],
+    address: `3 Chome-1 Higashiikebukuro, Toshima City, Tokyo 170-8630, Japon`,
+    lat: 35.730507,
+    lng: 139.717586,
+  },
+
+  {
+    name: "DIVER CITY TOKYO PLAZA",
+    description: `Odaiba est le point névralgique des animations avec sa grande roue géante, ses salles de concert, ses salles d'arcades et ses nombreux magasins. Ce quartier peut aussi être fier de l'établissement de sources chaudes Oedo-onsen-monogatari qui recrée l'ambiance traditionnelle de l'époque d'Edo et qui est très prisé des visiteurs étrangers. Shiodome est un quartier qui accueille des immeubles de bureau ultra modernes et des restaurants aux étages supérieurs qui offrent une vue imprenable sur Tokyo.`,
+    city: "Tokyo",
+    tag: "building",
+    picture: `https://res.cloudinary.com/db00tntyg/image/upload/v1689416592/JAPAN/hzmyliwqqdjmgj4ga4gm.png`,
+    links: [""],
+    address: `1 Chome-1-10 Aomi, Koto City, Tokyo 135-0064, Japon`,
+    lat: 35.625899,
+    lng: 139.776799,
+  },
+
+  // https://res.cloudinary.com/db00tntyg/image/upload/v1689418548/JAPAN/xnbilgubp9taivjch3ed.png
+
+  {
+    name: "NAKANO BROADWAY",
+    description: `Un truc cool avec ce magazin, c'est qu'il est pas du tout moderne, il est dans le style des vieux magazin du japon. Nakano Broadway est réputée pour être un haut lieu de vente pour otaku (mangas, jeux vidéos, figurines) au Japon`,
+    city: "Tokyo",
+    tag: "building",
+    picture: `https://res.cloudinary.com/db00tntyg/image/upload/v1689418548/JAPAN/xnbilgubp9taivjch3ed.png`,
+    links: [""],
+    address: `5 Chome-52-15 Nakano, Nakano City, Tokyo 164-0001, Japon`,
+    lat: 35.709987,
+    lng: 139.665585,
+  },
+
+  {
+    name: "Ryogoku",
+    description: `Le quartier des Sumo à Tokyo. On peux voir gratuitement les entrainement des sumo en passant. Le quartier Ryōgoku, en bord de fleuve, comprend le centre sportif Ryōgoku Kokugikan, qui accueille des tournois de sumo et de boxe, ainsi que des concerts de musique classique. Située à proximité, la rue Ryōgoku Edo Noren, semblable à un village de l'époque d'Edo, regorge de restaurants servant du chankonabe, un ragoût traditionnel riche en protéines et apprécié des lutteurs.`,
+    city: "Tokyo",
+    tag: "building",
+    picture: `https://res.cloudinary.com/db00tntyg/image/upload/v1689419881/JAPAN/hvuwsqifqvefjic4wcvb.png`,
+    links: [""],
+    address: ``,
+    lat: 0,
+    lng: 0,
+  },
+
   //   {
   //     name: "",
   //     description: ``,
@@ -53,5 +103,7 @@ export const building: JapanLocation[] = [
   //     picture: ``,
   //     links: [""],
   //     address: ``,
+  //     lat: 0,
+  //     lng: 0,
   //   },
 ];

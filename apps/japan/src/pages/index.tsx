@@ -4,6 +4,7 @@ import LocationCardList from "./LocationCardList";
 import { Drawer } from "../components/Drawer/Drawer";
 import { JapanLocation } from "../assets/japanData";
 import neighborhoods from "./api/tokyo.json";
+import { useMapBox } from "@jf/material";
 
 export default function Home({
   neighborhoodsData,
@@ -15,6 +16,9 @@ export default function Home({
   const [currentLocation, setCurrentLocation] = useState<JapanLocation | null>(
     null
   );
+
+  const [fetch, { viewport, onViewportChange, onCoordinateClick }] =
+    useMapBox();
 
   return (
     <>
@@ -37,7 +41,11 @@ export default function Home({
         <LocationCardList
           tag={currentTag || ""}
           view={view}
+          viewport={viewport}
+          onViewportChange={onViewportChange}
+          onCoordinateClick={onCoordinateClick}
           onLocationChange={setCurrentLocation}
+          currentLocation={currentLocation}
           neighborhoods={neighborhoodsData}
         />
       </main>
