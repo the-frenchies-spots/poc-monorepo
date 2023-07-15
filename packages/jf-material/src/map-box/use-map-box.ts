@@ -27,10 +27,6 @@ export const useMapBox = (defaultViewport = japanViewPort) => {
     undefined
   );
 
-  const handleViewportChange = useCallback((newViewport: TViewport) => {
-    setViewport(newViewport);
-  }, []);
-
   const callGeocoding = useCallback((keyWord: string) => {
     setLoading(true);
     return API.get(
@@ -57,7 +53,7 @@ export const useMapBox = (defaultViewport = japanViewPort) => {
       viewport,
       coordinate,
       onCoordinateClick: setCoordinate,
-      onViewportChange: handleViewportChange,
+      onViewportChange: setViewport,
     },
   ] as const;
 };

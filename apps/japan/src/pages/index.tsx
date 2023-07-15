@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useCallback, useState } from "react";
 import Head from "next/head";
 import LocationCardList from "./LocationCardList";
 import { Drawer } from "../components/Drawer/Drawer";
@@ -6,6 +6,8 @@ import { JapanLocation } from "../assets/japanData";
 import neighborhoods from "./api/tokyo.json";
 import { useMapBox } from "@jf/material";
 import { useGeoloc } from "@jf/hooks";
+import { RecenterViewport } from "../components/RecenterViewport/RecenterViewport";
+import React from "react";
 
 export default function Home({
   neighborhoodsData,
@@ -22,6 +24,18 @@ export default function Home({
 
   const [fetch, { viewport, onViewportChange, onCoordinateClick }] =
     useMapBox();
+
+  const SetCurrentLocationToViewPortClick = useCallback(() => {
+    onViewportChange((current) => {
+      if (!currentPosition) return current;
+      return {
+        ...current,
+        latitude: currentPosition?.lat,
+        longitude: currentPosition?.lng,
+        zoom: 12,
+      };
+    });
+  }, [currentPosition]);
 
   return (
     <>
@@ -52,6 +66,10 @@ export default function Home({
           currentLocation={currentLocation}
           neighborhoods={neighborhoodsData}
         />
+
+        {currentPosition && (
+          <RecenterViewport onClick={SetCurrentLocationToViewPortClick} />
+        )}
       </main>
     </>
   );
