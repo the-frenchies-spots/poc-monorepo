@@ -31,7 +31,7 @@ interface MapViewerProps {
   neighborhoods: any;
   currentLocation: JapanLocation | null;
   viewport: TViewport;
-  km: number | null;
+  km: string | null;
   currentPosition: TCoordinate | null;
   onViewportChange?: (newViewport: TViewport) => void;
   onCoordinateClick?: (coordinate: TCoordinate | undefined) => void;
