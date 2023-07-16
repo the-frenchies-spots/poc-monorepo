@@ -2,6 +2,7 @@ import { JapanLocation } from "./japanData";
 
 export const street: JapanLocation[] = [
   {
+    id: "a29ac45d-3e95-475c-b5b3-f1ae51dc616d",
     name: "TAKESHITA STREET",
     description: `Dans cette rue il ya les fameuse crêpe japonaise avec des glacxes dedans. Takeshita-dori est une avenue piétonne de 400 mètres de long, symbole du quartier excentrique Harajuku dans l'arrondissement de Shibuya à Tokyo. Les boutiques de mode s'alternent avec les salons de thé tandis que les jeunes Japonais en cosplay défilent tranquillement pour le plus grand dépaysement des touristes.`,
     city: "Tokyo",

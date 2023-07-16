@@ -30,6 +30,7 @@ const CardLoacation = ({ data }: { data: JapanLocation }) => {
       </Text>
       {data.links?.map((dataLink, index) => (
         <Button
+          key={index}
           component="a"
           variant="light"
           color="blue"

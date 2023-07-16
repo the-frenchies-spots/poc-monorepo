@@ -73,6 +73,7 @@ export const Drawer = (props: DrawerProps) => {
                   data={[
                     { label: "Vue Carte", value: "map" },
                     { label: "Vue Liste", value: "list" },
+                    { label: "Vue Calendrier", value: "calendar" },
                   ]}
                 />
               </Flex>
@@ -84,6 +85,9 @@ export const Drawer = (props: DrawerProps) => {
                 value={tag}
                 data={[
                   { value: "", label: "Tout" },
+                  { value: "plane", label: "Avion" },
+                  { value: "hotel", label: "Hotel" },
+                  { value: "onsen", label: "Onsen" },
                   { value: "neighborhood", label: "Quartier" },
                   { value: "sanctuary", label: "Sanctuaire" },
                   { value: "park", label: "Parc/Jardin" },

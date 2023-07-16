@@ -18,6 +18,7 @@ import {
   IconFlower,
   IconGolf,
   IconMapPinFilled,
+  IconPlaneTilt,
   IconRoad,
   IconToolsKitchen2,
   IconTorii,
@@ -31,6 +32,7 @@ interface MapViewerProps {
   neighborhoods: any;
   currentLocation: JapanLocation | null;
   viewport: TViewport;
+  japanData: any;
   km: string | null;
   currentPosition: TCoordinate | null;
   onViewportChange?: (newViewport: TViewport) => void;
@@ -45,6 +47,7 @@ const MapViewer = (props: MapViewerProps) => {
     currentLocation,
     currentPosition,
     viewport,
+    japanData,
     km,
     onViewportChange,
     onCoordinateClick,
@@ -58,6 +61,7 @@ const MapViewer = (props: MapViewerProps) => {
         onViewportChange={onViewportChange}
         onCoordinateClick={onCoordinateClick}
         neighborhoods={neighborhoods}
+        japanData={japanData}
         km={km}
       >
         {currentPosition && currentPosition.lat && currentPosition.lng && (
@@ -100,6 +104,9 @@ const MapViewer = (props: MapViewerProps) => {
               break;
             case "onsen":
               Icon = IconBathFilled;
+              break;
+            case "plane":
+              Icon = IconPlaneTilt;
               break;
             default:
               Icon = IconCurrencyYen;

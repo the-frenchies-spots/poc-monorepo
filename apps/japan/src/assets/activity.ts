@@ -2,6 +2,7 @@ import { JapanLocation } from "./japanData";
 
 export const activity: JapanLocation[] = [
   {
+    id: "8d0e9d66-3cb5-4cf3-9172-6aa336de740a",
     name: "UNIVERSAL STUDIO",
     description:
       "Nintendo World, Hollywood, NewYork, Minion Park, San Francisco, Jurassic Park, Water World, Amity Village, The Wizarding World of Harry Potter, et Universal Wonderland.",
@@ -21,6 +22,7 @@ export const activity: JapanLocation[] = [
     lng: 135.433612,
   },
   {
+    id: "1943194a-1e27-4105-9395-30b8339f116d",
     name: "Musée Ghibli",
     description:
       "Le musée Ghibli est un musée commercial consacré aux réalisations du studio Ghibli. Il est situé au Japon, sur le terrain du parc d'Inokashira à Mitaka dans la banlieue de Tokyo. Il est accessible par train depuis le centre de Tokyo et nécessite une réservation à l'avance pour pouvoir le visiter",
@@ -39,4 +41,18 @@ export const activity: JapanLocation[] = [
     lat: 35.696171,
     lng: 139.569969,
   },
+
+  // {
+  //   id: "",
+  //   name: "",
+  //   description: "",
+  //   city: "Tokyo",
+  //   tag: "activity",
+  //   price: "",
+  //   picture: "",
+  //   links: [],
+  //   address: ``,
+  //   lat: 0,
+  //   lng: 0,
+  // },
 ];

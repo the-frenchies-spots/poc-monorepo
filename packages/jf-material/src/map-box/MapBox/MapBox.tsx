@@ -27,6 +27,7 @@ interface MapBoxProps {
   onCoordinateClick?: (coordinate: TCoordinate | undefined) => void;
   children?: ReactNode;
   neighborhoods?: any;
+  japanData?: any;
   km: string | null;
 }
 
@@ -35,6 +36,7 @@ export const MapBox = (props: MapBoxProps) => {
     children,
     viewport,
     neighborhoods = null,
+    japanData = null,
     km,
     onViewportChange,
     onCoordinateClick,
@@ -95,6 +97,19 @@ export const MapBox = (props: MapBoxProps) => {
             type="line"
             paint={{
               "line-color": "#290532",
+              "line-width": 2,
+            }}
+          />
+        </Source>
+      )}
+
+      {japanData && (
+        <Source type="geojson" data={japanData}>
+          <Layer
+            id="japanData"
+            type="line"
+            paint={{
+              "line-color": "#9816b8",
               "line-width": 2,
             }}
           />

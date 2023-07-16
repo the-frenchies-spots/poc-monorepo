@@ -2,6 +2,7 @@ import { JapanLocation } from "./japanData";
 
 export const sanctuary: JapanLocation[] = [
   {
+    id: "1c4b0a3d-87a0-40e5-8716-ed654d1366d7",
     name: "Meiji-jingū",
     description: `A VISITER ABSOLUMENT LE DIMANCHE ! Il ya des mariages ancestral chaque dimanche, et même parfois plusieurs. Le deuxième plus grans temple de Tokyo. Magnifique chemin de balade forêt.Le sanctuaire Meiji est un sanctuaire shinto à Shibuya, Tokyo, dédié aux esprits déifiés de l'empereur Meiji et de son épouse, l'impératrice Shōken. Le sanctuaire ne contient pas la tombe de l'empereur, qui est située à Fushimi-momoyama, au sud de Kyoto.`,
     city: "Tokyo",
@@ -13,6 +14,7 @@ export const sanctuary: JapanLocation[] = [
     lng: 139.703697,
   },
   {
+    id: "04c6b9be-cd2a-4dad-a3ee-11f02cfe2a8d",
     name: "ASAKUSA - Sensō-ji",
     description: `[GRATUIT] - Venir ici que pour la ballade. Ne pas consomer de nouriture ici, très touristique bouffe pas ouf. Asakusa possède l'atmosphère du vieux Tokyo, avec ses boutiques artisanales traditionnelles et ses étals proposant une cuisine de rue le long de Nakamise Street, près de l'ancien temple Sensō-ji.`,
     city: "Tokyo",
@@ -24,6 +26,7 @@ export const sanctuary: JapanLocation[] = [
     lng: 139.796721,
   },
   {
+    id: "158f710a-8f5e-48da-a72e-dbecfbcc1683",
     name: "Kanda Myojin",
     description: `Le Kanda-myōjin, anciennement Kanda-jinja, est un sanctuaire shinto situé à Chiyoda, l'un des vingt-trois arrondissements de Tokyo, au Japon. Le sanctuaire a mille deux cent soixante-dix ans d'âge mais la structure principale a été reconstruite plusieurs fois à cause d'incendies ou de séismes`,
     city: "Tokyo",

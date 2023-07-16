@@ -1,26 +1,16 @@
 import React from "react";
-import {
-  Badge,
-  Button,
-  Card,
-  Grid,
-  Group,
-  Image,
-  ScrollArea,
-  TCoordinate,
-  TViewport,
-  Text,
-} from "@jf/material";
+import { Grid, TCoordinate, TViewport } from "@jf/material";
 import { JapanLocation, japanData } from "../assets/japanData";
-import { IconMapPin } from "@jf/icons";
 import MapViewer from "../components/MapViewer/MapViewer";
 import CardLoacation from "../components/CardLocation/CardLoacation";
 import { checkCoordinatesWithinRadius } from "../utils/checkCoordinatesWithinRadius";
+import Calendar from "../components/Calendar/Calendar";
 
 interface LocationCardListProps {
   tag: string;
   view: string;
   neighborhoods: any;
+  japanData: any;
   currentPosition: TCoordinate | null;
   currentLocation: JapanLocation | null;
   onLocationChange: (data: JapanLocation) => void;
@@ -35,6 +25,7 @@ const LocationCardList = (props: LocationCardListProps) => {
     tag,
     view,
     neighborhoods,
+    japanData: japanGeoJson,
     currentLocation,
     currentPosition,
     viewport,
@@ -62,19 +53,23 @@ const LocationCardList = (props: LocationCardListProps) => {
 
   return (
     <>
+      {view === "calendar" && <Calendar onLocationChange={onLocationChange} />}
+
       {view === "map" && (
         <MapViewer
           viewport={viewport}
+          neighborhoods={neighborhoods}
+          japanData={japanGeoJson}
+          currentLocation={currentLocation}
           currentPosition={currentPosition}
           onViewportChange={onViewportChange}
           onCoordinateClick={onCoordinateClick}
-          neighborhoods={neighborhoods}
-          currentLocation={currentLocation}
           list={filterList}
           onLocationChange={onLocationChange}
           km={km}
         />
       )}
+
       {view === "list" && (
         <Grid mt={20}>
           {filterList.map((japanLocation, key) => {

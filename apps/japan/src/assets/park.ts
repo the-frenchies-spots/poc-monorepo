@@ -2,6 +2,7 @@ import { JapanLocation } from "./japanData";
 
 export const park: JapanLocation[] = [
   {
+    id: "9bf08a48-c6a4-4e2a-aa53-b86cadfceff9",
     name: "Shinjuku Gyoen",
     description:
       "[PAYANT] entre les gares de Shinkuju et Sendagaya, cet ancien parc impérial regroupe trois jardins de style anglais, français et japonais. Un must lors de la floraison des cerisiers.",
@@ -15,6 +16,7 @@ export const park: JapanLocation[] = [
     lng: 139.70352,
   },
   {
+    id: "3bb0c406-2448-4c8d-9391-d4d5453ea8e4",
     name: "Jardin du Palais Impérial",
     description:
       "s’il est assez difficile de visiter le Palais Impérial, il n’en est pas de même pour certaines parties du jardin extérieur. L’entrée est gratuite et vous permettra d’apercevoir certaines parties de l’édifice, tout en vous promenant dans un cadre agréable.",
@@ -28,6 +30,7 @@ export const park: JapanLocation[] = [
     lng: 139.757214,
   },
   {
+    id: "397a185a-3d4b-4a97-9e80-152d14daa015",
     name: "Yoyogi-kōen",
     description:
       "VENIR lE DIMANCHE. le dimanche dans le park il ya des rockeur japonais célèbre. Le parc Yoyogi est un grand parc près de la station de Harajuku et du sanctuaire Meiji dans l'arrondissement de Shibuya à Tokyo.",

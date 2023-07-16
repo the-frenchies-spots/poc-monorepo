@@ -2,6 +2,7 @@ import { JapanLocation } from "./japanData";
 
 export const building: JapanLocation[] = [
   {
+    id: "b28a0d42-8fd7-4afd-bdd0-51d0cdac3dfd",
     name: "Pop Life Department m's",
     description: `Le magazin pour adulte le plus fun de la plannette. Boutique érotique dans Arrondissement spécial de Tokyo, Japon`,
     city: "Tokyo",
@@ -13,6 +14,7 @@ export const building: JapanLocation[] = [
     lng: 139.772525,
   },
   {
+    id: "f79b81a8-4ee6-4c7f-8e52-0b4a96277334",
     name: "Yadobashi-Akiba",
     description: `Le plus grans magazin électronique du monde, c'est ici aussi qu'on retrouve tout ce qui est maid café`,
     city: "Tokyo",
@@ -24,6 +26,7 @@ export const building: JapanLocation[] = [
     lng: 139.774345,
   },
   {
+    id: "fc50cd44-62b3-4a36-a144-4d07e33350c5",
     name: "Mairie de Tokyo",
     description: `Meilleur point de vue gratuit sur tokyo. On peux monter tout en haut. Meilleure observatoire de la ville. Et c'est la mairie la plus grande du monde.`,
     city: "Tokyo",
@@ -35,6 +38,7 @@ export const building: JapanLocation[] = [
     lng: 139.709611,
   },
   {
+    id: "7b585f6a-78c6-49f2-9f5c-068b159f75d8",
     name: "MAGASIN NINTENDO",
     description: `SHIBUYA - LE seul magasin Nintendo au monde, au sixième étage du batiment parko`,
     city: "Tokyo",
@@ -46,6 +50,7 @@ export const building: JapanLocation[] = [
     lng: 139.698764,
   },
   {
+    id: "4c14a293-fb31-4b17-af58-5f647da80287",
     name: "Sunshine city",
     description: `Sunshine City est un complexe de bâtiments localisés dans l'est d'Ikebukuro, Toshima, Tokyo. Sunshine City est la plus vieille « ville dans une autre ville » de Tokyo, avec le gigantesque et prestigieux gratte-ciel du Sunshine 60 localisé en son centre.`,
     city: "Tokyo",
@@ -58,6 +63,7 @@ export const building: JapanLocation[] = [
   },
 
   {
+    id: "bebd2f47-881c-4aa2-b3f7-7e53e604a524",
     name: "DIVER CITY TOKYO PLAZA",
     description: `Odaiba est le point névralgique des animations avec sa grande roue géante, ses salles de concert, ses salles d'arcades et ses nombreux magasins. Ce quartier peut aussi être fier de l'établissement de sources chaudes Oedo-onsen-monogatari qui recrée l'ambiance traditionnelle de l'époque d'Edo et qui est très prisé des visiteurs étrangers. Shiodome est un quartier qui accueille des immeubles de bureau ultra modernes et des restaurants aux étages supérieurs qui offrent une vue imprenable sur Tokyo.`,
     city: "Tokyo",
@@ -72,6 +78,7 @@ export const building: JapanLocation[] = [
   // https://res.cloudinary.com/db00tntyg/image/upload/v1689418548/JAPAN/xnbilgubp9taivjch3ed.png
 
   {
+    id: "2429bccd-ff2a-409a-9213-7dc0b092387e",
     name: "NAKANO BROADWAY",
     description: `Un truc cool avec ce magazin, c'est qu'il est pas du tout moderne, il est dans le style des vieux magazin du japon. Nakano Broadway est réputée pour être un haut lieu de vente pour otaku (mangas, jeux vidéos, figurines) au Japon`,
     city: "Tokyo",
@@ -84,6 +91,7 @@ export const building: JapanLocation[] = [
   },
 
   {
+    id: "c41c45a6-ab0f-4f3c-9841-1181400206b7",
     name: "Ryogoku",
     description: `Le quartier des Sumo à Tokyo. On peux voir gratuitement les entrainement des sumo en passant. Le quartier Ryōgoku, en bord de fleuve, comprend le centre sportif Ryōgoku Kokugikan, qui accueille des tournois de sumo et de boxe, ainsi que des concerts de musique classique. Située à proximité, la rue Ryōgoku Edo Noren, semblable à un village de l'époque d'Edo, regorge de restaurants servant du chankonabe, un ragoût traditionnel riche en protéines et apprécié des lutteurs.`,
     city: "Tokyo",

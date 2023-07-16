@@ -4,6 +4,7 @@ import LocationCardList from "./LocationCardList";
 import { Drawer } from "../components/Drawer/Drawer";
 import { JapanLocation } from "../assets/japanData";
 import neighborhoods from "./api/tokyo.json";
+import japan from "./api/japan.json";
 import { useMapBox } from "@jf/material";
 import { useGeoloc } from "@jf/hooks";
 import { RecenterViewport } from "../components/RecenterViewport/RecenterViewport";
@@ -24,8 +25,10 @@ const zoomKm: Record<number, number> = {
 
 export default function Home({
   neighborhoodsData,
+  japanData,
 }: {
   neighborhoodsData: any;
+  japanData: any;
 }) {
   const [currentTag, setCuurentTag] = useState<string | null>("");
   const [view, setView] = useState<string>("map");
@@ -99,6 +102,7 @@ export default function Home({
           onLocationChange={setCurrentLocation}
           currentLocation={currentLocation}
           neighborhoods={neighborhoodsData}
+          japanData={japanData}
         />
 
         {currentPosition && (
@@ -112,6 +116,7 @@ export default function Home({
 export async function getStaticProps() {
   return {
     props: {
+      japanData: japan,
       neighborhoodsData: neighborhoods,
     },
   };

@@ -2,6 +2,7 @@ import { JapanLocation } from "./japanData";
 
 export const neighborhood: JapanLocation[] = [
   {
+    id: "215974d6-9127-4bf0-a90d-57098ea925a9",
     name: "Akihabara",
     description:
       "Le quartier le plus moderne. Avec des animé manga jeux vidéo afficher sur de grands écrans partout sur les murs. Vous allez baigner dans une ambiance très agitée. Néons clignotants, publicités sonores annoncent les grands magasins spécialisés en électronique. Armez-vous de patience, ils sont nombreux.",
@@ -17,6 +18,7 @@ export const neighborhood: JapanLocation[] = [
     lng: 139.774397,
   },
   {
+    id: "41e9d024-79cf-4670-8cdb-1e17a301ab53",
     name: "UENO",
     description:
       "Plein de rue sympa et plain de bonne adresse pour manger. Apparament il y a plein de sex shop mdr. Le quartier traditionnel d'Ueno est connu pour ses sanctuaires richement décorés, notamment le temple de Benzaiten, datant du XVIIe siècle, érigé sur une île dans le parc d'Ueno.",
@@ -30,6 +32,7 @@ export const neighborhood: JapanLocation[] = [
     lng: 139.773395,
   },
   {
+    id: "46f51564-1afa-44ca-90d2-825cd0ff2f7e",
     name: "TSUKIJI",
     description:
       "Un quartier si on aime manger, surtout si on aime le poisson. gouter des super suchi, et pleins de spécialité.",
@@ -43,6 +46,7 @@ export const neighborhood: JapanLocation[] = [
     lng: 139.771648,
   },
   {
+    id: "d4c2a94a-693c-485e-a7d3-0512b260a15b",
     name: "Kabukichō",
     description:
       "Y ALLER DE NUIT ! C'est un quartier plein de Love Hotel. Il ya tout le temps plein de policier. C'est un quartier chaud ou il y a souvent des yakuza. Kabukicho est un quartier de divertissements prisé, surtout connu pour sa vie nocturne réservée aux adultes. Le secteur de Golden Gai comprend des allées éclairées aux lanternes où se côtoient de petites discothèques, des pubs enfumés et des snack-bars ouverts tard en soirée.",
@@ -58,6 +62,7 @@ export const neighborhood: JapanLocation[] = [
     // 35.696113, 139.702632
   },
   {
+    id: "e27e86f7-cad8-42c7-ac33-01490433ab3a",
     name: "SHIBUYA",
     description: "Un des meilleurs quartier dans lesquels ce perdre",
     city: "Tokyo",

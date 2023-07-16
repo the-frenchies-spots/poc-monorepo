@@ -2,6 +2,7 @@ import { JapanLocation } from "./japanData";
 
 export const hotel: JapanLocation[] = [
   {
+    id: "339b28b4-e98b-4866-b058-7ab3ded1580c",
     name: "Asakusa Fukudaya",
     description: `Wi-Fi haut débit gratuit, Laverie, Climatisation, Service d'assistance pour les visites touristiques ou l'achat de billets`,
     city: "Tokyo",
@@ -19,6 +20,7 @@ export const hotel: JapanLocation[] = [
     lng: 139.804107,
   },
   {
+    id: "4011ae97-5c3b-4d96-a8c2-7458c04863dd",
     name: "Capsule Inn Hamamatsucho",
     description: `Non loin de Tour de Tokyo. Wi-Fi haut débit gratuit
     Réception 24 h/24`,
@@ -37,6 +39,7 @@ export const hotel: JapanLocation[] = [
     lng: 139.754202,
   },
   {
+    id: "b4a86dad-a4dd-4e42-b0c7-a6757aa92016",
     name: "Tokyo Ariake Bay Hotel",
     description: `Hôtel capsule en périphérie non loin de Palais des congrès Tokyo Big Sight, Wi-Fi haut débit gratuit
     Climatisation
@@ -57,6 +60,7 @@ export const hotel: JapanLocation[] = [
     lng: 139.803643,
   },
   {
+    id: "ce4aa56f-a914-4cfe-9c10-d8c5e5376088",
     name: "Do-c Ebisu",
     description: `Hôtel capsule au centre-ville non loin de Croisement de Shibuya, Wi-Fi haut débit gratuit
     Climatisation
@@ -77,6 +81,7 @@ export const hotel: JapanLocation[] = [
     lng: 139.709956,
   },
   {
+    id: "b8da384c-095f-435b-980d-5103857bdf37",
     name: "Shinjuku Sky Capsule",
     description: `Hôtel au bord de l'eau à Tokyo, Wi-Fi haut débit gratuit
     Climatisation
@@ -97,6 +102,7 @@ export const hotel: JapanLocation[] = [
     lng: 139.684281,
   },
   {
+    id: "ba859af1-24e1-4c62-b627-727d5a596f5a",
     name: "BookTeaBed Shibuya",
     description: `À quelques minutes de marche de Croisement de Shibuya, Wi-Fi haut débit gratuit
     Climatisation
@@ -112,6 +118,7 @@ export const hotel: JapanLocation[] = [
     lng: 139.694974,
   },
   {
+    id: "c9a806df-bb82-4ca3-bede-9b48f45d1b6b",
     name: "Hotel Graphy Nezu",
     description: `Hôtel 3 étoiles avec un bar/salon - Parc d'Ueno à 0,2 km, Wi-Fi haut débit gratuit
     Climatisation
