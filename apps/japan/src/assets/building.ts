@@ -90,17 +90,19 @@ export const building: JapanLocation[] = [
     lng: 139.665585,
   },
 
+
+
   {
-    id: "c41c45a6-ab0f-4f3c-9841-1181400206b7",
-    name: "Ryogoku",
-    description: `Le quartier des Sumo à Tokyo. On peux voir gratuitement les entrainement des sumo en passant. Le quartier Ryōgoku, en bord de fleuve, comprend le centre sportif Ryōgoku Kokugikan, qui accueille des tournois de sumo et de boxe, ainsi que des concerts de musique classique. Située à proximité, la rue Ryōgoku Edo Noren, semblable à un village de l'époque d'Edo, regorge de restaurants servant du chankonabe, un ragoût traditionnel riche en protéines et apprécié des lutteurs.`,
-    city: "Tokyo",
+    id: "5fdc1357-9b99-4edd-8308-4c41b29eac81",
+    name: "Nishiki Market",
+    description: ``,
+    city: "Kyoto",
     tag: "building",
-    picture: `https://res.cloudinary.com/db00tntyg/image/upload/v1689419881/JAPAN/hvuwsqifqvefjic4wcvb.png`,
+    picture: `https://lh5.googleusercontent.com/p/AF1QipOI5ZzdyhCXs7v1YscxkJG-N0sIzvSMrWrVgaA=w408-h255-k-no`,
     links: [],
-    address: ``,
-    lat: 35.697087,
-    lng: 139.792159,
+    address: `Nakagyo Ward, Kyoto, 604-8055, Japon`,
+    lat: 35.005014,
+    lng: 135.764728,
   },
 
   //   {

@@ -74,4 +74,16 @@ export const neighborhood: JapanLocation[] = [
     lat: 35.668341,
     lng: 139.696198,
   },
+  {
+    id: "c41c45a6-ab0f-4f3c-9841-1181400206b7",
+    name: "Ryogoku",
+    description: `Le quartier des Sumo à Tokyo. On peux voir gratuitement les entrainement des sumo en passant. Le quartier Ryōgoku, en bord de fleuve, comprend le centre sportif Ryōgoku Kokugikan, qui accueille des tournois de sumo et de boxe, ainsi que des concerts de musique classique. Située à proximité, la rue Ryōgoku Edo Noren, semblable à un village de l'époque d'Edo, regorge de restaurants servant du chankonabe, un ragoût traditionnel riche en protéines et apprécié des lutteurs.`,
+    city: "Tokyo",
+    tag: "neighborhood",
+    picture: `https://res.cloudinary.com/db00tntyg/image/upload/v1689419881/JAPAN/hvuwsqifqvefjic4wcvb.png`,
+    links: [],
+    address: `両国PORT, Japon, 〒130-0026 Tokyo, Sumida City, 9, 両国2-9-5 TKF第２会館３階`,
+    lat: 35.697087,
+    lng: 139.792159,
+  },
 ];
