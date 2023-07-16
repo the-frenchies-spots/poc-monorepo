@@ -5,6 +5,7 @@ import MapViewer from "../components/MapViewer/MapViewer";
 import CardLoacation from "../components/CardLocation/CardLoacation";
 import { checkCoordinatesWithinRadius } from "../utils/checkCoordinatesWithinRadius";
 import Calendar from "../components/Calendar/Calendar";
+import { ListRappel } from "./../components/ListRappel/ListRappel";
 
 interface LocationCardListProps {
   tag: string;
@@ -54,7 +55,7 @@ const LocationCardList = (props: LocationCardListProps) => {
   return (
     <>
       {view === "calendar" && <Calendar onLocationChange={onLocationChange} />}
-
+      {view === "listRappel" && <ListRappel />}
       {view === "map" && (
         <MapViewer
           viewport={viewport}

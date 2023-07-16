@@ -71,9 +71,10 @@ export const Drawer = (props: DrawerProps) => {
                   value={view}
                   onChange={onViewChange}
                   data={[
-                    { label: "Vue Carte", value: "map" },
-                    { label: "Vue Liste", value: "list" },
-                    { label: "Vue Calendrier", value: "calendar" },
+                    { label: "Carte", value: "map" },
+                    { label: "Spot", value: "list" },
+                    { label: "Calendrier", value: "calendar" },
+                    { label: "Rappel", value: "listRappel" },
                   ]}
                 />
               </Flex>
