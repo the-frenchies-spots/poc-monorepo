@@ -1,6 +1,19 @@
 import { JapanLocation } from "./japanData";
 
 export const onsen: JapanLocation[] = [
+  {
+    id: "d8109f59-3c05-41ef-ba11-818d854c114b",
+    name: "Onsen Green plaza",
+    description: "Onsen avec vue sur le mont fuji",
+    city: "Hakone",
+    tag: "onsen",
+    picture:
+      "https://cf.bstatic.com/xdata/images/hotel/max1024x768/65765684.jpg?k=b34330b23fa86414152452b2639a1fd7535aff149e20c2d174cbee8dbccd91ed&o=&hp=1",
+    links: [],
+    address: `1244-2 Sengokuhara, Hakone, Ashigarashimo District, Kanagawa 250-0631, Japon`,
+    lat: 35.24565,
+    lng: 139.006777,
+  },
   // {
   //   id: "f117cbe7-2d8c-4c63-a899-660b344f6ea4",
   //   name: "Kusatsu Onsen",

@@ -80,4 +80,17 @@ export const restaurant: JapanLocation[] = [
     lat: 35.677989,
     lng: 139.73706,
   },
+  {
+    id: "a00ad98c-54a4-44d5-aeb0-9205c515ef13",
+    name: "Nishiki market",
+    description: "Le marché alimentaire, pour bouffer de la street food",
+    city: "Kyoto",
+    tag: "Restaurant",
+    picture:
+      "https://res-3.cloudinary.com/jnto/image/upload/w_2064,h_1300,c_fill,f_auto,fl_lossy,q_auto/v1648006915/kyoto/H_00480_001",
+    links: [],
+    address: `Nakagyo Ward, Kyoto, 604-8055, Japon`,
+    lat: 35.005027,
+    lng: 35.764692,
+  },
 ];

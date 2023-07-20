@@ -41,18 +41,47 @@ export const activity: JapanLocation[] = [
     lat: 35.696171,
     lng: 139.569969,
   },
-
-  // {
-  //   id: "",
-  //   name: "",
-  //   description: "",
-  //   city: "Tokyo",
-  //   tag: "activity",
-  //   price: "",
-  //   picture: "",
-  //   links: [],
-  //   address: ``,
-  //   lat: 0,
-  //   lng: 0,
-  // },
+  {
+    id: "ac1feed4-cb01-4a2f-97a6-1f6ba9ccacf3",
+    name: "Saga Torokko Station",
+    description: "Pas de trains le mercredi en générale",
+    city: "Tokyo",
+    tag: "activity",
+    price: "",
+    picture:
+      "https://lh5.googleusercontent.com/p/AF1QipN6bhf_e96aT8ircAy6hMrazFzY9X3rS7NiY2Ve=w408-h306-k-no",
+    links: [],
+    address: `Sagatenryuji Kurumamichicho, Ukyo Ward, Kyoto, 616-8373, Japon`,
+    lat: 35.018561,
+    lng: 135.681008,
+  },
+  {
+    id: "a151e895-bee0-4a9a-85a4-8920bbcec842",
+    name: "Omotenashi Nihonbashi",
+    description:
+      "Les 4 premiers samedis du mois de 18h à 19h. Réservation jusqu'à 17h la veille sur le site. 5 500 yen (41€50) ; 3 500 yen (26€40) pour les moins de 12 ans, Accès : station Mitsukoshimae (lignes Tokyo Metro Ginza et Hanzomon) ou Shin-Nihonbashi (ligne JR Sobu) ",
+    city: "Tokyo",
+    tag: "activity",
+    price: "41€50",
+    picture:
+      "https://www.japan-experience.com/sites/default/files/styles/scale_crop_880x460/public/legacy/japan_experience/1524235107404.jpg?h=e5aec6c8&itok=_dxnn5Iz",
+    links: [],
+    address: `2-2-1 Nihonbashi Muromachi, Chuo-ku, Tokyo`,
+    lat: 35.686909,
+    lng: 139.773939,
+  },
+  {
+    id: "81111564-8931-498f-80ea-d517baa46431",
+    name: "Musée plein air de Hakone",
+    description:
+      "Musée en plein air, a voir si on a du temps, pas forcément un must to do",
+    city: "Hakone",
+    tag: "activity",
+    picture:
+      "https://lh5.googleusercontent.com/p/AF1QipMTVrXnZcGajGZZBUG_CpfqSqO9CIxlwhIzuw1N=w408-h544-k-no",
+    links: [],
+    address: `1121 Ninotaira, Hakone, Ashigarashimo District, Kanagawa 250-0407, Japon`,
+    lat: 35.244972,
+    lng: 139.051361,
+  },
 ];

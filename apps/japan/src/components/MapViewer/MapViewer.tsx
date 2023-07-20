@@ -13,6 +13,7 @@ import {
   IconBathFilled,
   IconBedFilled,
   IconBuilding,
+  IconBuildingArch,
   IconBuildingSkyscraper,
   IconCurrencyYen,
   IconFlower,
@@ -26,6 +27,7 @@ import {
 
 import { JapanLocation } from "../../assets/japanData";
 import { CurrentLocationMarker } from "./CurrentLocationMarker/CurrentLocationMarker";
+import IconOnsen from "./Icons/IconOnsen";
 
 interface MapViewerProps {
   list: JapanLocation[];
@@ -75,7 +77,7 @@ const MapViewer = (props: MapViewerProps) => {
             currentLocation &&
             currentLocation.lat === location.lat &&
             currentLocation.lng === location.lng;
-          let Icon = IconCurrencyYen;
+          let Icon: any = IconCurrencyYen;
 
           switch (location.tag) {
             case "restaurant":
@@ -103,11 +105,15 @@ const MapViewer = (props: MapViewerProps) => {
               Icon = IconBedFilled;
               break;
             case "onsen":
-              Icon = IconBathFilled;
+              Icon = IconOnsen;
               break;
             case "plane":
               Icon = IconPlaneTilt;
               break;
+            case "monument":
+              Icon = IconBuildingArch;
+              break;
+
             default:
               Icon = IconCurrencyYen;
           }

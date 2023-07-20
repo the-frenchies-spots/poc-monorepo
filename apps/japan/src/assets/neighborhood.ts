@@ -59,7 +59,6 @@ export const neighborhood: JapanLocation[] = [
     Japon`,
     lat: 35.696113,
     lng: 139.702632,
-    // 35.696113, 139.702632
   },
   {
     id: "e27e86f7-cad8-42c7-ac33-01490433ab3a",

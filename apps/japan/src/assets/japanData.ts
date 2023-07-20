@@ -8,6 +8,7 @@ import { street } from "./street";
 import { hotel } from "./hotel";
 import { onsen } from "./onsen";
 import { plane } from "./plane";
+import { monument } from "./monument";
 
 interface TLinks {
   label: string;
@@ -38,4 +39,5 @@ export const japanData: JapanLocation[] = [
   ...hotel,
   ...onsen,
   ...plane,
+  ...monument,
 ];

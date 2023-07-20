@@ -95,6 +95,7 @@ export const Drawer = (props: DrawerProps) => {
                   { value: "activity", label: "Activité" },
                   { value: "restaurant", label: "Restaurant" },
                   { value: "building", label: "Batiment" },
+                  { value: "monument", label: "Monument" },
                   { value: "street", label: "Rue" },
                 ]}
               />

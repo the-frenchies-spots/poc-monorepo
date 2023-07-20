@@ -43,6 +43,33 @@ export const park: JapanLocation[] = [
     lat: 35.672885,
     lng: 139.692297,
   },
+  {
+    id: "2d59277e-11d3-489d-8ff1-723c5e103540",
+    name: "Maruyama park",
+    description: "Un parc énorme de 6 hectare, parfait pour un pique nique",
+    city: "Kyoto",
+    tag: "park",
+    picture:
+      "https://a0.cdn.japantravel.com/photo/11820-67837/1000/kyoto-kyoto-maruyama-park-67837.jpg",
+    links: [],
+    address: `Maruyamacho, Higashiyama Ward, Kyoto 605-0071, Japon`,
+    lat: 35.003558,
+    lng: 135.78057,
+  },
+  {
+    id: "4101c005-4447-42ec-a608-9c54e8825783",
+    name: "Le temple Saiho-ji + son jardin",
+    description:
+      "Le temple Saiho-ji possède l’un des plus beaux jardins de Kyoto : le jardin Kokedera. Autour d’un petit étang, le sol est tapissé de mousses végétales, évoquant le cycle de la vie.",
+    city: "Kyoto",
+    tag: "park",
+    picture:
+      "https://lh5.googleusercontent.com/p/AF1QipNHAzs2ev4R-l--nSrVu_K_VP1-oYqDZZi1lgoL=w426-h240-k-no",
+    links: [],
+    address: `56 Matsuojingatanicho, Nishikyo Ward, Kyoto, 615-8286, Japon`,
+    lat: 34.992165,
+    lng: 135.68407,
+  },
 
   // {
   //   name: "",
