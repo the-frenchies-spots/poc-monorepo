@@ -1,0 +1,64 @@
+../..                                    | Progress: resolved 0, reused 1, downloaded 0, added 0
+ WARN  deprecated @inlet/react-pixi@6.8.0: This package has been deprecated. Please use @pixi/react instead. See https://pixijs.io/pixi-react
+../..                                    | Progress: resolved 23, reused 23, downloaded 0, added 0
+../..                                    | Progress: resolved 259, reused 251, downloaded 0, added 0
+../..                                    |   +2   -1 +-
+
+dependencies:
++ @pixi/app 7.2.4
+- @pixi/react 7.1.0
++ @pixi/react 7.1.0
+
+ WARN  Issues with peer dependencies found
+apps/portfolio
+├─┬ @pixi/app
+│ ├── ✕ missing peer @pixi/core@7.2.4
+│ └── ✕ missing peer @pixi/display@7.2.4
+├─┬ @pixi/react
+│ ├── ✕ missing peer @pixi/core@>=6.0.0
+│ ├── ✕ missing peer @pixi/display@>=6.0.0
+│ ├── ✕ missing peer @pixi/constants@>=6.0.0
+│ ├── ✕ missing peer @pixi/extensions@>=6.0.0
+│ ├── ✕ missing peer @pixi/graphics@>=6.0.0
+│ ├── ✕ missing peer @pixi/math@>=6.0.0
+│ ├── ✕ missing peer @pixi/mesh@>=6.0.0
+│ ├── ✕ missing peer @pixi/mesh-extras@>=6.0.0
+│ ├── ✕ missing peer @pixi/particle-container@>=6.0.0
+│ ├── ✕ missing peer @pixi/sprite@>=6.0.0
+│ ├── ✕ missing peer @pixi/sprite-animated@>=6.0.0
+│ ├── ✕ missing peer @pixi/sprite-tiling@>=6.0.0
+│ ├── ✕ missing peer @pixi/text@>=6.0.0
+│ ├── ✕ missing peer @pixi/text-bitmap@>=6.0.0
+│ └── ✕ missing peer @pixi/ticker@>=6.0.0
+├─┬ @inlet/react-pixi
+│ ├── ✕ missing peer prop-types@^15.7.2
+│ ├── ✕ unmet peer pixi.js@^6.0.0: found 7.2.4
+│ ├── ✕ unmet peer react@^17.0.1: found 18.2.0
+│ └── ✕ unmet peer react-dom@^17.0.1: found 18.2.0
+├─┬ react-pixi-fiber
+│ ├── ✕ missing peer prop-types@>=15.0.0
+│ └─┬ react-reconciler
+│   └── ✕ unmet peer react@^17.0.2: found 18.2.0
+└─┬ pixi.js
+  └─┬ @pixi/assets
+    └── ✕ missing peer @pixi/utils@7.2.4
+Peer dependencies that should be installed:
+  @pixi/constants@>=6.0.0
+  @pixi/core@7.2.4
+  @pixi/display@7.2.4
+  @pixi/extensions@>=6.0.0
+  @pixi/graphics@>=6.0.0
+  @pixi/math@>=6.0.0
+  @pixi/mesh-extras@>=6.0.0
+  @pixi/mesh@>=6.0.0
+  @pixi/particle-container@>=6.0.0
+  @pixi/sprite-animated@>=6.0.0
+  @pixi/sprite-tiling@>=6.0.0
+  @pixi/sprite@>=6.0.0
+  @pixi/text-bitmap@>=6.0.0
+  @pixi/text@>=6.0.0
+  @pixi/ticker@>=6.0.0
+  @pixi/utils@7.2.4
+  prop-types@">=15.7.2 <16.0.0"
+
+../..                                    | Progress: resolved 463, reused 455, downloaded 0, added 2, done

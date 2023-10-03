@@ -1,6 +1,16 @@
 /** @type {import('next').NextConfig} */
+
+const withPWA = require("next-pwa");
+
 const nextConfig = {
   reactStrictMode: true,
+  ...withPWA({
+    dest: "public",
+    register: true,
+    skipWaitin: true,
+    disable: process.env.NODE_ENV === "development",
+  }),
+
   transpilePackages: ["@jf/ui-manga-maker"],
   images: {
     domains: [
