@@ -150,6 +150,61 @@ Petit sanctuaire shinto dédié à un dieu dragon, avec torii, sentiers et vue s
     lng: 138.99963,
   },
 
+  {
+    id: "262e8d87-7a9a-460f-a39f-a6cbda5cb287",
+    name: "Okuno Shrine",
+    description:
+      "Temple. Regarder sur google map y a d’autres ruines à voir sur l’île ",
+    city: "Takahera",
+    tag: "Sanctuary",
+    picture:
+      "https://lh5.googleusercontent.com/p/AF1QipMO7UZDT5BarvKvoiyLtAQ5h1viyS88s8J4sF_T=w408-h306-k-no",
+    links: [],
+    address: `Japon, 〒729-2311 Hiroshima, Takehara, Tadanoumicho, 大久野島`,
+    lat: 34.304623,
+    lng: 132.993505,
+  },
+
+  {
+    id: "3b517d6b-3769-41b2-bdc1-ccd2a844af7c",
+    name: "Temple Katsuo-ji",
+    description:
+      "Pleins d’autres temples autour, voir sur google map. Payant, genre 3, 4€ Le temple Katsuo-ji, plus familièrement surnommé “le temple aux Darumas”, est situé au cœur de la forêt de Minoh, dans le nord d’Osaka. Il est réputé pour apporter victoire et bonne fortune. Les japonais sont donc nombreux à s’y rendre chaque année en pèlerinage, ou avant un examen important. ",
+    city: "Osaka",
+    tag: "Sanctuary",
+    picture:
+      "https://japonsecret.fr/wp-content/uploads/2022/06/jordy-meow-0410161332.jpg",
+    links: [
+      {
+        label: "web site",
+        link: "https://japonsecret.fr/katsuo-ji-temple-daruma/",
+      },
+    ],
+    address: `2914-1 Aomatani, Minoh, Osaka 562-8508, Japon`,
+    lat: 34.866057,
+    lng: 135.490819,
+  },
+
+  {
+    id: "73b8d24b-7770-4343-a093-8fd8c96f0d05",
+    name: "Namba Yasaka-jinja",
+    description:
+      " Sanctuaire unique à tête de lion, pleins d’autres sanctuaires à voir autour",
+    city: "Osaka",
+    tag: "Sanctuary",
+    picture:
+      "https://www.kanpai.fr/sites/default/files/styles/big_header_lg/public/uploads/2014/04/namba-yasaka-jinja-5.jpg",
+    links: [
+      {
+        label: "website",
+        link: "https://www.kanpai.fr/osaka/namba-yasaka-jinja",
+      },
+    ],
+    address: `2 Chome-9-19 Motomachi, Naniwa Ward, Osaka, 556-0016, Japon`,
+    lat: 34.661444,
+    lng: 135.496706,
+  },
+
   // {
   //   id: "",
   //   name: "",

@@ -86,6 +86,27 @@ export const park: JapanLocation[] = [
     lng: 142.984406,
   },
 
+  {
+    id: "f38b41bf-2065-4dd9-b943-7736ab138f20",
+    name: "Parc quasi national de Meiji no Mori Minō",
+    description: `Tout le long de la marche on croise :
+des petits temples ;
+des établissements ou des cafés traditionnels ;
+des petits commerces ;
+ou encore des tunnels qui semblent abandonnées.
+Bien qu'éclairé, le sentier rappellera à plusieurs reprises certains décors du célèbre Voyage de Chihiro de Miyazaki. Cascade à la fin`,
+    city: "Osaka",
+    tag: "Park",
+    picture:
+      "https://lh5.googleusercontent.com/p/AF1QipMwHEUhdltlguUi1giGbAcVk2shaIUskIjHConp=w426-h240-k-no",
+    links: [
+      { label: "website", link: "https://www.kanpai.fr/osaka/parc-minoh" },
+    ],
+    address: `1-18 Minookoen, Minoh, Osaka 562-0002, Japon`,
+    lat: 34.847047,
+    lng: 135.472481,
+  },
+
   // {
   //   name: "",
   //   description: "",

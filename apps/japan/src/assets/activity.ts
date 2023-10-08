@@ -114,4 +114,23 @@ Vous en trouverez notamment dans la petite boutique Owakudani Kurotamago Kan, ju
     lat: 35.244093,
     lng: 139.019221,
   },
+
+  {
+    id: "35ac71d9-d829-4ca0-9e75-7a9f0e6a7d80",
+    name: "teamlab botanical garden",
+    description: "A faire la nuit, reservation conseillée ",
+    city: "Osaka",
+    tag: "Activity",
+    picture:
+      "https://lh5.googleusercontent.com/p/AF1QipNRiU2CycHgIIRx6PbprZDvhGkjJ55NYaSb7OEO=w408-h245-k-no",
+    links: [
+      {
+        label: "website",
+        link: "https://www.teamlab.art/fr/e/botanicalgarden/",
+      },
+    ],
+    address: `1-23 Nagaikoen, Higashisumiyoshi Ward, Osaka, 546-0034, Japon`,
+    lat: 34.610941,
+    lng: 135.520494,
+  },
 ];
