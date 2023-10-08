@@ -83,8 +83,8 @@ export const sanctuary: JapanLocation[] = [
     links: [],
     address: `２番地 Kyotogyoen, Kamigyo Ward, Kyoto, 602-0881, Japon`,
     lat: 35.021937,
-    lng: 135.764950,
-    },
+    lng: 135.76495,
+  },
   {
     id: "7a1b3875-8ed8-43ef-85d1-16837f2532fe",
     name: "Kiyomizu-dera",
@@ -133,7 +133,23 @@ export const sanctuary: JapanLocation[] = [
     lat: 35.013876,
     lng: 135.748823,
   },
- 
+
+  {
+    id: "00a6dcb2-2a8f-4d79-bd9b-c308a8db3e16",
+    name: "Kuzuryū Shrine Hongū",
+    description: ` 
+Petit sanctuaire shinto dédié à un dieu dragon, avec torii, sentiers et vue sur un lac boisé.
+`,
+    city: "Hakone",
+    tag: "Sanctuary",
+    picture:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvUCgvG0KcnS6Vpm5Xgc_aRWWvslQ8gWpn6Un6RJr8aDzuCvMa9l9eexXA38tNu0Ql154&usqp=CAU",
+    links: [],
+    address: `Japon, 〒250-0522 Kanagawa, Ashigarashimo District, Hakone, Motohakone, 防ケ沢 箱根九頭龍の森 内`,
+    lat: 35.223556,
+    lng: 138.99963,
+  },
+
   // {
   //   id: "",
   //   name: "",
@@ -146,5 +162,4 @@ export const sanctuary: JapanLocation[] = [
   //   lat: 0,
   //   lng: 0,
   // },
-
 ];

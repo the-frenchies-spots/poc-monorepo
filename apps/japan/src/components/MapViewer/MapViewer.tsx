@@ -11,7 +11,9 @@ import {
 } from "@jf/material";
 import {
   IconBathFilled,
+  IconBeach,
   IconBedFilled,
+  IconBladeFilled,
   IconBuilding,
   IconBuildingArch,
   IconBuildingSkyscraper,
@@ -113,7 +115,9 @@ const MapViewer = (props: MapViewerProps) => {
             case "monument":
               Icon = IconBuildingArch;
               break;
-
+            case "island":
+              Icon = IconBeach;
+              break;
             default:
               Icon = IconCurrencyYen;
           }

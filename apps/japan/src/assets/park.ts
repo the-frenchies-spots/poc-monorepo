@@ -71,6 +71,21 @@ export const park: JapanLocation[] = [
     lng: 135.68407,
   },
 
+  {
+    id: "da9748c6-b30f-4f3a-a26b-b5ee361a9d4c",
+    name: "Parc national de Daisetsuzan",
+    description:
+      "Parc montagneux s'étendant sur 2 267 km², composé de 16 pics, divers sentiers, animaux et plantes alpines. Cascade, souffleur de soufre, lacs,  téléphérique, park magnifiques.",
+    city: "île d'Hokkaïdo",
+    tag: "Park",
+    picture:
+      "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.arabiaweather.com%2Ffr%2Fcontent%2Fen-images-6-endroits-pour-admirer-les-merveilleuses-couleurs-d39automne-au-japon&psig=AOvVaw2-bKuQtwq3GB8OK2omvsnS&ust=1696852655825000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCNj-6fey5oEDFQAAAAAdAAAAABAD",
+    links: [],
+    address: `Sounkyo, Kamikawa, Kamikawa District, Hokkaido 078-1701, Japon`,
+    lat: 43.507806,
+    lng: 142.984406,
+  },
+
   // {
   //   name: "",
   //   description: "",

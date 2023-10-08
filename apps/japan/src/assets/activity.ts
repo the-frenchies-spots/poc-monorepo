@@ -84,4 +84,34 @@ export const activity: JapanLocation[] = [
     lat: 35.244972,
     lng: 139.051361,
   },
+  {
+    id: "82e51b54-f20c-4460-9a88-059a79840edd",
+    name: "Mont kami",
+    description:
+      "Le mont Kamiyama (la montagne des dieux créateurs de l'univers), au sommet du volcan Hakone, accessible en haut en téléphériques, mais il y a des fumerolles de soufre à admirer sur son flanc. Au total 3h de randonnée et possibilité de tomber sur un onsen naturel ! un hotel pour dieu en haut du mont",
+    city: "Hakone",
+    tag: "Activity",
+    picture:
+      "https://wa-sakura.fr/wp-content/uploads/2021/03/WA-SAKURA-Japon-Tourisme-Voyage-Kanagawa-Hakone-Odakuni-vallee-de-lenfer-souffre.jpg",
+    links: [],
+    address: `Motohakone, Hakone, District d'Ashigarashimo, Préfecture de Kanagawa 250-0522, Japon`,
+    lat: 35.233291,
+    lng: 139.020822,
+  },
+  {
+    id: "b7a2a73a-9941-441b-9b0b-62248363bfff",
+    name: "Fumerolles d’Owakudami",
+    description: `Le paysage très singulier de la vallée d'Owakudani a été créé suite à la dernière éruption du mont Hakone, il y a de cela environ 3 000 ans. Située autour du cratère de ce volcan, Owakudani est une zone volcanique active où l'on peut trouver et admirer des sources et des rivières chaudes d'où émanent d'impressionnantes vapeurs sulfureuses. Ici, vous pouvez acheter des œufs noirs cuits dans les sources chaudes de la vallée volcanique. Cette couleur particulière qui fait la renommée de ces oeufs durs est dû au fait que les coquilles sont noircies par le soufre des sources d'Owakudani lors de la cuisson.
+Une légende locale dit que manger ces oeufs noirs prolongeraient la vie de sept ans !
+Vous en trouverez notamment dans la petite boutique Owakudani Kurotamago Kan, juste à côté de la station de funitel.
+`,
+    city: "Hakone",
+    tag: "Activity",
+    picture:
+      "https://lh5.googleusercontent.com/p/AF1QipOxOeDjM782B7DxaDQqh-oFNcvxY6AXJf-ulbKU=w408-h272-k-no",
+    links: [],
+    address: `1300 Sengokuhara, Hakone, Ashigarashimo District, Kanagawa 250-0408, Japon`,
+    lat: 35.244093,
+    lng: 139.019221,
+  },
 ];

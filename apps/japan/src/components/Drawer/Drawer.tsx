@@ -97,6 +97,7 @@ export const Drawer = (props: DrawerProps) => {
                   { value: "building", label: "Batiment" },
                   { value: "monument", label: "Monument" },
                   { value: "street", label: "Rue" },
+                  { value: "island", label: "Île" },
                 ]}
               />
 

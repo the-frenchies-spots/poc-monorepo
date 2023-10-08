@@ -15,4 +15,17 @@ export const monument: JapanLocation[] = [
     lat: 35.204653,
     lng: 139.025393,
   },
+  {
+    id: "35d16ce7-4db4-430f-89fe-d3765e1a13bf",
+    name: "Hakone pirate Ship togendaï port",
+    description: "Bateau pirate en bois sur le lac",
+    city: "Hakone",
+    tag: "Monument",
+    picture:
+      "https://lh5.googleusercontent.com/p/AF1QipPJ8RPU9Cs_G_Ipl-0hVbtyZX_mTzhMrsLLy3ZS=w408-h272-k-no",
+    links: [],
+    address: `164 Motohakone, Hakone, Ashigarashimo District, Kanagawa 250-0522, Japon`,
+    lat: 35.237719,
+    lng: 138.994269,
+  },
 ];

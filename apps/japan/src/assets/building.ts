@@ -90,8 +90,6 @@ export const building: JapanLocation[] = [
     lng: 139.665585,
   },
 
-
-
   {
     id: "5fdc1357-9b99-4edd-8308-4c41b29eac81",
     name: "Nishiki Market",
@@ -103,6 +101,48 @@ export const building: JapanLocation[] = [
     address: `Nakagyo Ward, Kyoto, 604-8055, Japon`,
     lat: 35.005014,
     lng: 135.764728,
+  },
+
+  {
+    id: "35e39ae1-2431-4760-a422-8908257c9b2a",
+    name: "Hakone checkpoint",
+    description: `Poste de contrôle militaire de l'époque d'Edo, avec quartiers des soldats, belvédère, salon de thé, etc.
+3€19 l’entrée, ouvert tous les jours de 9h à 17h`,
+    city: "Hakone",
+    tag: "building",
+    picture: "https://the-wadas.com/wp-content/uploads/2017/07/sekisho_map.jpg",
+    links: [],
+    address: `1番地 Hakone, Ashigarashimo District, Kanagawa 250-0521, Japon`,
+    lat: 35.192451,
+    lng: 139.026489,
+  },
+
+  {
+    id: "8c81ad98-5127-4baf-8e84-68fca8f88b5d",
+    name: "Northern Cannon Battery Remnants 北部砲台跡",
+    description: "Ruines ",
+    city: "Takehara",
+    tag: "building",
+    picture:
+      "https://www.google.com/maps/place/Northern+Cannon+Battery+Remnants/@34.3137172,132.9926952,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipO1eS5Wl4x8SPkqrN21KJd520_GWFX6MECEgfEQ!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipO1eS5Wl4x8SPkqrN21KJd520_GWFX6MECEgfEQ%3Dw152-h86-k-no!7i3840!8i2160!4m7!3m6!1s0x35504532fba3410d:0x5983645bc4f2c6!8m2!3d34.3137579!4d132.9926921!10e5!16s%2Fg%2F11c6dwxydw?entry=ttu#",
+    links: [],
+    address: `Japon, 〒729-2311 Hiroshima, Takehara, Tadanoumicho, 大久野島`,
+    lat: 34.313812,
+    lng: 132.992691,
+  },
+
+  {
+    id: "bbb2ae9a-3766-49c0-b761-09e4917790f2",
+    name: "Site de stockage de gaz toxiques de Nagaura",
+    description: "Ruines ",
+    city: "Takehara",
+    tag: "building",
+    picture:
+      "https://www.google.com/maps/place/Site+de+stockage+de+gaz+toxiques+de+Nagaura/@34.3130371,132.9901738,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipPkXW56zMZQnCiRua9GqjhHLZcX3Hh_GtN8VeY_!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipPkXW56zMZQnCiRua9GqjhHLZcX3Hh_GtN8VeY_%3Dw203-h135-k-no!7i3984!8i2656!4m7!3m6!1s0x3550452d8ae08b57:0x1b89834013ea77d!8m2!3d34.3130371!4d132.9901738!10e5!16s%2Fg%2F11dxf1fl74?entry=ttu#",
+    links: [],
+    address: `8X7R+63 Takehara, Préfecture de Hiroshima, Japon`,
+    lat: 4.313053,
+    lng: 132.99012,
   },
 
   //   {

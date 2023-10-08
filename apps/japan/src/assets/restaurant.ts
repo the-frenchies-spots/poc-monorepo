@@ -93,4 +93,17 @@ export const restaurant: JapanLocation[] = [
     lat: 35.005027,
     lng: 35.764692,
   },
+  {
+    id: "0eca4268-8d8e-4983-9372-5d862634f925",
+    name: "Restaurant à Ramen - Asakuracho, Nakagyo Ward",
+    description: "restaurant a ramen à faire ",
+    city: "Kyoto",
+    tag: "Restaurant",
+    picture:
+      "https://mblogthumb-phinf.pstatic.net/MjAyMzA0MDFfMjMx/MDAxNjgwMzU0MTg0NDM2.YDADKzQSO9lrEfvuuzj8V4B1lyverh7I5vPlr8nGDPMg.0xC1CfTXIYjbMbn8V7ENX287C76V2m9Yp9zD3fFo38Ig.JPEG.jamie18/IMG_2694.JPG?type=w800",
+    links: [],
+    address: `527-4 Asakuracho, Nakagyo Ward, Kyoto, 604-8074, Japon`,
+    lat: 35.008166,
+    lng: 135.764985,
+  },
 ];
