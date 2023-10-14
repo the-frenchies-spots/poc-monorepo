@@ -193,4 +193,23 @@ Zoo d'Izu Shaboten, qui peut être vu depuis le sommet de la montagne`,
     lat: 34.90423,
     lng: 139.0961,
   },
+
+  {
+    id: "80bec034-0212-49fd-838f-45457a55e876",
+    name: "Kyoto Samurai Experience/Waraku",
+    description: ``,
+    city: "Kyoto",
+    tag: "activity",
+    picture:
+      "https://media.tacdn.com/media/attractions-splice-spp-674x446/11/04/33/c6.jpg",
+    links: [
+      {
+        label: "reservation",
+        link: "https://www.viator.com/fr-FR/tours/Kyoto/Samurai-Sword-Experience-Tameshigiri-at-Samurai-and-Ninja-Museum-Kyoto/d332-51440P79?m=26643&supag=67876691506&supsc=aud-435409373039:dsa-694098304204&supai=659618003898&supap=&supdv=c&supnt=nt:g&suplp=9056139&supli=&supti=aud-435409373039:dsa-694098304204&tsem=true&supci=aud-435409373039:dsa-694098304204&supap1=&supap2=&gclid=CjwKCAjw-KipBhBtEiwAWjgwrLUcxJ-e9kC9MGS6FBiGDm25QZpXZuPoDLaJfsXHZlAIs5_j0xUKZhoCwSgQAvD_BwE",
+      },
+    ],
+    address: `111 Inabacho, Nakagyo Ward, Kyoto, 604-8803, Japon`,
+    lat: 35.006113,
+    lng: 135.747583,
+  },
 ];

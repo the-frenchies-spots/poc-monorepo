@@ -100,6 +100,13 @@ const Data = (props: DataProps) => {
 
       <TextInput
         withAsterisk
+        label="city"
+        placeholder="city"
+        {...form.getInputProps("city")}
+      />
+
+      <TextInput
+        withAsterisk
         label="address"
         placeholder="address"
         {...form.getInputProps("address")}
