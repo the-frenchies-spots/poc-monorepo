@@ -4,6 +4,7 @@ import {
   IconBatteryAutomotive,
   IconBook,
   IconChefHat,
+  IconCoinYen,
   IconCreditCard,
   IconDroplet,
   IconGlassFull,
@@ -37,15 +38,46 @@ import {
   Box,
   Divider,
   Group,
+  Image,
   List,
   Stack,
   Tabs,
   Text,
 } from "@jf/material";
 
+import OneYen from "../../../public/images/1Yen.png";
+import FiveYen from "../../../public/images/5Yen.png";
+import TenYen from "../../../public/images/10Yen.png";
+import FiveTenYen from "../../../public/images/50Yen.png";
+import UndredYen from "../../../public/images/100Yen.png";
+import FiveUndredYen from "../../../public/images/500Yen.png";
+import ThousandYen from "../../../public/images/1000Yen.png";
+import ThwoThousandYen from "../../../public/images/2000Yen.png";
+import FiveThousandYen from "../../../public/images/5000Yen.png";
+import TenThousandYen from "../../../public/images/10000Yen.png";
+
 import { fonts } from "../../utils/fonts";
 import BankaiText from "../Text/BankaiText";
 import MonserattText from "../Text/MonserattText";
+
+type TArgent = {
+  source: string;
+  frenchLabel: string;
+  japLabel: string;
+};
+
+const ArgentList: TArgent[] = [
+  { source: OneYen.src, frenchLabel: "0,008€", japLabel: "1¥" },
+  { source: FiveYen.src, frenchLabel: "0,04€", japLabel: "5¥" },
+  { source: TenYen.src, frenchLabel: "0,08€", japLabel: "10¥" },
+  { source: FiveTenYen.src, frenchLabel: "0,39€", japLabel: "50¥" },
+  { source: UndredYen.src, frenchLabel: "0,78€", japLabel: "100¥" },
+  { source: FiveUndredYen.src, frenchLabel: "3,90€", japLabel: "500¥" },
+  { source: ThousandYen.src, frenchLabel: "9€", japLabel: "1 000¥" },
+  { source: ThwoThousandYen.src, frenchLabel: "18€", japLabel: "2 000¥" },
+  { source: FiveThousandYen.src, frenchLabel: "45€", japLabel: "5 000¥" },
+  { source: TenThousandYen.src, frenchLabel: "90€", japLabel: "10 000¥" },
+];
 
 type NoteVocal = {
   valueJap: string;
@@ -262,6 +294,9 @@ export const ListRappel = () => {
         <Tabs.Tab value="resto" icon={<IconChefHat />}>
           <MonserattText>Restaurant</MonserattText>
         </Tabs.Tab>
+        <Tabs.Tab value="argent" icon={<IconCoinYen />}>
+          <MonserattText>Argent</MonserattText>
+        </Tabs.Tab>
       </Tabs.List>
 
       <Tabs.Panel value="rappel" pt="xs">
@@ -365,6 +400,22 @@ export const ListRappel = () => {
             </Accordion.Panel>
           </Accordion.Item>
         </Accordion>
+      </Tabs.Panel>
+
+      <Tabs.Panel value="argent" pt="xs">
+        <Stack>
+          {ArgentList?.map((argentItem, index) => (
+            <Group key={index} grow>
+              <Box>
+                <Image src={argentItem.source} alt={argentItem.japLabel} />
+              </Box>
+              <Stack justify="center" align="center">
+                <MonserattText>{argentItem.frenchLabel}</MonserattText>
+                <BankaiText>{argentItem.japLabel}</BankaiText>
+              </Stack>
+            </Group>
+          ))}
+        </Stack>
       </Tabs.Panel>
     </Tabs>
   );
