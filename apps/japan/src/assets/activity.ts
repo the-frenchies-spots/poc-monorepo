@@ -133,4 +133,64 @@ Vous en trouverez notamment dans la petite boutique Owakudani Kurotamago Kan, ju
     lat: 34.610941,
     lng: 135.520494,
   },
+  {
+    id: "08fec304-19d6-4a4d-8bf0-15418222dd16",
+    name: "Umeda Sky Building",
+    description:
+      "L’Umeda Sky Building offre la plus belle vue panoramique sur la ville d’Osaka. Dessiné par l’architecte japonais Hiroshi Hara, le bâtiment comporte 2 tours de 40 étages reliées par un pont et est admirablement bien conçu. Il est possible d’accéder à la plateforme d’observation de ce gratte-ciel haut de 173 mètres pour admirer la ville de jour comme de nuit. Le soir, c’est encore plus beau lorsque Osaka est illuminée. Umeda Sky Building se trouve dans le quartier d’Umeda et l’entrée est de 1000 yens (7€). On y va seulement pour la vue, mais ça en vaut la peine. ",
+    city: "Osaka",
+    tag: "Building",
+    picture:
+      "https://cdn.generationvoyage.fr/2014/04/umeda-sky-building-osaka-600x413.jpg",
+    links: [],
+    address: `1 Chome-1-88 Oyodonaka, Kita Ward, Osaka, 531-6023, Japon`,
+    lat: 34.705328,
+    lng: 135.489353,
+  },
+
+  {
+    id: "2a121f78-9fcf-4749-bf57-4da2b39db64e",
+    name: "Le musée Momofuku Ando Instant Ramen",
+    description:
+      "Ce musée est assez étonnant et surtout différent des autres musées ordinaires… Bien qu’il retrace l’histoire d’une invention connue internationalement, cela reste très original : vous connaissez les noodles ? Ces nouilles qui ne valent presque rien et qui sont prêtes en quelques secondes avec de l’eau chaude. Le musée Rāmen (la marque qui en commercialise le plus au Japon) vous permet d’en savoir plus et vous propose même de fabriquer vos propres noodles. ",
+    city: "Osaka",
+    tag: "activity",
+    picture:
+      "https://magazine.japan-jtrip.com/wp-content/uploads/2018/04/cup-noodles01.jpg",
+    links: [],
+    address: `8-25 Masumicho, Ikeda, Osaka 563-0041, Japon`,
+    lat: 34.818116,
+    lng: 135.426561,
+  },
+
+  {
+    id: "df9383c2-73bb-4375-81ea-e6f126597fbd",
+    name: "Capybara Onsen: The Izu Shaboten Zoo",
+    description: `Le zoo dispose d'un onsen réservé aux capybaras (en hiver)
+Des plats originaux comme un curry vert au cactus, des burgers de cactus et de la glace au cactus font partie des mets proposés`,
+    city: "Futo",
+    tag: "activity",
+    picture:
+      "https://imgcp.aacdn.jp/img-a/1720/auto/global-aaj-front/article/2015/10/560fd6b80e4d5_560fd668b1dce_511482178.jpg",
+    links: [],
+    address: `1317-13 Futo, Itō, Shizuoka 413-0231, Japon`,
+    lat: 34.907101,
+    lng: 139.100885,
+  },
+
+  {
+    id: "4f197215-03a2-4c5c-9f95-922f469dec34",
+    name: "Mont Omuro",
+    description: `La vue panoramique sur le mont Fuji, Oshima et l'archipel d'Izu dans l'océan Pacifique
+S'entraîner au tir à l'arc dans le cratère d'un volcan
+Zoo d'Izu Shaboten, qui peut être vu depuis le sommet de la montagne`,
+    city: "Futo",
+    tag: "Activity",
+    picture:
+      "https://lh5.googleusercontent.com/p/AF1QipM1DPRXZmmWTP-hKrxMCq4V0ZwtQDdUrTljlcFW=w408-h306-k-no",
+    links: [],
+    address: `Ike, Itō, Préfecture de Shizuoka 413-0234, Japon`,
+    lat: 34.90423,
+    lng: 139.0961,
+  },
 ];

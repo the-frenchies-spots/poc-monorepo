@@ -90,8 +90,8 @@ export const restaurant: JapanLocation[] = [
       "https://res-3.cloudinary.com/jnto/image/upload/w_2064,h_1300,c_fill,f_auto,fl_lossy,q_auto/v1648006915/kyoto/H_00480_001",
     links: [],
     address: `Nakagyo Ward, Kyoto, 604-8055, Japon`,
-    lat: 35.005027,
-    lng: 35.764692,
+    lat: 35.005117,
+    lng: 135.76469,
   },
   {
     id: "0eca4268-8d8e-4983-9372-5d862634f925",

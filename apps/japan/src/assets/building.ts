@@ -124,7 +124,7 @@ export const building: JapanLocation[] = [
     city: "Takehara",
     tag: "building",
     picture:
-      "https://www.google.com/maps/place/Northern+Cannon+Battery+Remnants/@34.3137172,132.9926952,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipO1eS5Wl4x8SPkqrN21KJd520_GWFX6MECEgfEQ!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipO1eS5Wl4x8SPkqrN21KJd520_GWFX6MECEgfEQ%3Dw152-h86-k-no!7i3840!8i2160!4m7!3m6!1s0x35504532fba3410d:0x5983645bc4f2c6!8m2!3d34.3137579!4d132.9926921!10e5!16s%2Fg%2F11c6dwxydw?entry=ttu#",
+      "https://en.normandie-tourisme.fr/wp-content/uploads/sites/3/wpetourisme/LONGUESSURMER-BATTERIE-CALV.jpg",
     links: [],
     address: `Japon, 〒729-2311 Hiroshima, Takehara, Tadanoumicho, 大久野島`,
     lat: 34.313812,
@@ -137,12 +137,26 @@ export const building: JapanLocation[] = [
     description: "Ruines ",
     city: "Takehara",
     tag: "building",
-    picture:
-      "https://www.google.com/maps/place/Site+de+stockage+de+gaz+toxiques+de+Nagaura/@34.3130371,132.9901738,3a,75y,90t/data=!3m8!1e2!3m6!1sAF1QipPkXW56zMZQnCiRua9GqjhHLZcX3Hh_GtN8VeY_!2e10!3e12!6shttps:%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipPkXW56zMZQnCiRua9GqjhHLZcX3Hh_GtN8VeY_%3Dw203-h135-k-no!7i3984!8i2656!4m7!3m6!1s0x3550452d8ae08b57:0x1b89834013ea77d!8m2!3d34.3130371!4d132.9901738!10e5!16s%2Fg%2F11dxf1fl74?entry=ttu#",
+    picture: "https://f.ptcdn.info/161/034/000/1438829054-p33-o.jpg",
     links: [],
     address: `8X7R+63 Takehara, Préfecture de Hiroshima, Japon`,
-    lat: 4.313053,
-    lng: 132.99012,
+    lat: 34.312843,
+    lng: 132.990198,
+  },
+
+  {
+    id: "b7f75f16-43e8-4939-b9ba-92ef5ffb8048",
+    name: "Chateau d’Osaka",
+    description: `Parc à visiter avec pleins de points d’intérêt cf google map si nécessaire.
+Le château d’Osaka est un réel chef-d’oeuvre de l’architecture japonaise. Il fut construit en 1583 par Toyotomi Hideyoshi. En 1945, un raid aérien américain détruisit le donjon. Le château a depuis été rénové et abrite à présent l’un des plus grands « musées » (c’est une expo à lui seul) de la région et il est entouré par l’un des plus beaux parcs de la ville. `,
+    city: "Osaka",
+    tag: "Building",
+    picture:
+      "https://cdn.generationvoyage.fr/2014/04/chateau-osaka-600x399.jpg",
+    links: [],
+    address: `1-1 Osakajo, Chuo Ward, Osaka, 540-0002, Japon`,
+    lat: 34.687205,
+    lng: 135.526306,
   },
 
   //   {

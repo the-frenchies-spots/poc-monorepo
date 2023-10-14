@@ -85,4 +85,32 @@ export const neighborhood: JapanLocation[] = [
     lat: 35.697087,
     lng: 139.792159,
   },
+
+  {
+    id: "d19c8532-4a92-41b0-bab2-8257e5d797ae",
+    name: "Dōtonbori et le quartier de Namba",
+    description: `La rue de Dōtonbori est un peu le Times Square d’Osaka. Elle est située dans le quartier de Namba où l’on compte un nombre incroyable de centres commerciaux, de restaurants et de lieux pour sortir et s’amuser. La vie nocturne y est en effet animée et les enseignes illuminent cette rue unique à Osaka. Sa popularité n’a fait que grandir suite aux nombreux films et émissions locales qui ont été tournés ici.`,
+    city: "Osaka",
+    tag: "neighborhood",
+    picture:
+      "https://c8.alamy.com/compfr/m62bxj/osaka-japon-29-avril-2017-dans-la-nuit-a-la-rue-commercante-dotonbori-osaka-namba-en-canal-une-vie-nocturne-et-de-divertissement-blue-hour-shot-m62bxj.jpg",
+    links: [],
+    address: `1 Chome Dotonbori, Chuo Ward, Osaka, 542-0071, Japon`,
+    lat: 34.668727,
+    lng: 135.501306,
+  },
+
+  {
+    id: "8a90917c-8924-448e-94a3-4771c489b242",
+    name: "Shinsekai",
+    description: `Shinsekai est un quartier populaire emblématique d’Osaka dans la région du Kansai au Japon. De sa traduction littérale, le "nouveau monde" a été aménagé en 1912 en s’inspirant des villes de Paris et New York, avec comme symbole la tour Tsutenkaku qui domine la zone. Aujourd’hui les visiteurs s’y rendent notamment pour la gastronomie locale bon marché. `,
+    city: "Osaka",
+    tag: "neighborhood",
+    picture:
+      "https://www.kanpai.fr/sites/default/files/styles/big_header_lg/public/uploads/shinsekai-osaka-1.jpg",
+    links: [],
+    address: `1 Chome Ebisuhigashi, Naniwa Ward, Osaka, 556-0002, Japon`,
+    lat: 34.653789,
+    lng: 135.505716,
+  },
 ];

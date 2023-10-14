@@ -205,6 +205,21 @@ Petit sanctuaire shinto dédié à un dieu dragon, avec torii, sentiers et vue s
     lng: 135.496706,
   },
 
+  {
+    id: "d9a54e90-5bff-405c-8e69-f4b0fb184ba3",
+    name: "Le sanctuaire Sumiyoshi-taisha",
+    description:
+      " Sumiyoshi-taisha, également connu sous le nom de Grand sanctuaire Sumiyoshi, a été construit au début du 3ème siècle, avant l’introduction du bouddhisme au Japon. Cela signifie qu’il a été bâti sans aucune autre influence religieuse que le shintoïsme. L’architecture est donc absolument unique, ce qui fait de lui non seulement l’un des plus anciens sanctuaires dans tout le Japon, mais aussi l’un des plus intéressants à visiter. C’est l’un des sanctuaires les plus visités au Japon au cours de la Hatsumōde (première visite dans un sanctuaire après le Nouvel An japonais). ",
+    city: "Osaka",
+    tag: "Sanctuary",
+    picture:
+      "https://cdn.generationvoyage.fr/2014/04/sumiyoshi-taisha-osaka-600x450.jpg",
+    links: [],
+    address: `2 Chome-9-89 Sumiyoshi, Sumiyoshi Ward, Osaka, 558-0045, Japon`,
+    lat: 34.612358,
+    lng: 135.493561,
+  },
+
   // {
   //   id: "",
   //   name: "",
