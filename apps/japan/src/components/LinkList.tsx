@@ -7,25 +7,25 @@ interface LinkListProps {
 }
 
 const LinkList = ({ value, onChange }: LinkListProps) => {
-  const [links, setLinks] = useState(value);
+  const [links, setLinks] = useState<any>(value);
 
   useEffect(() => {
-    onChange(links);
+    onChange(links as any);
   }, [links]);
 
-  const handleInputChange = (index, event, key) => {
+  const handleInputChange = (index: any, event: any, key: any) => {
     const values = [...links];
-    values[index][key] = event.target.value;
-    setLinks(values);
+    values[index][key] = event.target.value as any;
+    setLinks(values as any);
   };
 
   const handleAdd = () => {
     const values = [...links];
     values.push({ label: "", link: "" });
-    setLinks(values);
+    setLinks(values as any);
   };
 
-  const handleRemove = (index) => {
+  const handleRemove = (index: any) => {
     const values = [...links];
     values.splice(index, 1);
     setLinks(values);
@@ -34,7 +34,7 @@ const LinkList = ({ value, onChange }: LinkListProps) => {
   return (
     <Stack mt="md">
       <Button onClick={handleAdd}>Add Link</Button>
-      {links.map((link, index) => (
+      {links.map((link: any, index: any) => (
         <Group key={index} grow>
           <TextInput
             type="text"
@@ -46,7 +46,7 @@ const LinkList = ({ value, onChange }: LinkListProps) => {
             type="text"
             placeholder="Link"
             value={link.link}
-            onChange={(event) => handleInputChange(index, event, "link")}
+            onChange={(event: any) => handleInputChange(index, event, "link")}
           />
           <Button onClick={() => handleRemove(index)}>Remove</Button>
         </Group>
