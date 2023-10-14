@@ -40,16 +40,16 @@ const LocationCardList = (props: LocationCardListProps) => {
     japanLocation.tag.includes(tag)
   );
 
-  if (km) {
-    filterList = filterList.filter((japanLocation) =>
-      checkCoordinatesWithinRadius(
-        35.689966,
-        139.754537,
+  if (km && currentPosition && currentPosition.lat && currentPosition.lng) {
+    filterList = filterList.filter((japanLocation) => {
+      return checkCoordinatesWithinRadius(
+        currentPosition.lat as number,
+        currentPosition.lng as number,
         japanLocation.lat as number,
         japanLocation.lng as number,
         +km
-      )
-    );
+      );
+    });
   }
 
   return (

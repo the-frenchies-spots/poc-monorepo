@@ -55,6 +55,4 @@ const example = () => {
     lng2,
     radius
   );
-
-  console.log(withinRadius); // Renvoie true si les coordonnées sont dans le rayon, sinon false
 };

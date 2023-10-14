@@ -9,6 +9,11 @@ import { useMapBox } from "@jf/material";
 import { useGeoloc } from "@jf/hooks";
 import { RecenterViewport } from "../components/RecenterViewport/RecenterViewport";
 import React from "react";
+import { fonts } from "./../utils/fonts";
+import {
+  getFromLocalStorage,
+  saveToLocalStorage,
+} from "../utils/locale-storage";
 
 const zoomKm: Record<number, number> = {
   1: 13,
@@ -32,7 +37,7 @@ export default function Home({
 }) {
   const [currentTag, setCuurentTag] = useState<string | null>("");
   const [view, setView] = useState<string>("map");
-  const [km, setKm] = useState<string | null>(null);
+  const [km, setKm] = useState<string | null>("5");
   const [currentLocation, setCurrentLocation] = useState<JapanLocation | null>(
     null
   );
@@ -42,20 +47,35 @@ export default function Home({
   const [fetch, { viewport, onViewportChange, onCoordinateClick }] =
     useMapBox();
 
+  useEffect(() => {
+    const km = getFromLocalStorage("km");
+    if (km) {
+      setKm(km);
+    }
+    const currentTag = getFromLocalStorage("currentTag");
+    if (currentTag) {
+      setCuurentTag(currentTag);
+    }
+  }, []);
+
   const handleKmChange = (km: string | null) => {
+    saveToLocalStorage("km", km);
     setKm(km === "" || null ? null : km);
   };
+
   useEffect(() => {
-    if (km) {
-      onViewportChange((current) => ({
-        ...current,
-        latitude: 35.689966,
-        longitude: 139.754537,
-        zoom: zoomKm[+km],
-        transitionDuration: 1000,
-      }));
+    if (km && currentPosition && currentPosition.lat && currentPosition.lng) {
+      onViewportChange((current) => {
+        return {
+          ...current,
+          latitude: currentPosition.lat,
+          longitude: currentPosition.lng,
+          zoom: zoomKm[+km],
+          transitionDuration: 1000,
+        };
+      });
     }
-  }, [km]);
+  }, [km, currentPosition]);
 
   const SetCurrentLocationToViewPortClick = useCallback(() => {
     getLocation();
@@ -71,6 +91,11 @@ export default function Home({
     });
   }, [currentPosition]);
 
+  const handleTagChange = (value: any) => {
+    saveToLocalStorage("currentTag", value);
+    setCuurentTag(value);
+  };
+
   return (
     <>
       <Head>
@@ -79,9 +104,9 @@ export default function Home({
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
+      <main style={{ ...fonts["Montserrat-Regular"].style }}>
         <Drawer
-          onTagChange={setCuurentTag}
+          onTagChange={handleTagChange}
           tag={currentTag || ""}
           onViewChange={setView}
           view={view}

@@ -26,6 +26,7 @@ interface MapBoxProps {
   onViewportChange?: (newViewport: TViewport) => void;
   onCoordinateClick?: (coordinate: TCoordinate | undefined) => void;
   children?: ReactNode;
+  currentPosition: TCoordinate | null;
   neighborhoods?: any;
   japanData?: any;
   km: string | null;
@@ -37,6 +38,7 @@ export const MapBox = (props: MapBoxProps) => {
     viewport,
     neighborhoods = null,
     japanData = null,
+    currentPosition = null,
     km,
     onViewportChange,
     onCoordinateClick,
@@ -68,11 +70,13 @@ export const MapBox = (props: MapBoxProps) => {
       ref={mapRef}
       style={{ width: "100%", height: "100%" }}
     >
-      <DetectionCircle
-        lat={35.689966}
-        lng={139.754537}
-        radius={km === null ? 0 : +km}
-      />
+      {currentPosition && currentPosition.lat && currentPosition.lng && (
+        <DetectionCircle
+          lat={+currentPosition.lat}
+          lng={+currentPosition.lng}
+          radius={km === null ? 0 : +km}
+        />
+      )}
 
       {labels.map((label) => (
         <Marker key={label.id} latitude={label.lat} longitude={label.lng}>

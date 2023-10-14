@@ -14,7 +14,7 @@ const japanViewPort = {
   longitude: 139.754537,
   padding: { top: 0, bottom: 0, left: 0, right: 0 },
   pitch: 0,
-  zoom: 5,
+  zoom: 11,
   transitionDuration: 1000, // Transition duration in milliseconds
 };
 

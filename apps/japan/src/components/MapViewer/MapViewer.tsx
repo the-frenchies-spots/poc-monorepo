@@ -66,6 +66,7 @@ const MapViewer = (props: MapViewerProps) => {
         onCoordinateClick={onCoordinateClick}
         neighborhoods={neighborhoods}
         japanData={japanData}
+        currentPosition={currentPosition}
         km={km}
       >
         {currentPosition && currentPosition.lat && currentPosition.lng && (

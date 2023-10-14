@@ -2,7 +2,10 @@ import { useState, useEffect } from "react";
 import { TCoordinate } from "@jf/types";
 
 export const useGeoloc = () => {
-  const [location, setLocation] = useState<TCoordinate | null>(null);
+  const [location, setLocation] = useState<TCoordinate | null>({
+    lat: 35.689966,
+    lng: 139.754537,
+  });
 
   const getLocation = () => {
     if (navigator.geolocation) {
