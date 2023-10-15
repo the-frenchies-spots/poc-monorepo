@@ -1,6 +1,7 @@
 import React from "react";
 
 import {
+  Icon123,
   IconBatteryAutomotive,
   IconBook,
   IconChefHat,
@@ -41,6 +42,7 @@ import {
   Image,
   List,
   Stack,
+  Table,
   Tabs,
   Text,
 } from "@jf/material";
@@ -59,6 +61,7 @@ import TenThousandYen from "../../../public/images/10000Yen.png";
 import { fonts } from "../../utils/fonts";
 import BankaiText from "../Text/BankaiText";
 import MonserattText from "../Text/MonserattText";
+import { countList } from "../../assets/count/count";
 
 type TArgent = {
   source: string;
@@ -67,16 +70,16 @@ type TArgent = {
 };
 
 const ArgentList: TArgent[] = [
-  { source: OneYen.src, frenchLabel: "0,008€", japLabel: "1¥" },
-  { source: FiveYen.src, frenchLabel: "0,04€", japLabel: "5¥" },
-  { source: TenYen.src, frenchLabel: "0,08€", japLabel: "10¥" },
-  { source: FiveTenYen.src, frenchLabel: "0,39€", japLabel: "50¥" },
-  { source: UndredYen.src, frenchLabel: "0,78€", japLabel: "100¥" },
-  { source: FiveUndredYen.src, frenchLabel: "3,90€", japLabel: "500¥" },
-  { source: ThousandYen.src, frenchLabel: "9€", japLabel: "1 000¥" },
-  { source: ThwoThousandYen.src, frenchLabel: "18€", japLabel: "2 000¥" },
-  { source: FiveThousandYen.src, frenchLabel: "45€", japLabel: "5 000¥" },
-  { source: TenThousandYen.src, frenchLabel: "90€", japLabel: "10 000¥" },
+  { source: OneYen.src, frenchLabel: "0,0064€", japLabel: "1¥" },
+  { source: FiveYen.src, frenchLabel: "0,032€", japLabel: "5¥" },
+  { source: TenYen.src, frenchLabel: "0,064€", japLabel: "10¥" },
+  { source: FiveTenYen.src, frenchLabel: "0,32€", japLabel: "50¥" },
+  { source: UndredYen.src, frenchLabel: "0,64€", japLabel: "100¥" },
+  { source: FiveUndredYen.src, frenchLabel: "3,20€", japLabel: "500¥" },
+  { source: ThousandYen.src, frenchLabel: "6,4€", japLabel: "1 000¥" },
+  { source: ThwoThousandYen.src, frenchLabel: "12,8€", japLabel: "2 000¥" },
+  { source: FiveThousandYen.src, frenchLabel: "32€", japLabel: "5 000¥" },
+  { source: TenThousandYen.src, frenchLabel: "64€", japLabel: "10 000¥" },
 ];
 
 type NoteVocal = {
@@ -289,13 +292,16 @@ export const ListRappel = () => {
     <Tabs defaultValue="resto">
       <Tabs.List>
         <Tabs.Tab value="rappel" icon={<IconPhoto />}>
-          <MonserattText> Rapelle</MonserattText>
+          <MonserattText> Rappel</MonserattText>
         </Tabs.Tab>
         <Tabs.Tab value="resto" icon={<IconChefHat />}>
           <MonserattText>Restaurant</MonserattText>
         </Tabs.Tab>
         <Tabs.Tab value="argent" icon={<IconCoinYen />}>
           <MonserattText>Argent</MonserattText>
+        </Tabs.Tab>
+        <Tabs.Tab value="count" icon={<Icon123 />}>
+          <MonserattText>Comptés</MonserattText>
         </Tabs.Tab>
       </Tabs.List>
 
@@ -416,6 +422,60 @@ export const ListRappel = () => {
             </Group>
           ))}
         </Stack>
+      </Tabs.Panel>
+
+      <Tabs.Panel value="count" pt="xs">
+        <Accordion defaultValue="Compter par défaut">
+          <>
+            {countList?.map((countItem, index) => {
+              return (
+                <Accordion.Item
+                  value={countItem.label}
+                  key={`Accordion-${index}`}
+                >
+                  <Accordion.Control>
+                    <MonserattText>{countItem.label}</MonserattText>
+                  </Accordion.Control>
+                  <Accordion.Panel>
+                    <Table>
+                      <thead>
+                        <tr>
+                          <th>
+                            <MonserattText>Kanji</MonserattText>
+                          </th>
+                          <th>
+                            <MonserattText>Kana</MonserattText>
+                          </th>
+                          <th>
+                            <MonserattText>Rōmaji</MonserattText>
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {countItem?.value?.map((countItemItem, index) => (
+                          <tr key={`tr-${index}`}>
+                            <td>
+                              <BankaiText>{index + 1}</BankaiText>{" "}
+                              {countItemItem.Kanji}
+                            </td>
+                            <td>
+                              <MonserattText>
+                                {countItemItem.Kana}
+                              </MonserattText>
+                            </td>
+                            <td>
+                              <BankaiText>{countItemItem.Rōmaji}</BankaiText>
+                            </td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </Table>
+                  </Accordion.Panel>
+                </Accordion.Item>
+              );
+            })}
+          </>
+        </Accordion>
       </Tabs.Panel>
     </Tabs>
   );
