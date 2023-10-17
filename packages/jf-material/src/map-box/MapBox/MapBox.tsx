@@ -17,6 +17,11 @@ const labels = [
   { id: 7, lat: 35.622617, lng: 139.790518, name: "Odaiba" },
   { id: 8, lat: 35.714452, lng: 139.666402, name: "Nakano" },
   { id: 9, lat: 35.663072, lng: 139.745454, name: "MINATO" },
+  { id: 10, lat: 36.625942, lng: 138.59477, name: "Kusatsu" },
+  { id: 11, lat: 35.012483, lng: 135.768929, name: "KYOTO" },
+  { id: 11, lat: 34.669891, lng: 135.498025, name: "OSAKA" },
+  { id: 12, lat: 34.674503, lng: 135.891002, name: "NARA" },
+  { id: 12, lat: 36.818739, lng: 139.581019, name: "Nikkō" },
 ];
 
 // 35.663072, 139.745454
@@ -81,6 +86,7 @@ export const MapBox = (props: MapBoxProps) => {
       {labels.map((label) => (
         <Marker key={label.id} latitude={label.lat} longitude={label.lng}>
           <Text
+            tt="uppercase"
             sx={{
               fontWeight: "bold",
               color: "#ffffff",

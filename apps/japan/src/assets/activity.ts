@@ -480,4 +480,79 @@ Zoo d'Izu Shaboten, qui peut être vu depuis le sommet de la montagne`,
     lng: 139.769452,
     price: "0",
   },
+
+  {
+    id: "38927cfb-2d3b-43c2-9556-fa91b8c268f1",
+    name: "GARE DE KYOTO",
+    description: "",
+    picture:
+      "https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/kyoto-train-station-andrei-sky.jpg",
+    tag: "station",
+    city: "Kyoto",
+    address: "Higashishiokoji Kamadonocho, Shimogyo Ward, Kyoto, Japon",
+    links: [],
+    lat: 34.984936,
+    lng: 135.75769,
+    price: "0",
+  },
+
+  {
+    id: "635ee919-62a3-4993-a578-106f4616b852",
+    name: "Gare de Hakodate",
+    description: "",
+    picture:
+      "https://lh5.googleusercontent.com/p/AF1QipPQM7n4SodmkObTc5BZ-ac4SpDCgCv0puikjaYY=w408-h306-k-no",
+    tag: "station",
+    city: "Hakodate",
+    address: "12 Wakamatsuchō, Hakodate, Hokkaido 040-0063, Japon",
+    links: [],
+    lat: 41.773957,
+    lng: 140.726281,
+    price: "0",
+  },
+
+  {
+    id: "635ee919-62a3-4993-a578-106f4616b852",
+    name: "Gare de Hakodate",
+    description: "",
+    picture:
+      "https://lh5.googleusercontent.com/p/AF1QipPQM7n4SodmkObTc5BZ-ac4SpDCgCv0puikjaYY=w408-h306-k-no",
+    tag: "station",
+    city: "Hakodate",
+    address: "12 Wakamatsuchō, Hakodate, Hokkaido 040-0063, Japon",
+    links: [],
+    lat: 41.773957,
+    lng: 140.726281,
+    price: "0",
+  },
+
+  {
+    id: "4e274bfb-cb4a-4273-a6b9-f5c146b410a0",
+    name: "Shin-Hakodate-Hokuto Station",
+    description: "",
+    picture:
+      "https://lh5.googleusercontent.com/p/AF1QipPXPUhxGWm6DOz_f7O199DTGBH3aAN01mqaaMq2=w408-h544-k-no",
+    tag: "station",
+    city: "Hokkaido",
+    address: "1-chome-1-1 Ichinowatari, Hokuto, Hokkaido 041-1242, Japon",
+    links: [],
+    lat: 41.904668,
+    lng: 140.648376,
+    price: "",
+  },
+
+  // {
+  //   id: "",
+  //   name: "",
+  //   description: "",
+  //   picture:
+  //     "",
+  //   tag: "station",
+  //   city: "",
+  //   address: "",
+  //   links: [],
+  //   lat: 0,
+  //   lng: 0,
+  //   price: "",
+  // },
 ];

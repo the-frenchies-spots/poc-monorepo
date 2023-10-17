@@ -14,3 +14,5 @@ export * from "./MapPinMount";
 export * from "./MapPinDefault";
 export * from "./MapPinStation";
 export * from "./MapPinUniversalStudio";
+export * from "./MapPinCity";
+export * from "./MapPinCascade";

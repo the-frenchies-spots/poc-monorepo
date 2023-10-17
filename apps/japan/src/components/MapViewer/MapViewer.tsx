@@ -53,7 +53,11 @@ const MapViewer = (props: MapViewerProps) => {
         km={km}
       >
         {currentPosition && currentPosition.lat && currentPosition.lng && (
-          <MapBoxMarker lat={currentPosition.lat} lng={currentPosition.lng}>
+          <MapBoxMarker
+            lat={currentPosition.lat}
+            lng={currentPosition.lng}
+            isDefaultCursor={false}
+          >
             <CurrentLocationMarker />
           </MapBoxMarker>
         )}
@@ -76,6 +80,7 @@ const MapViewer = (props: MapViewerProps) => {
               lat={location?.lat || 0}
               lng={location?.lng || 0}
               onPress={() => onLocationChange(location)}
+              style={{ paddingBottom: 43 }}
             >
               <Icon
                 size={isSelected ? 80 : 50}

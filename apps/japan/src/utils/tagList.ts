@@ -15,6 +15,8 @@ import {
   MapPinDefault,
   MapPinStation,
   MapPinUniversalStudio,
+  MapPinCity,
+  MapPinCascade,
 } from "@jf/icons";
 
 export const tagList = [
@@ -32,6 +34,8 @@ export const tagList = [
   { value: "activity", label: "Activité", icon: MapPinActivity },
   { value: "mount", label: "Mont", icon: MapPinMount },
   { value: "station", label: "Gare", icon: MapPinStation },
+  { value: "city", label: "Ville", icon: MapPinCity },
+  { value: "cascade", label: "Cascade", icon: MapPinCascade },
   {
     value: "universal-studio",
     label: "Universal Studio",
