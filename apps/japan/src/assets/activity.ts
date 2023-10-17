@@ -7,7 +7,7 @@ export const activity: JapanLocation[] = [
     description:
       "Nintendo World, Hollywood, NewYork, Minion Park, San Francisco, Jurassic Park, Water World, Amity Village, The Wizarding World of Harry Potter, et Universal Wonderland.",
     city: "Osaka",
-    tag: "activity",
+    tag: "universal-studio",
     picture:
       "https://fs-prod-cdn.nintendo-europe.com/media/images/10_share_images/others_3/nintendo_direct_3/H2x1_SuperMarioWorldDirect2020.jpg",
     links: [
@@ -90,7 +90,7 @@ export const activity: JapanLocation[] = [
     description:
       "Le mont Kamiyama (la montagne des dieux créateurs de l'univers), au sommet du volcan Hakone, accessible en haut en téléphériques, mais il y a des fumerolles de soufre à admirer sur son flanc. Au total 3h de randonnée et possibilité de tomber sur un onsen naturel ! un hotel pour dieu en haut du mont",
     city: "Hakone",
-    tag: "Activity",
+    tag: "mount",
     picture:
       "https://wa-sakura.fr/wp-content/uploads/2021/03/WA-SAKURA-Japon-Tourisme-Voyage-Kanagawa-Hakone-Odakuni-vallee-de-lenfer-souffre.jpg",
     links: [],
@@ -106,7 +106,7 @@ Une légende locale dit que manger ces oeufs noirs prolongeraient la vie de sept
 Vous en trouverez notamment dans la petite boutique Owakudani Kurotamago Kan, juste à côté de la station de funitel.
 `,
     city: "Hakone",
-    tag: "Activity",
+    tag: "activity",
     picture:
       "https://lh5.googleusercontent.com/p/AF1QipOxOeDjM782B7DxaDQqh-oFNcvxY6AXJf-ulbKU=w408-h272-k-no",
     links: [],
@@ -120,7 +120,7 @@ Vous en trouverez notamment dans la petite boutique Owakudani Kurotamago Kan, ju
     name: "teamlab botanical garden",
     description: "A faire la nuit, reservation conseillée ",
     city: "Osaka",
-    tag: "Activity",
+    tag: "activity",
     picture:
       "https://lh5.googleusercontent.com/p/AF1QipNRiU2CycHgIIRx6PbprZDvhGkjJ55NYaSb7OEO=w408-h245-k-no",
     links: [
@@ -139,7 +139,7 @@ Vous en trouverez notamment dans la petite boutique Owakudani Kurotamago Kan, ju
     description:
       "L’Umeda Sky Building offre la plus belle vue panoramique sur la ville d’Osaka. Dessiné par l’architecte japonais Hiroshi Hara, le bâtiment comporte 2 tours de 40 étages reliées par un pont et est admirablement bien conçu. Il est possible d’accéder à la plateforme d’observation de ce gratte-ciel haut de 173 mètres pour admirer la ville de jour comme de nuit. Le soir, c’est encore plus beau lorsque Osaka est illuminée. Umeda Sky Building se trouve dans le quartier d’Umeda et l’entrée est de 1000 yens (7€). On y va seulement pour la vue, mais ça en vaut la peine. ",
     city: "Osaka",
-    tag: "Building",
+    tag: "building",
     picture:
       "https://cdn.generationvoyage.fr/2014/04/umeda-sky-building-osaka-600x413.jpg",
     links: [],
@@ -169,7 +169,7 @@ Vous en trouverez notamment dans la petite boutique Owakudani Kurotamago Kan, ju
     description: `Le zoo dispose d'un onsen réservé aux capybaras (en hiver)
 Des plats originaux comme un curry vert au cactus, des burgers de cactus et de la glace au cactus font partie des mets proposés`,
     city: "Futo",
-    tag: "activity",
+    tag: "onsen",
     picture:
       "https://imgcp.aacdn.jp/img-a/1720/auto/global-aaj-front/article/2015/10/560fd6b80e4d5_560fd668b1dce_511482178.jpg",
     links: [],
@@ -185,7 +185,7 @@ Des plats originaux comme un curry vert au cactus, des burgers de cactus et de l
 S'entraîner au tir à l'arc dans le cratère d'un volcan
 Zoo d'Izu Shaboten, qui peut être vu depuis le sommet de la montagne`,
     city: "Futo",
-    tag: "Activity",
+    tag: "activity",
     picture:
       "https://lh5.googleusercontent.com/p/AF1QipM1DPRXZmmWTP-hKrxMCq4V0ZwtQDdUrTljlcFW=w408-h306-k-no",
     links: [],
@@ -263,7 +263,7 @@ Zoo d'Izu Shaboten, qui peut être vu depuis le sommet de la montagne`,
     description: "onsen vu sur mer",
     picture:
       "https://lh5.googleusercontent.com/p/AF1QipM1JwZYsYKGYSnJ2A6_uGUaLnSeyJTsmyjhstue=w408-h306-k-no",
-    tag: "activity",
+    tag: "onsen",
     city: "",
     address: "767-2 Futo, Itō, Shizuoka 413-0231, Japon",
     links: [],
@@ -463,6 +463,21 @@ Zoo d'Izu Shaboten, qui peut être vu depuis le sommet de la montagne`,
     links: [],
     lat: 34.292047,
     lng: 132.318697,
+    price: "0",
+  },
+
+  {
+    id: "a7ce1fea-9cef-4614-b013-47ee25c1768a",
+    name: "GARE DE TOKYO",
+    description: "",
+    picture:
+      "https://vivreatokyo.com/wp-content/uploads/2021/01/gare-de-tokyo-avant.jpeg",
+    tag: "station",
+    city: "Tokyo",
+    address: "1 Chome Marunouchi, Chiyoda City, Tokyo 100-0005, Japon",
+    links: [],
+    lat: 35.682736,
+    lng: 139.769452,
     price: "0",
   },
 ];

@@ -20,7 +20,7 @@ export const monument: JapanLocation[] = [
     name: "Hakone pirate Ship togendaï port",
     description: "Bateau pirate en bois sur le lac",
     city: "Hakone",
-    tag: "Monument",
+    tag: "monument",
     picture:
       "https://lh5.googleusercontent.com/p/AF1QipPJ8RPU9Cs_G_Ipl-0hVbtyZX_mTzhMrsLLy3ZS=w408-h272-k-no",
     links: [],

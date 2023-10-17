@@ -85,7 +85,7 @@ export const restaurant: JapanLocation[] = [
     name: "Nishiki market",
     description: "Le marché alimentaire, pour bouffer de la street food",
     city: "Kyoto",
-    tag: "Restaurant",
+    tag: "restaurant",
     picture:
       "https://res-3.cloudinary.com/jnto/image/upload/w_2064,h_1300,c_fill,f_auto,fl_lossy,q_auto/v1648006915/kyoto/H_00480_001",
     links: [],
@@ -98,7 +98,7 @@ export const restaurant: JapanLocation[] = [
     name: "Restaurant à Ramen - Asakuracho, Nakagyo Ward",
     description: "restaurant a ramen à faire ",
     city: "Kyoto",
-    tag: "Restaurant",
+    tag: "restaurant",
     picture:
       "https://mblogthumb-phinf.pstatic.net/MjAyMzA0MDFfMjMx/MDAxNjgwMzU0MTg0NDM2.YDADKzQSO9lrEfvuuzj8V4B1lyverh7I5vPlr8nGDPMg.0xC1CfTXIYjbMbn8V7ENX287C76V2m9Yp9zD3fFo38Ig.JPEG.jamie18/IMG_2694.JPG?type=w800",
     links: [],

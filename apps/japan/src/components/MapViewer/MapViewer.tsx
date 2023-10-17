@@ -1,35 +1,18 @@
-import React, { useState } from "react";
+import React from "react";
 
 import {
   Box,
-  Flex,
   MapBox,
   MapBoxMarker,
   TCoordinate,
   TViewport,
-  useMapBox,
 } from "@jf/material";
-import {
-  IconBathFilled,
-  IconBeach,
-  IconBedFilled,
-  IconBladeFilled,
-  IconBuilding,
-  IconBuildingArch,
-  IconBuildingSkyscraper,
-  IconCurrencyYen,
-  IconFlower,
-  IconGolf,
-  IconMapPinFilled,
-  IconPlaneTilt,
-  IconRoad,
-  IconToolsKitchen2,
-  IconTorii,
-} from "@jf/icons";
+import { MapPinDefault } from "@jf/icons";
 
 import { JapanLocation } from "../../assets/japanData";
 import { CurrentLocationMarker } from "./CurrentLocationMarker/CurrentLocationMarker";
-import IconOnsen from "./Icons/IconOnsen";
+
+import { tagList } from "../../utils/tagList";
 
 interface MapViewerProps {
   list: JapanLocation[];
@@ -80,47 +63,11 @@ const MapViewer = (props: MapViewerProps) => {
             currentLocation &&
             currentLocation.lat === location.lat &&
             currentLocation.lng === location.lng;
-          let Icon: any = IconCurrencyYen;
 
-          switch (location.tag) {
-            case "restaurant":
-              Icon = IconToolsKitchen2;
-              break;
-            case "neighborhood":
-              Icon = IconBuildingSkyscraper;
-              break;
-            case "sanctuary":
-              Icon = IconTorii;
-              break;
-            case "park":
-              Icon = IconFlower;
-              break;
-            case "activity":
-              Icon = IconGolf;
-              break;
-            case "building":
-              Icon = IconBuilding;
-              break;
-            case "street":
-              Icon = IconRoad;
-              break;
-            case "hotel":
-              Icon = IconBedFilled;
-              break;
-            case "onsen":
-              Icon = IconOnsen;
-              break;
-            case "plane":
-              Icon = IconPlaneTilt;
-              break;
-            case "monument":
-              Icon = IconBuildingArch;
-              break;
-            case "island":
-              Icon = IconBeach;
-              break;
-            default:
-              Icon = IconCurrencyYen;
+          let Icon = MapPinDefault;
+          const tagExist = tagList.find((tag) => tag.value === location.tag);
+          if (tagExist) {
+            Icon = tagExist.icon;
           }
 
           return (
@@ -130,36 +77,10 @@ const MapViewer = (props: MapViewerProps) => {
               lng={location?.lng || 0}
               onPress={() => onLocationChange(location)}
             >
-              <Box sx={{ position: "relative" }}>
-                <Flex
-                  sx={{
-                    position: "absolute",
-
-                    top: 0,
-                    left: 0,
-                    right: 0,
-                    bottom: 0,
-                  }}
-                  justify="center"
-                >
-                  <Icon
-                    style={{
-                      color: "black",
-                      backgroundColor: "white",
-                      borderRadius: 50,
-                      border: "1px solid",
-                      marginTop: 9,
-                    }}
-                    size={isSelected ? 50 : 25}
-                  />
-                </Flex>
-                <Box>
-                  <IconMapPinFilled
-                    size={isSelected ? 80 : 50}
-                    style={{ color: isSelected ? "orange" : "purple" }}
-                  />
-                </Box>
-              </Box>
+              <Icon
+                size={isSelected ? 80 : 50}
+                fill={isSelected ? "orange" : "white"}
+              />
             </MapBoxMarker>
           );
         })}

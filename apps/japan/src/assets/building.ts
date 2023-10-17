@@ -150,7 +150,7 @@ export const building: JapanLocation[] = [
     description: `Parc à visiter avec pleins de points d’intérêt cf google map si nécessaire.
 Le château d’Osaka est un réel chef-d’oeuvre de l’architecture japonaise. Il fut construit en 1583 par Toyotomi Hideyoshi. En 1945, un raid aérien américain détruisit le donjon. Le château a depuis été rénové et abrite à présent l’un des plus grands « musées » (c’est une expo à lui seul) de la région et il est entouré par l’un des plus beaux parcs de la ville. `,
     city: "Osaka",
-    tag: "Building",
+    tag: "monument",
     picture:
       "https://cdn.generationvoyage.fr/2014/04/chateau-osaka-600x399.jpg",
     links: [],

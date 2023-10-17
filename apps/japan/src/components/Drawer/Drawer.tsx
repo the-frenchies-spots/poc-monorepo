@@ -13,6 +13,7 @@ import {
 import React from "react";
 import { JapanLocation } from "../../assets/japanData";
 import CardLoacation from "../CardLocation/CardLoacation";
+import { tagList } from "../../utils/tagList";
 
 interface DrawerProps {
   onTagChange: (val: string) => void;
@@ -84,21 +85,7 @@ export const Drawer = (props: DrawerProps) => {
                 onChange={onTagChange}
                 sx={{ width: "100%" }}
                 value={tag}
-                data={[
-                  { value: "", label: "Tout" },
-                  { value: "plane", label: "Avion" },
-                  { value: "hotel", label: "Hotel" },
-                  { value: "onsen", label: "Onsen" },
-                  { value: "neighborhood", label: "Quartier" },
-                  { value: "sanctuary", label: "Sanctuaire" },
-                  { value: "park", label: "Parc/Jardin" },
-                  { value: "activity", label: "Activité" },
-                  { value: "restaurant", label: "Restaurant" },
-                  { value: "building", label: "Batiment" },
-                  { value: "monument", label: "Monument" },
-                  { value: "street", label: "Rue" },
-                  { value: "island", label: "Île" },
-                ]}
+                data={[{ value: "", label: "Tout" }, ...tagList]}
               />
 
               <Select

@@ -12,6 +12,7 @@
     "@babel/runtime": "^7.14.8",
     "@inlet/react-pixi": "^6.8.0",
     "@jf/material": "workspace:*",
+    "@jf/icons": "workspace:*",
     "@jf/types": "workspace:*",
     "@pixi/filter-adjustment": "4.1.3",
     "@pixi/react-pixi": "7.0.0-alpha.0",

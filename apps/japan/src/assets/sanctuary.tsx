@@ -141,7 +141,7 @@ export const sanctuary: JapanLocation[] = [
 Petit sanctuaire shinto dédié à un dieu dragon, avec torii, sentiers et vue sur un lac boisé.
 `,
     city: "Hakone",
-    tag: "Sanctuary",
+    tag: "sanctuary",
     picture:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvUCgvG0KcnS6Vpm5Xgc_aRWWvslQ8gWpn6Un6RJr8aDzuCvMa9l9eexXA38tNu0Ql154&usqp=CAU",
     links: [],
@@ -156,7 +156,7 @@ Petit sanctuaire shinto dédié à un dieu dragon, avec torii, sentiers et vue s
     description:
       "Temple. Regarder sur google map y a d’autres ruines à voir sur l’île ",
     city: "Takahera",
-    tag: "Sanctuary",
+    tag: "sanctuary",
     picture:
       "https://lh5.googleusercontent.com/p/AF1QipMO7UZDT5BarvKvoiyLtAQ5h1viyS88s8J4sF_T=w408-h306-k-no",
     links: [],
@@ -171,7 +171,7 @@ Petit sanctuaire shinto dédié à un dieu dragon, avec torii, sentiers et vue s
     description:
       "Pleins d’autres temples autour, voir sur google map. Payant, genre 3, 4€ Le temple Katsuo-ji, plus familièrement surnommé “le temple aux Darumas”, est situé au cœur de la forêt de Minoh, dans le nord d’Osaka. Il est réputé pour apporter victoire et bonne fortune. Les japonais sont donc nombreux à s’y rendre chaque année en pèlerinage, ou avant un examen important. ",
     city: "Osaka",
-    tag: "Sanctuary",
+    tag: "sanctuary",
     picture:
       "https://japonsecret.fr/wp-content/uploads/2022/06/jordy-meow-0410161332.jpg",
     links: [
@@ -191,7 +191,7 @@ Petit sanctuaire shinto dédié à un dieu dragon, avec torii, sentiers et vue s
     description:
       " Sanctuaire unique à tête de lion, pleins d’autres sanctuaires à voir autour",
     city: "Osaka",
-    tag: "Sanctuary",
+    tag: "sanctuary",
     picture:
       "https://www.kanpai.fr/sites/default/files/styles/big_header_lg/public/uploads/2014/04/namba-yasaka-jinja-5.jpg",
     links: [
@@ -211,7 +211,7 @@ Petit sanctuaire shinto dédié à un dieu dragon, avec torii, sentiers et vue s
     description:
       " Sumiyoshi-taisha, également connu sous le nom de Grand sanctuaire Sumiyoshi, a été construit au début du 3ème siècle, avant l’introduction du bouddhisme au Japon. Cela signifie qu’il a été bâti sans aucune autre influence religieuse que le shintoïsme. L’architecture est donc absolument unique, ce qui fait de lui non seulement l’un des plus anciens sanctuaires dans tout le Japon, mais aussi l’un des plus intéressants à visiter. C’est l’un des sanctuaires les plus visités au Japon au cours de la Hatsumōde (première visite dans un sanctuaire après le Nouvel An japonais). ",
     city: "Osaka",
-    tag: "Sanctuary",
+    tag: "sanctuary",
     picture:
       "https://cdn.generationvoyage.fr/2014/04/sumiyoshi-taisha-osaka-600x450.jpg",
     links: [],

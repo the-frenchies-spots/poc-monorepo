@@ -77,9 +77,9 @@ export const park: JapanLocation[] = [
     description:
       "Parc montagneux s'étendant sur 2 267 km², composé de 16 pics, divers sentiers, animaux et plantes alpines. Cascade, souffleur de soufre, lacs,  téléphérique, park magnifiques.",
     city: "île d'Hokkaïdo",
-    tag: "Park",
+    tag: "park",
     picture:
-      "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.arabiaweather.com%2Ffr%2Fcontent%2Fen-images-6-endroits-pour-admirer-les-merveilleuses-couleurs-d39automne-au-japon&psig=AOvVaw2-bKuQtwq3GB8OK2omvsnS&ust=1696852655825000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCNj-6fey5oEDFQAAAAAdAAAAABAD",
+      "https://www.japan-experience.com/sites/default/files/styles/scale_crop_380x278/public/legacy/japan_experience/1479547422194.jpg?h=790be497&itok=2m3LdvHh",
     links: [],
     address: `Sounkyo, Kamikawa, Kamikawa District, Hokkaido 078-1701, Japon`,
     lat: 43.507806,
@@ -96,7 +96,7 @@ des petits commerces ;
 ou encore des tunnels qui semblent abandonnées.
 Bien qu'éclairé, le sentier rappellera à plusieurs reprises certains décors du célèbre Voyage de Chihiro de Miyazaki. Cascade à la fin`,
     city: "Osaka",
-    tag: "Park",
+    tag: "park",
     picture:
       "https://lh5.googleusercontent.com/p/AF1QipMwHEUhdltlguUi1giGbAcVk2shaIUskIjHConp=w426-h240-k-no",
     links: [
