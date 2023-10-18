@@ -28,4 +28,34 @@ export const monument: JapanLocation[] = [
     lat: 35.237719,
     lng: 138.994269,
   },
+
+  {
+    id: "b9ae17b2-cfe9-4dee-9757-dc71991233d3",
+    name: "Tokyo, Tower",
+    description: "",
+    picture:
+      "https://dmo-shiba-tokyobay.jp/dmo/wp-content/uploads/2021/06/1-26.jpg",
+    tag: "tokyo-tower",
+    city: "Tokyo",
+    address: "4 Chome-2-8 Shibakoen, Minato City, Tokyo 105-0011, Japon",
+    links: [],
+    lat: 35.658966,
+    lng: 139.74579,
+    price: "",
+  },
+
+  // {
+  //   id: "",
+  //   name: "",
+  //   description: "",
+  //   picture:
+  //     "",
+  //   tag: "station",
+  //   city: "",
+  //   address: "",
+  //   links: [],
+  //   lat: 0,
+  //   lng: 0,
+  //   price: "",
+  // },
 ];

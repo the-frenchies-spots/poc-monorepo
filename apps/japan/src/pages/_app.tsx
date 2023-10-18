@@ -19,6 +19,10 @@ export default function App({ Component, pageProps }: AppProps) {
           name="viewport"
           content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"
         />
+        <link
+          href="https://fonts.cdnfonts.com/css/anime-ace"
+          rel="stylesheet"
+        />
         <meta name="description" content="Description" />
         <meta name="keywords" content="Keywords" />
 

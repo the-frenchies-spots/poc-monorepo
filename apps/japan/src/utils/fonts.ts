@@ -20,6 +20,10 @@ const Bankai = localFont({
   src: "./fonts/bankai/Bankai.otf",
 });
 
+const AnimeAce = localFont({
+  src: "./fonts/anime-ace/anime-ace.regular.ttf",
+});
+
 //
 export const fonts = {
   "Montserrat-Bold": MontserratBold,
@@ -27,6 +31,7 @@ export const fonts = {
   "Montserrat-Regular": MontserratRegular,
   Harukaze: Harukaze,
   Bankai: Bankai,
+  AnimeAce,
 };
 
 // ...fonts["Montserrat-Regular"].style,

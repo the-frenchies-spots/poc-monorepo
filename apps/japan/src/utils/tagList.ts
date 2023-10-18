@@ -17,10 +17,15 @@ import {
   MapPinUniversalStudio,
   MapPinCity,
   MapPinCascade,
+  MapPinPokeCafe,
+  MapPinPokeCenter,
+  MapPinTokyoTower,
+  MapPinNintendo,
 } from "@jf/icons";
 
 export const tagList = [
   { value: "restaurant", label: "Restaurant", icon: MapPinResto },
+  { value: "default", label: "Autre", icon: MapPinDefault },
   { value: "onsen", label: "Onsen", icon: MapPinOnsen },
   { value: "plane", label: "Avion", icon: MapPinPlane },
   { value: "hotel", label: "Hotel", icon: MapPinHotel },
@@ -36,6 +41,10 @@ export const tagList = [
   { value: "station", label: "Gare", icon: MapPinStation },
   { value: "city", label: "Ville", icon: MapPinCity },
   { value: "cascade", label: "Cascade", icon: MapPinCascade },
+  { value: "poke-cafe", label: "Poké-Café", icon: MapPinPokeCafe },
+  { value: "poke-center", label: "Poké-Café", icon: MapPinPokeCenter },
+  { value: "tokyo-tower", label: "tokyo-tower", icon: MapPinTokyoTower },
+  { value: "nintendo-shop", label: "Magasin Nintendo", icon: MapPinNintendo },
   {
     value: "universal-studio",
     label: "Universal Studio",

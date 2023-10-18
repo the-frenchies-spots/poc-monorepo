@@ -429,49 +429,165 @@ export const ListRappel = () => {
           <>
             {countList?.map((countItem, index) => {
               return (
-                <Accordion.Item
-                  value={countItem.label}
-                  key={`Accordion-${index}`}
-                >
-                  <Accordion.Control>
-                    <MonserattText>{countItem.label}</MonserattText>
-                  </Accordion.Control>
-                  <Accordion.Panel>
-                    <Table>
-                      <thead>
-                        <tr>
-                          <th>
-                            <MonserattText>Kanji</MonserattText>
-                          </th>
-                          <th>
-                            <MonserattText>Kana</MonserattText>
-                          </th>
-                          <th>
-                            <MonserattText>Rōmaji</MonserattText>
-                          </th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        {countItem?.value?.map((countItemItem, index) => (
-                          <tr key={`tr-${index}`}>
-                            <td>
-                              <BankaiText>{index + 1}</BankaiText>{" "}
-                              {countItemItem.Kanji}
-                            </td>
-                            <td>
+                <>
+                  <Accordion.Item
+                    value={countItem.label}
+                    key={`Accordion-${index}`}
+                  >
+                    <Accordion.Control>
+                      <MonserattText>{countItem.label}</MonserattText>
+                    </Accordion.Control>
+                    <Accordion.Panel>
+                      <Table>
+                        <thead>
+                          <tr>
+                            <th>
+                              <MonserattText>Kanji</MonserattText>
+                            </th>
+                            <th>
                               <MonserattText>
-                                {countItemItem.Kana}
+                                {index === 0 ? "chiffres" : "Kana"}
                               </MonserattText>
-                            </td>
-                            <td>
-                              <BankaiText>{countItemItem.Rōmaji}</BankaiText>
-                            </td>
+                            </th>
+                            <th>
+                              <MonserattText>Rōmaji</MonserattText>
+                            </th>
                           </tr>
-                        ))}
-                      </tbody>
-                    </Table>
-                  </Accordion.Panel>
-                </Accordion.Item>
+                        </thead>
+                        <tbody>
+                          {countItem?.value?.map((countItemItem, idx) => (
+                            <tr key={`tr-${idx}`}>
+                              <td>
+                                {index !== 0 && (
+                                  <BankaiText>{idx + 1}</BankaiText>
+                                )}
+
+                                {countItemItem.Kanji}
+                              </td>
+                              <td>
+                                <MonserattText>
+                                  {countItemItem.Kana}
+                                </MonserattText>
+                              </td>
+                              <td>
+                                <BankaiText>{countItemItem.Rōmaji}</BankaiText>
+                              </td>
+                            </tr>
+                          ))}
+                        </tbody>
+                      </Table>
+                    </Accordion.Panel>
+                  </Accordion.Item>
+                  {index === 0 && (
+                    <>
+                      <Accordion.Item value="11-to-99">
+                        <Accordion.Control>
+                          <MonserattText>De 11 à 99</MonserattText>
+                          <Accordion.Panel>
+                            <MonserattText>
+                              Pour constituer les nombres de 11 à 99, il suffit
+                              simplement de combiner les chiffres de 1 à 9 ou
+                              bien un chiffre et le nombre 10. Par exemple, 11
+                              est la combinaison du nombre 10 et du chiffre 1
+                              soit 十一 (jū ichi).
+                              <br />
+                              十二 (<b>jūni</b>) = 12
+                              <br />
+                              二十 (<b>nijū</b>) = 20
+                              <br />
+                              三十 (<b>sanjū</b>) = 30
+                              <br />
+                              五十九 (<b>gojū kyū</b>) = 59
+                            </MonserattText>
+                          </Accordion.Panel>
+                        </Accordion.Control>
+                      </Accordion.Item>
+                      <Accordion.Item value="100-to-audela">
+                        <Accordion.Control>
+                          <MonserattText>100 et au-delà</MonserattText>
+                          <Accordion.Panel>
+                            <MonserattText>
+                              百(<b>hyaku</b>) = 100
+                              <br />
+                              千(<b>sen</b>) = 1000
+                              <br />
+                              万(<b>man</b>) = 10 000
+                              <br />
+                              十万(<b>jūman</b>) = 100 000
+                              <br />
+                              百万(<b>hyakuman</b>) = 1 million
+                              <br />
+                              千万 (<b>senman</b>) = 10 millions
+                              <br />
+                              Certains kanji sont facilement modifiables (一 se
+                              transforme aisément en 十). Afin d’éviter les
+                              actes délictueux, les documents officiels,
+                              juridiques et financiers portent en supplément des
+                              caractères formels appelés daiji "grands
+                              caractères". Les caractères daiji se retrouvent
+                              également sur les billets de banque. Il est ainsi
+                              écrit 壱万円 sur le billet de 10 000 yens !
+                            </MonserattText>
+                          </Accordion.Panel>
+                        </Accordion.Control>
+                      </Accordion.Item>
+
+                      <Accordion.Item value="count-in-jap">
+                        <Accordion.Control>
+                          <MonserattText>
+                            Comment compter en japonais
+                          </MonserattText>
+                          <Accordion.Panel>
+                            <MonserattText>
+                              Les Japonais utilisent un suffixe particulier
+                              placé à la suite du chiffre pour compter des
+                              personnes, des animaux, des objets ou exprimer une
+                              durée, un âge, ou une fréquence. Ce système de
+                              compteurs, également en vigueur en Chine et en
+                              Corée, peut paraître déroutant. Dans ce cas,
+                              l’apprentissage est la règle d’or ! <br />
+                              <br />人 (<b>jin /nin</b>) = Personnes <br />頭 (
+                              <b>tō</b>) = Grands animaux <br />羽 (<b>wa</b>) =
+                              Oiseaux et lapins <br />匹 (<b>hiki</b>) = Petits
+                              animaux (chats, chiens, poissons, insectes…){" "}
+                              <br />枚 (<b>mai</b>) = Objets fins et plats
+                              (timbres, draps...) <br />台 (<b>dai</b>) = Objets
+                              technologiques (voitures, télévision...) <br />本
+                              (<b>hon</b>) = Objets longs et cylindriques
+                              (crayons, doigts, arbres, parapluie...) <br />個 (
+                              <b>ko</b>) = Très petits objets <br />着 (
+                              <b>chaku</b>) = Vêtements <br />冊 (<b>satsu</b>)
+                              = Objets reliés (livres, dictionnaires, magazines){" "}
+                              <br />足 (<b>soku</b>) = Objets portés aux pieds
+                              (chaussettes, chaussures...) <br />
+                              切れ (<b>kire</b>) = Tranches (de gâteau, de pain,
+                              de jambon...) <br />杯 (<b>hai</b>) = Liquides
+                              contenus dans des récipients <br />錠 (<b>jō</b>)
+                              = Pilules, gélules, médicaments de forme ronde{" "}
+                              <br />軒 (<b>ken</b>) = Bâtiments <br />階 (
+                              <b>kai</b>) = Étages <br />番 (<b>ban</b>) =
+                              Objets numérotés (quais de gare, bus) <br />番 (
+                              <b>ban</b>) + 目 (<b>me</b>) = Classement (1er,
+                              2ème…) <br />回 (<b>kai</b>) = Fréquence (une
+                              fois, deux fois…) <br />年 (<b>nen</b>) = Années{" "}
+                              <br />
+                              か月 (<b>kagetsu</b>) = Mois <br />
+                              週間(<b>shūkan</b>) = Semaines <br />日 (
+                              <b>ka / nichi</b>) = Jours <br />
+                              時間 (<b>jikan</b>) = Heures <br />分 (
+                              <b>fun/pun</b>) = Minutes <br />秒 (<b>byō</b>) =
+                              Secondes <br />歳 (<b>sai</b>) = Âge <br />
+                              <br />
+                              <br />À savoir : en cas de de méconnaissance ou
+                              d'oubli, vous pouvez utiliser le suffixeつ (tsu)
+                              qui fait office de compteur par défaut !
+                            </MonserattText>
+                          </Accordion.Panel>
+                        </Accordion.Control>
+                      </Accordion.Item>
+                    </>
+                  )}
+                </>
               );
             })}
           </>

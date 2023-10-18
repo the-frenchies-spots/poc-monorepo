@@ -106,4 +106,145 @@ export const restaurant: JapanLocation[] = [
     lat: 35.008166,
     lng: 135.764985,
   },
+
+  {
+    id: "2b856439-efbf-4e31-8ce1-67d85f56212f",
+    name: "Pokémon Cafe (Nihombashi, Tokyo)",
+    description: "",
+    picture:
+      "https://i2.wp.com/geekytravelsfandoms.com/wp-content/uploads/2019/09/Pikachu-Pokemon-Cafe_02.jpg?ssl=1",
+    tag: "poke-cafe",
+    city: "Tokyo",
+    address: `Nihombashi Takashimaya Shopping Center
+    2-4-1 Nihombashi, Chuo-ku, Tokyo 103-8265`,
+    links: [
+      {
+        label: "poké-café-menu",
+        link: "https://www.pokemoncenter-online.com/cafe/en/",
+      },
+    ],
+    lat: 35.68044,
+    lng: 139.774144,
+    price: "",
+  },
+
+  {
+    id: "0eb35f2e-2bf8-4f6a-a4a5-d7616276541c",
+    name: "Pokémon Cafe (Shinsaibashi, Osaka)",
+    description: "",
+    picture:
+      "https://i2.wp.com/geekytravelsfandoms.com/wp-content/uploads/2019/09/Pikachu-Pokemon-Cafe_02.jpg?ssl=1",
+    tag: "poke-cafe",
+    city: "Osaka",
+    address: `Daimaru Shinsaibashi Store, Main Building 9F,
+    1-7-1, Shinsaibashisuji, Chuo-ku, Osaka-shi, Osaka Pref., 542-8501`,
+    links: [
+      {
+        label: "poké-café-menu",
+        link: "https://www.pokemoncenter-online.com/cafe/en/",
+      },
+    ],
+    lat: 34.673313,
+    lng: 135.500496,
+    price: "",
+  },
+
+  {
+    id: "f3f91d7a-787a-4b7d-843c-6bed37fceab7",
+    name: "Pokémon Center Mega Tokyo",
+    description: "",
+    picture:
+      "https://kokorojapanstore.com/cdn/shop/articles/Pokemon_Center1_1024x1024.jpg?v=1630683901",
+    tag: "poke-center",
+    city: "",
+    address:
+      "Japon, 〒170-6002 Tokyo, Toshima City, Higashiikebukuro, 3 Chome−1−2 サンシャインシティ 専門店街アルパ 2F",
+    links: [
+      {
+        label: "site-web",
+        link: "https://www.pokemon.co.jp/shop/pokecen/megatokyo/",
+      },
+    ],
+    lat: 35.728618,
+    lng: 139.718838,
+    price: "",
+  },
+
+  {
+    id: "4b12172b-31fc-488c-85cf-d30c0cb4298e",
+    name: "Pokémon Center Tokyo DX",
+    description: "",
+    picture:
+      "https://kokorojapanstore.com/cdn/shop/articles/Pokemon_Center1_1024x1024.jpg?v=1630683901",
+    tag: "poke-center",
+    city: "",
+    address:
+      "髙島屋S.C.東館, 5F, 2 Chome-11-2 Nihonbashi, Chuo City, Tokyo 103-0027, Japon",
+    links: [
+      {
+        label: "site-web",
+        link: "https://www.pokemon.co.jp/shop/pokecen/megatokyo/",
+      },
+    ],
+    lat: 35.680062,
+    lng: 139.774235,
+    price: "",
+  },
+
+  {
+    id: "e1cadadf-324f-4a87-8270-745e0c0d8728",
+    name: "Pokémon Center Sky Tree Town",
+    description: "",
+    picture:
+      "https://kokorojapanstore.com/cdn/shop/articles/Pokemon_Center1_1024x1024.jpg?v=1630683901",
+    tag: "poke-center",
+    city: "",
+    address:
+      "Japon, 〒131-0045 Tokyo, Sumida City, Oshiage, 1 Chome−1−2 4F 東京スカイツリータウン・ソラマチ イーストヤード",
+    links: [
+      {
+        label: "site-web",
+        link: "https://www.pokemon.co.jp/shop/pokecen/megatokyo/",
+      },
+    ],
+    lat: 35.709853,
+    lng: 139.812699,
+    price: "",
+  },
+
+  {
+    id: "33bedda6-0f4c-4b53-bba7-c1a4b77d17b4",
+    name: "Pokémon Center Shibuya",
+    description: "",
+    picture:
+      "https://lh3.googleusercontent.com/p/AF1QipNqIfn2FCaMcVoVs70OOA0emPTn1jG0tkdnuKaN=s680-w680-h510",
+    tag: "poke-center",
+    city: "",
+    address:
+      " Japon, 〒150-8377 Tokyo, Shibuya City, Udagawacho, 15−1 渋谷PARCO 6F",
+    links: [
+      {
+        label: "site-web",
+        link: "https://www.pokemon.co.jp/shop/pokecen/megatokyo/",
+      },
+    ],
+    lat: 35.66173,
+    lng: 139.698982,
+    price: "",
+  },
+
+  // {
+  //   id: "",
+  //   name: "",
+  //   description: "",
+  //   picture:
+  //     "",
+  //   tag: "station",
+  //   city: "",
+  //   address: "",
+  //   links: [],
+  //   lat: 0,
+  //   lng: 0,
+  //   price: "",
+  // },
 ];

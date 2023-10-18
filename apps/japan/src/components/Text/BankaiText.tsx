@@ -6,10 +6,10 @@ const BankaiText = ({ sx, ...props }: TextProps) => {
   return (
     <Text
       sx={{
-        ...fonts["Bankai"].style,
+        ...fonts["Montserrat-Regular"].style,
         fontSize: 16,
         fontStyle: "normal",
-        fontWeight: 400,
+        fontWeight: "bold",
         ...sx,
       }}
       {...props}

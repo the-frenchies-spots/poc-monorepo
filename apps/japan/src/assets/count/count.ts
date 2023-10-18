@@ -1730,12 +1730,71 @@ const sectionCount: TableCount[] = [
   },
 ];
 
+const section0To10: TableCount[] = [
+  {
+    Kanji: "零",
+    Kana: "0",
+    Rōmaji: "rei",
+  },
+  {
+    Kanji: "一",
+    Kana: "1",
+    Rōmaji: "ichi",
+  },
+  {
+    Kanji: "二",
+    Kana: "2",
+    Rōmaji: "ni",
+  },
+  {
+    Kanji: "三",
+    Kana: "3",
+    Rōmaji: "san",
+  },
+  {
+    Kanji: "四",
+    Kana: "4",
+    Rōmaji: "yon/ shi",
+  },
+  {
+    Kanji: "五",
+    Kana: "5",
+    Rōmaji: "go",
+  },
+  {
+    Kanji: "六",
+    Kana: "6",
+    Rōmaji: "roku",
+  },
+  {
+    Kanji: "七",
+    Kana: "7",
+    Rōmaji: "shichiou nana",
+  },
+  {
+    Kanji: "八",
+    Kana: "8",
+    Rōmaji: "hachi",
+  },
+  {
+    Kanji: "九",
+    Kana: "9",
+    Rōmaji: "kyū / ku",
+  },
+  {
+    Kanji: "十",
+    Kana: "10",
+    Rōmaji: "jū",
+  },
+];
+
 interface TCount {
   label: string;
   value: TableCount[];
 }
 
 export const countList: TCount[] = [
+  { label: "De 0 à 10", value: section0To10 },
   { label: "Compter par défaut", value: defaultCount },
   { label: "Numération des êtres humains", value: humanCount },
   { label: "Expression de l'âge", value: countAge },

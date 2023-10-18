@@ -42,7 +42,7 @@ export const building: JapanLocation[] = [
     name: "MAGASIN NINTENDO",
     description: `SHIBUYA - LE seul magasin Nintendo au monde, au sixième étage du batiment parko`,
     city: "Tokyo",
-    tag: "building",
+    tag: "nintendo-shop",
     picture: `https://res.cloudinary.com/db00tntyg/image/upload/v1689282269/JAPAN/nrlfkusylb4t42qwjg16.png`,
     links: [],
     address: `Japon, 〒150-0042 Tokyo, Shibuya City, Udagawacho, 15−1 渋谷PARCO 6F`,
