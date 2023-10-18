@@ -16,3 +16,7 @@ export * from "./MapPinStation";
 export * from "./MapPinUniversalStudio";
 export * from "./MapPinCity";
 export * from "./MapPinCascade";
+export * from "./MapPinPokeCafe";
+export * from "./MapPinPokeCenter";
+export * from "./MapPinTokyoTower";
+export * from "./MapPinNintendo";
