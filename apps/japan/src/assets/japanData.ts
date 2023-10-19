@@ -10,6 +10,7 @@ import { onsen } from "./onsen";
 import { plane } from "./plane";
 import { monument } from "./monument";
 import { island } from "./island";
+import { velo } from "./velo";
 
 interface TLinks {
   label: string;
@@ -42,4 +43,5 @@ export const japanData: JapanLocation[] = [
   ...plane,
   ...monument,
   ...island,
+  ...velo,
 ];

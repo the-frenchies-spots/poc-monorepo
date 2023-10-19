@@ -21,6 +21,8 @@ import {
   MapPinPokeCenter,
   MapPinTokyoTower,
   MapPinNintendo,
+  MapPinCableCar,
+  MapPinVelo,
 } from "@jf/icons";
 
 export const tagList = [
@@ -45,6 +47,8 @@ export const tagList = [
   { value: "poke-center", label: "Poké-Café", icon: MapPinPokeCenter },
   { value: "tokyo-tower", label: "tokyo-tower", icon: MapPinTokyoTower },
   { value: "nintendo-shop", label: "Magasin Nintendo", icon: MapPinNintendo },
+  { value: "cable-car", label: "Téléphérique", icon: MapPinCableCar },
+  { value: "velo", label: "Vélo", icon: MapPinVelo },
   {
     value: "universal-studio",
     label: "Universal Studio",

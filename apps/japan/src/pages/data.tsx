@@ -12,6 +12,19 @@ import { JapanLocation } from "../assets/japanData";
 import LinkList from "../components/LinkList";
 import { tagList } from "../utils/tagList";
 
+function generateRandomUUID(): string {
+  let dt = new Date().getTime();
+  const uuid = "xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(
+    /[xy]/g,
+    function (c) {
+      const r = (dt + Math.random() * 16) % 16 | 0;
+      dt = Math.floor(dt / 16);
+      return (c === "x" ? r : (r & 0x3) | 0x8).toString(16);
+    }
+  );
+  return uuid;
+}
+
 interface DataProps {}
 
 const Data = (props: DataProps) => {
@@ -34,13 +47,20 @@ const Data = (props: DataProps) => {
   });
 
   const handleClick = () => {
-    setList((current) => [...current, form.values]);
+    setList((current) => [
+      ...current,
+      {
+        ...form.values,
+        id: generateRandomUUID(),
+        lat: +(form?.values?.lat || 0),
+        lng: +(form?.values?.lng || 0),
+      },
+    ]);
     form.reset();
   };
 
   const downloadJsonFile = () => {
-    const myObject = { key: "value" }; // Votre objet JavaScript à télécharger
-
+    const myObject = { key: "value" };
     const json = JSON.stringify(list);
     const blob = new Blob([json], { type: "application/json" });
     const url = URL.createObjectURL(blob);

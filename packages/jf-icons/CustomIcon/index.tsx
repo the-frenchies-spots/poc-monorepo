@@ -20,3 +20,5 @@ export * from "./MapPinPokeCafe";
 export * from "./MapPinPokeCenter";
 export * from "./MapPinTokyoTower";
 export * from "./MapPinNintendo";
+export * from "./MapPinCableCar";
+export * from "./MapPinVelo";
