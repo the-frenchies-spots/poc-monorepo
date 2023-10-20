@@ -662,6 +662,97 @@ Zoo d'Izu Shaboten, qui peut être vu depuis le sommet de la montagne`,
     price: "0",
   },
 
+  {
+    id: "1cf708f0-cb46-4a5f-b335-3917cc3ab2b0",
+    name: "Mont Takao",
+    description: "",
+    picture:
+      "https://www.japan-experience.com/sites/default/files/styles/scale_crop_480x250/public/images/2022-09/57375035_l.jpg?h=c3f2815d&itok=ucVPYg24",
+    tag: "mount",
+    city: "Tokyo",
+    address: "Takaomachi, Hachiōji, Tokyo 193-0844, Japon",
+    links: [],
+    lat: 35.625405,
+    lng: 139.243744,
+    price: "",
+  },
+
+  {
+    id: "2ac59dc8-ffba-4772-bfa5-ae9699e05922",
+    name: "NOBORIBETSU",
+    description:
+      "Noboribetsu est une station thermale située au pied du mont volcanique Hiyori, au sud-ouest de Sapporo sur l’île de Hokkaido, au nord du Japon. Réputée pour ses multiples bains chauds onsen, les visiteurs s'y rendent également pour les impressionnants paysages naturels toujours en activité.À Noboribetsu, la nature bouillonne même sous la neige ❄️ en hiver. On l’observe s’échapper en fumée ou en grosses bulles qui se forment à la surface des eaux jaillissantes de la terre. Le village à onsen ♨️ peut se targuer de réchauffer naturellement ses visiteurs toute l’année. Et avant de mériter un bon bain, quoi de mieux qu’une plaisante balade au cœur des enfers !  Disposées ci et là au détour d’une rue ou à l’entrée d’un bâtiment, la dizaine de statues de démon oni rappellent aux nouveaux arrivants que l'on protège et respecte avant tout ici la force des éléments.Avec son paysage lunaire aux odeurs de souffre, la vallée de l’enfer porte bien son nom. En contact direct avec l’activité volcanique de la montagne Hiyoriyama, les voyageurs suivent un sentier balisé sécurisé et observent avec curiosité les fumerolles qui ne cessent de se dégager du sol. Entouré d’un tapis blanc hivernal ou d’une forêt luxuriante en été, le point de vue Jigokudani vaut définitivement le détour. C’est de ces lieux que les thermes puisent leurs sources chaudes, acheminées jusqu’aux établissements voisins.  On continue ensuite le chemin pédestre pendant une vingtaine de minutes pour atteindre un autre phénomène naturel : le lac sulfureux d’Oyunuma qui s’est formé suite à une éruption du volcan 🌋. Visiblement brûlante, la température de l’eau à la surface flirte avec les 45°C tandis qu’elle atteint les 130°C dans les profondeurs. Juste en face, de l’autre côté du parking, on n’oublie pas de se pencher sur Oku no Yu, le second et plus petit lac aux propriétés semblables, bien que d’aspect plus boueux. Il est également possible de voir dans les environs deux geysers aux doux noms de Tessen-ike et Taishi Jigoku.  L’ultime attraction de cette virée dans les entrailles de la terre consiste à suivre le cours d’eau Oyunuma qui, comme son appellation l’indique, provient du lac éponyme. La balade à travers la végétation s’avère particulièrement intéressante en été et en automne 🍁 lorsque le feuillage des arbres est à son apogée. Région thermale oblige, la marche se termine incontestablement par un bain de pieds simplement et directement au bord de la rivière chaude. Les randonneurs sont d’ailleurs invités à ne pas oublier une serviette dans leur sac pour bien rester au sec.",
+    picture:
+      "https://www.kanpai.fr/sites/default/files/styles/content_lg/public/uploads/2017/10/noboribetsu-2.jpg",
+    tag: "activity",
+    city: "Noboribetsu",
+    address:
+      "無番地 Noboribetsuonsencho, Noboribetsu, Hokkaido 059-0551, Japon",
+    links: [],
+    lat: 42.497598,
+    lng: 141.148664,
+    price: "0",
+  },
+  {
+    id: "f3706005-9050-49e7-aac8-c8b089acf408",
+    name: "AKAN-MASHU",
+    description:
+      "Le parc national Akan-Mashu se situe dans les terres à l'est de l'île de Hokkaido, entre les villes d'Abashiri au nord et de Kushiro au sud. Destination prisée des randonneurs et amateurs de nature, il abrite un paysage volcanique grandiose composé de lacs de cratère et de monts verdoyants. Un tourisme thermal s'est également développé autour de la montagne soufrière Iozan et de ses sources chaudes onsen qui en découlent.",
+    picture:
+      "https://www.kanpai.fr/sites/default/files/styles/big_header_lg/public/uploads/2023/08/akan-mashu-10.jpg",
+    tag: "activity",
+    city: "Kushiro",
+    address: "Kussharo, Teshikaga, Kawakami District, Hokkaido 088-3341, Japon",
+    links: [],
+    lat: 43.585196,
+    lng: 144.314984,
+    price: "0",
+  },
+  {
+    id: "89b0a393-e572-40cc-85b9-0b58cee52e18",
+    name: "BIEI",
+    description:
+      "Biei est un bourg rural de la sous-préfecture de Kamikawa, situé au centre de l'île d'Hokkaido. Il figure parmi les plus beaux villages du Japon notamment grâce à ses resplendissantes collines fleuries et à son lac d'un bleu intense. Les chaînes de hautes montagnes en toile de fond ajoutent un caractère d'immensité à ce paysage entretenu par l'Homme. Autre attraction locale incontournable, le lac Aoi-ike se visite rapidement en bus ou en voiture le long de la route 966. Un simple parking accueille les curieux qui viennent contempler l'intensité du bleu couplée aux bouleaux blancs plantés dans l'étang tels des roseaux. La forte teneur en aluminium de l'eau explique la couleur bleue si particulière du lac qui reflète la luminosité du soleil. Il faut savoir que cette carte postale, qui n'a rien de naturel, est le résultat d'une erreur humaine à la suite de travaux pour prévenir des glissements de terrain.",
+    picture: "https://mybiei.jp/wp-content/uploads/2022/10/NKZ_1782.jpg",
+    tag: "park",
+    city: "Biei",
+    address:
+      "1-chōme-1 Motomachi, Biei, Kamikawa District, Hokkaido 071-0208, Japon",
+    links: [],
+    lat: 43.590841,
+    lng: 142.461782,
+    price: "0",
+  },
+  {
+    id: "568a27ae-4a5d-464d-bbe8-1be1aa4bbb3d",
+    name: "Biei Station",
+    description: "gare JR",
+    picture:
+      "https://lh5.googleusercontent.com/p/AF1QipPQbdooqPGSiTGMO4fcxD9ycvgmrlIYyCt0x6z8=w408-h306-k-no",
+    tag: "station",
+    city: "biei",
+    address:
+      "1-chōme-1 Motomachi, Biei, Kamikawa District, Hokkaido 071-0208, Japon",
+    links: [],
+    lat: 43.591231,
+    lng: 142.46192,
+    price: "0",
+  },
+
+  {
+    "id": "0e1b51ee-9e43-4de5-9789-c8acee190201",
+    "name": "Geisha House Shima",
+    "description": " la maison de thé Shima porte le titre de patrimoine culturel important du Japon. En effet, la visite de ce bâtiment représente un moyen ludique et vivant de découvrir le mode de vie de l’époque. L’ombre des geishas plane toujours sur les lieux. Thé et pâtisseries y sont servis.",
+    "picture": "https://visitkanazawa.jp/lsc/upfile/spot/0001/0094/10094_1_l.jpg?1549002473",
+    "tag": "restaurant",
+    "city": "Kanazawa",
+    "address": "1 Chome-13-21 Higashiyama, Kanazawa, Ishikawa 920-0831, Japon",
+    "links": [],
+    "lat": 36.572512,
+    "lng": 136.666894,
+    "price": "0"
+  }
+
   // {
   //   id: "",
   //   name: "",

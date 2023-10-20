@@ -49,6 +49,7 @@ export const tagList = [
   { value: "nintendo-shop", label: "Magasin Nintendo", icon: MapPinNintendo },
   { value: "cable-car", label: "Téléphérique", icon: MapPinCableCar },
   { value: "velo", label: "Vélo", icon: MapPinVelo },
+  { value: "festival", label: "Festival", icon: MapPinDefault },
   {
     value: "universal-studio",
     label: "Universal Studio",
