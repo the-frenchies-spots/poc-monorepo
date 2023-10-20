@@ -22,3 +22,4 @@ export * from "./MapPinTokyoTower";
 export * from "./MapPinNintendo";
 export * from "./MapPinCableCar";
 export * from "./MapPinVelo";
+export * from "./MapPinFestival";

@@ -196,6 +196,55 @@ export const street: JapanLocation[] = [
     price: "",
   },
 
+  {
+    id: "39f2664f-2a41-4b07-b0fa-74c792a20dec",
+    name: "JIGOKUDANI",
+    description:
+      "Le parc aux singes de Jigokudani est niché à 850 mètres d’altitude dans la vallée de la rivière Yokoyu, située dans la petite ville de Yamanouchi au nord de la préfecture de Nagano. Ouvert en 1964 et appartenant au parc national Joshin'etsu-Kogen, il est connu pour laisser contempler de près des macaques japonais qui vivent et se baignent dans un des nombreux onsen (sources chaudes naturelles) de la région. D'abord, en train express depuis Nagano (50 minutes / 1.200¥ (~7,63€), plusieurs départs dans la journée  Puis, une fois à la gare de Yudanaka :  prendre un bus local jusqu'à l'arrêt Kanbayashi Onsen (10-15min / 310¥ (~1,97€) / 1 à 2 trajets par heure) ou l'arrêt Snow Monkey Park / Shiga Kogen situé 100m plus loin finir par 35 minutes de marche dans la forêt Pour économiser environ 1.000 ¥ (~6,36€) : prendre le Snow Monkey 1-Day Pass qui combine :  Train et bus illimités entre Nagano et Yudanaka Bus local Nagaden illimité Entrée du parc À acheter uniquement sur place : 2.900¥ (~18,44€) par adulte -- station de Nagaden Nagano au sous-sol de la gare JR de Nagano et aux stations de Gondo, Suzaka et Obuse  Destination non accessible avec le JR Pass",
+    picture:
+      "https://www.kanpai.fr/sites/default/files/styles/big_header_lg/public/uploads/2016/11/jigokudani-singes-6.jpg",
+    tag: "park",
+    city: "Hirao",
+    address:
+      "6845 Hirao, Yamanochi, Shimotakai District, Nagano 381-0401, Japon",
+    links: [],
+    lat: 36.732829,
+    lng: 138.462006,
+    price: "0",
+  },
+
+  {
+    id: "60a25358-6a4b-4127-8325-afb1e25617aa",
+    name: "Gion Odori, le festival de danse des geisha",
+    description:
+      "Chaqueautomne, du 1er au 10 novembre au Théâtre Kaikan à Gion, se tient le Gion Odori, festival de danse traditionnel des geiko (les geisha) et des maiko, les apprenties geiko.   La danse, épurée,silencieuse, plonge le spectateur dans un Japon parfois champêtre. Des jeux,tels que le lancer d’éventail, ponctuent aussi les représentations. Parfoisseules, parfois à deux, parfois à plus de quinze sur scène, les geiko se départissent de leur imagehabituelle. Une cérémonie de thé, qui débute une heure avant, vous initie àl’art floral de l’ikebana, servi par leshôtes-stars d’une après-midi.",
+    picture:
+      "https://www.japan-experience.com/sites/default/files/styles/scale_740/public/legacy/japan_experience/1476451243974.jpg?itok=3zXKDDHZ",
+    tag: "festival",
+    city: "Kyoto",
+    address: "Gion Kaikan, 323 Gionmachi Kitagawa, Higashiyama, 605-0073 Kyoto",
+    links: [],
+    lat: 35.004617,
+    lng: 135.777471,
+    price:
+      " 4 000 yens (environ 33€).  Pour 500 yens supplémentaires, vous pouvez savourer une tasse de thé vert et une sucrerie traditionnelle japonaise avant le spectacle.",
+  },
+  {
+    id: "2bfa5797-3388-4b94-ba9e-e3ee8f749feb",
+    name: "Ohitaki ",
+    description:
+      "Festival du feu : on brûle les prières. Commence à 13h30 pétante, pas de retard au Japon. Le 7 novembre.",
+    picture:
+      "http://www.greentour-kyoto.net/wp/wp-content/uploads/2011/10/ohitaki1.jpg",
+    tag: "festival",
+    city: "Kyoto",
+    address: "68 Fukakusa Yabunouchicho, Fushimi Ward, Kyoto, 612-0882, Japon",
+    links: [],
+    lat: 34.967638,
+    lng: 135.779238,
+    price: "4€",
+  },
+
   // {
   //   id: "",
   //   name: "",

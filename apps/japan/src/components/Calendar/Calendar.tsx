@@ -1,5 +1,14 @@
 import React, { Fragment, useEffect, useRef } from "react";
-import { Badge, Box, Card, Grid, Group, Stack, Text } from "@jf/material";
+import {
+  Badge,
+  Box,
+  Card,
+  Grid,
+  Group,
+  Image,
+  Stack,
+  Text,
+} from "@jf/material";
 import { calandar } from "../../assets/calandar";
 import { JapanLocation, japanData } from "../../assets/japanData";
 
@@ -30,7 +39,7 @@ const DateDivs: React.FC<DateDivsProps> = ({
     const divs: JSX.Element[] = [];
 
     const currentDate = new Date(startDate);
-    const today = new Date(); // Obtient la date actuelle
+    const today = new Date();
 
     while (currentDate <= endDate) {
       const day = currentDate.getDate();
@@ -82,24 +91,57 @@ const DateDivs: React.FC<DateDivsProps> = ({
 
             <Group position="apart" mt="md" mb="xs">
               {findDate &&
+                findDate.map((currentDate, _idx) =>
+                  currentDate.events?.map((event, _idxIdx) => (
+                    <Badge color="pink" variant="light">
+                      <Group>
+                        <event.icon /> <Text>{event.label}</Text>
+                      </Group>
+                    </Badge>
+                  ))
+                )}
+              {findDate &&
                 findDate.map((thisFindDate) =>
                   thisFindDate?.list?.map((id, _idxx) => {
                     const theData = japanData.find((jd) => jd.id === id);
                     if (!theData) return null;
                     return (
-                      <Stack
-                        key={_idxx}
-                        sx={{ border: "1px solid", borderRadius: 8 }}
-                        p="xs"
-                        onClick={() => onLocationChange(theData)}
+                      <Group
+                        sx={{
+                          border: "1px solid",
+                          borderRadius: 8,
+                          position: "relative",
+                        }}
                       >
-                        <Badge color="pink" variant="light">
-                          {theData.tag}
-                        </Badge>
-                        <Badge color="pink" variant="light">
-                          {theData.city}
-                        </Badge>
-                      </Stack>
+                        <Box
+                          h="100%"
+                          w={100}
+                          ml="md"
+                          sx={{
+                            borderRadius: 8,
+                            overflow: "hidden",
+                          }}
+                        >
+                          <Image
+                            src={theData.picture}
+                            sx={{
+                              borderRadius: 8,
+                            }}
+                          />
+                        </Box>
+                        <Stack
+                          key={_idxx}
+                          p="xs"
+                          onClick={() => onLocationChange(theData)}
+                        >
+                          <Badge color="pink" variant="light">
+                            {theData.tag}
+                          </Badge>
+                          <Badge color="pink" variant="light">
+                            {theData.city}
+                          </Badge>
+                        </Stack>
+                      </Group>
                     );
                   })
                 )}
@@ -127,7 +169,7 @@ interface CalendarProps {
 
 const Calendar = (props: CalendarProps) => {
   const { onLocationChange } = props;
-  const startDate = new Date("2023-07-15");
+  const startDate = new Date("2023-10-20");
   const endDate = new Date("2023-11-23");
   return (
     <DateDivs
