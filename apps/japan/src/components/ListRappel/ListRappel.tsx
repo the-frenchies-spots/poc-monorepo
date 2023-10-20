@@ -3,6 +3,7 @@ import React from "react";
 import {
   Icon123,
   IconBatteryAutomotive,
+  IconBike,
   IconBook,
   IconChefHat,
   IconCoinYen,
@@ -62,6 +63,8 @@ import { fonts } from "../../utils/fonts";
 import BankaiText from "../Text/BankaiText";
 import MonserattText from "../Text/MonserattText";
 import { countList } from "../../assets/count/count";
+import ByceCycleList from "../ByceCycleList/ByceCycleList";
+import { byceCycleStation } from "../../utils/bike-cycle";
 
 type TArgent = {
   source: string;
@@ -303,7 +306,14 @@ export const ListRappel = () => {
         <Tabs.Tab value="count" icon={<Icon123 />}>
           <MonserattText>Comptés</MonserattText>
         </Tabs.Tab>
+        <Tabs.Tab value="velo" icon={<IconBike />}>
+          <MonserattText>Vélos</MonserattText>
+        </Tabs.Tab>
       </Tabs.List>
+
+      <Tabs.Panel value="velo" pt="xs">
+        <ByceCycleList row={byceCycleStation} />
+      </Tabs.Panel>
 
       <Tabs.Panel value="rappel" pt="xs">
         <List p="xl">
