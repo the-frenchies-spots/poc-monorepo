@@ -541,6 +541,127 @@ Zoo d'Izu Shaboten, qui peut être vu depuis le sommet de la montagne`,
     price: "",
   },
 
+  {
+    id: "bbd8e919-bbe7-407e-ae30-f3501c9d83d4",
+    name: "TODAI-JI",
+    description:
+      "Le Todai-ji est un temple bouddhique situé à Nara, sur l'île principale de Honshu. Ce grand temple de l'est abrite notamment le bâtiment Daibutsu-den, connue pour être la plus grande construction en bois du monde et hébergeant un monumental Grand Bouddha assis en bronze.",
+    picture:
+      "https://www.kanpai.fr/sites/default/files/styles/big_header_lg/public/uploads/2020/06/nara-covid19-printemps-2020-5.jpg",
+    tag: "sanctuary",
+    city: "Nara",
+    address: "406-1 Zoshicho, Nara, 630-8211, Japon",
+    links: [],
+    lat: 34.688429,
+    lng: 135.839519,
+    price: "0",
+  },
+  {
+    id: "3baf6548-2f3f-41d0-aef8-2ad6c48b07c9",
+    name: "MONT WAKAKUSA",
+    description:
+      "Le Mont Wakakusa est une colline qui culmine à 342 mètres d'altitude, située dans la ville de Nara au Japon. Une fois arrivé à son sommet par l’un des sentiers de randonnée, elle offre un point de vue panoramique sur l’ancienne cité impériale et son parc. tre conseil est de démarrer l'ascension qui reste extrêmement accessible. En une vingtaine de minutes à peine, on se retrouve au premier palier depuis lequel le panorama sur Nara est saisissant. Les différents points d'intérêt principaux de la ville s'offrent sous un nouveau jour et l'on reconnaîtra aisément les lieux caractéristiques de la balade, probablement visités peu avant ou peu après.  De là, deux itinéraires sont accessibles : soit terminer la boucle pour rejoindre le terrain de départ, ou poursuivre la montée pour apercevoir d'autres monts en s'éloignant du centre-ville.  Attention : l'accès au mont Wakakusa n'est possible qu'une moitié de l'année, au printemps et à l'automne 🍁, afin de protéger ses herbes qui sont d'ailleurs brûlées chaque année le quatrième samedi de janvier après quelques feux 🔥 d'artifices.",
+    picture:
+      "https://lh5.googleusercontent.com/p/AF1QipPFh0796kJWz0w7MGbIr7e8AxNgZK0GT9YSoovg=w408-h272-k-no",
+    tag: "mount",
+    city: "Nara",
+    address: "Kasuganocho, Nara, 630-8211, Japon",
+    links: [],
+    lat: 34.690637,
+    lng: 135.854126,
+    price: "150 yen",
+  },
+  {
+    id: "0c40e03a-f871-4f32-b400-7253f5e66697",
+    name: "KASUGA TAISHA",
+    description:
+      "Ouvre à 6h30. Kasuga Taisha est un sanctuaire shinto, mausolée de la famille Fujiwara, situé à Nara. Inscrit au Patrimoine mondial de l'Unesco, le complexe est notamment connu pour ses nombreuses lanternes suspendues en bronze et celles en pierre jalonnant le sentier de promenade.",
+    picture:
+      "https://img.freepik.com/photos-premium/lanternes-japonaises-au-sanctuaire-kasuga-taisha-nara-au-japon_255553-1495.jpg?w=1060",
+    tag: "sanctuary",
+    city: "Nara",
+    address: "160 Kasuganocho, Nara, 630-8212, Japon",
+    links: [],
+    lat: 34.681585,
+    lng: 135.848605,
+    price: "3€16",
+  },
+  {
+    id: "e71c5ae4-cdbf-44ca-866b-508293accd23",
+    name: "CHÂTEAU DE KORIYAMA",
+    description:
+      "Le château de Koriyama se situe à Yamato-Koriyama, au sud-ouest de la ville de Nara au Japon. Sublimées par la floraison de 800 cerisiers au début du printemps, ses ruines historiques offrent un panorama en hauteur sur la région et ses montagnes alentours.",
+    picture:
+      "https://www.kanpai.fr/sites/default/files/styles/big_header_lg/public/uploads/2023/03/chateau-koriyama-6.jpg",
+    tag: "building",
+    city: "Nara",
+    address: "2-255 Jonaicho, Yamatokoriyama, Nara 639-1011, Japon",
+    links: [],
+    lat: 34.651768,
+    lng: 135.778903,
+    price: "0",
+  },
+  {
+    id: "4242c96f-9270-46cd-b976-fa51e2f3a7f1",
+    name: "NIGATSU-DO",
+    description:
+      "Les bâtiments originaux du complexe Nigatsu-do seraient datés du milieu du VIIIe siècle. Entièrement brûlés par un incendie en 1667, ils sont reconstruits à l'identique deux ans plus tard. Avec ses faux airs de Kiyomizu-dera, le pavillon principal monté sur pilotis est désigné Trésor National de Japon. Néanmoins, ce n'est ni pour l'architecture ni pour la contemplation des statues de Kannon (qui sont ici qualifiées de 秘仏 hibutsu \"Bouddha secrets\", ce qui signifie qu'elles restent cachées du regard) que l'on pousse la balade jusqu'à cette contrée éloignée du flux touristique habituel.",
+    picture:
+      "https://www.kanpai.fr/sites/default/files/styles/big_header_lg/public/uploads/2018/11/nigatsudo-nara-2.jpg",
+    tag: "sanctuary",
+    city: "Nara",
+    address: "406-1 Zoshicho, Nara, 630-8211, Japon",
+    links: [],
+    lat: 34.689442,
+    lng: 135.844354,
+    price: "3€79",
+  },
+  {
+    id: "fbcdf08d-92c2-458d-8e6c-0057e9338100",
+    name: "PARC DE NARA",
+    description:
+      "Le parc de Nara est un vaste espace vert public de plus de 500 hectares, démarrant au pied de Wakakusa-yama jusqu'au cœur la ville éponyme dans la région du Kansai. Datant de 1880, le \"parc aux daims\" accueille près de 1.300 cerfs shika qui évoluent en liberté autour des temples, des avenues et des touristes venus visiter les trésors de l'ancienne capitale impériale.",
+    picture:
+      "https://www.kanpai.fr/sites/default/files/styles/content_lg/public/uploads/2020/06/nara-covid19-printemps-2020-2.jpg",
+    tag: "park",
+    city: "Nara",
+    address: "Nara, Japon",
+    links: [],
+    lat: 34.685005,
+    lng: 135.843003,
+    price: "0",
+  },
+  {
+    id: "3cefe27f-dbad-4269-b6ae-df007fa81054",
+    name: "NARAMACHI",
+    description:
+      "Naramachi est un quartier marchand aux allures traditionnelles, situé au sud du temple Kofuku-ji à Nara. Les machiya, anciennes maisons japonaises en bois, se dressent le long des ruelles et abritent désormais des musées, boutiques de souvenirs, restaurants ou encore des cafés.",
+    picture:
+      "https://www.kanpai.fr/sites/default/files/styles/big_header_lg/public/uploads/2014/11/naramachi-10.jpg",
+    tag: "neighborhood",
+    city: "Nara",
+    address: "Japon, 〒630-8392 Nara, Chuincho, １１",
+    links: [],
+    lat: 34.678532,
+    lng: 135.824056,
+    price: "0",
+  },
+  {
+    id: "c6ba8eca-047a-409c-92ca-a0a398b8196d",
+    name: "YOSHIKI-EN",
+    description:
+      "Yoshiki-en est un petit jardin japonais situé à Nara. Non loin des grands temples touristiques de la ville, cet écrin de verdure se révèle un joli havre de tranquillité et un lieu privilégié pour la traditionnelle cérémonie du thé.",
+    picture:
+      "https://lh5.googleusercontent.com/p/AF1QipNJ0pUROXWnbphed-gj1mDwcGqOcY022ZADe0oA=w408-h306-k-no",
+    tag: "park",
+    city: "Nara",
+    address: "60-1 Noboriojicho, Nara, 630-8213, Japon",
+    links: [],
+    lat: 34.685383,
+    lng: 135.836389,
+    price: "0",
+  },
+
   // {
   //   id: "",
   //   name: "",
