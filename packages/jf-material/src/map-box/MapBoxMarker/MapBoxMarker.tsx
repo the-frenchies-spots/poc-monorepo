@@ -1,5 +1,6 @@
 import React, { CSSProperties, ReactNode } from "react";
 import { Marker } from "react-map-gl";
+import { MarkerEvent } from "react-map-gl/dist/esm/types";
 require("dotenv").config();
 interface MapBoxMarkerProps {
   lat: number;
@@ -12,10 +13,25 @@ interface MapBoxMarkerProps {
 
 export const MapBoxMarker = (props: MapBoxMarkerProps) => {
   const { lat, lng, children, style, isDefaultCursor = true, onPress } = props;
+
+  const handleClick: (e: MarkerEvent<mapboxgl.Marker, MouseEvent>) => void = (
+    e
+  ) => {
+    e.originalEvent.stopPropagation();
+    if (typeof onPress === "function") {
+      onPress();
+    }
+  };
+
   return (
     <>
       {isDefaultCursor && <Marker latitude={lat} longitude={lng} />}
-      <Marker latitude={lat} longitude={lng} style={style} onClick={onPress}>
+      <Marker
+        latitude={lat}
+        longitude={lng}
+        style={style}
+        onClick={handleClick}
+      >
         {children}
       </Marker>
     </>

@@ -44,7 +44,7 @@ export default function Home({
 
   const { location: currentPosition, getLocation } = useGeoloc();
 
-  const [fetch, { viewport, onViewportChange, onCoordinateClick }] =
+  const [fetch, { viewport, onViewportChange, coordinate, onCoordinateClick }] =
     useMapBox();
 
   useEffect(() => {
