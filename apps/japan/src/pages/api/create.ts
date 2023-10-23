@@ -8,7 +8,7 @@ const client = new MongoClient(uri, {
   useUnifiedTopology: true,
 } as any);
 
-export default async function handler(req, res) {
+export default async function handler(req: any, res: any) {
   if (req.method === "POST") {
     const { tag, color, name, description, picture, lat, lng } = req.body;
     try {
