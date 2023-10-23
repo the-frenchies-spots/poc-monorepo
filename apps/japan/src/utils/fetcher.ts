@@ -1,4 +1,4 @@
-export async function callLambdaInNext(url, method, data) {
+export async function callLambdaInNext(url: any, method: any, data: any) {
   try {
     const fetchUrl = process.env.NEXT_PUBLIC_API_URL + url;
     const response = await fetch(fetchUrl, {
