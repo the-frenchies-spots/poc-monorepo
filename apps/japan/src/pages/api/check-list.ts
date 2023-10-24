@@ -13,7 +13,7 @@ export default async function handler(req: any, res: any) {
     try {
       await client.connect();
       const database = client.db("japan");
-      const collection = database.collection("spot");
+      const collection = database.collection("check");
       const data = await collection.find({}).toArray();
 
       res.status(200).json({ data });

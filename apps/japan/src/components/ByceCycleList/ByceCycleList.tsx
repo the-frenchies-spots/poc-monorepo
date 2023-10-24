@@ -14,7 +14,10 @@ const ByceCycleList = ({ row }: ByceCycleListProps) => {
       <Accordion defaultValue={row[0].label}>
         {row.map((cycleCompagny, index) => {
           return (
-            <Accordion.Item value={cycleCompagny.label} key={index}>
+            <Accordion.Item
+              value={cycleCompagny.label}
+              key={`actuion-item${index}`}
+            >
               <Accordion.Control>{cycleCompagny.label}</Accordion.Control>
               <Accordion.Panel w="100%">
                 <Stack w="100%">
@@ -23,7 +26,7 @@ const ByceCycleList = ({ row }: ByceCycleListProps) => {
                       leftIcon={<IconBike />}
                       variant="outline"
                       component="a"
-                      key={`list-${idx}`}
+                      key={`list-a-37-${idx}`}
                       href={val.link}
                       mt="xl"
                       w="100%"

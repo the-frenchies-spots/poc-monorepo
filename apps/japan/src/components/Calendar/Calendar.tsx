@@ -60,7 +60,14 @@ const DateDivs: React.FC<DateDivsProps> = ({
       });
 
       divs.push(
-        <Grid.Col xs={6} md={4} key={dateString} sx={{ width: "100%" }}>
+        <Grid.Col
+          xs={6}
+          md={4}
+          key={`${dateString}${
+            Math.floor(Math.random() * (583486438 - 9698 + 1)) + 9698
+          }`}
+          sx={{ width: "100%" }}
+        >
           <Card
             shadow="sm"
             padding="lg"
@@ -130,7 +137,11 @@ const DateDivs: React.FC<DateDivsProps> = ({
                           />
                         </Box>
                         <Stack
-                          key={_idxx}
+                          key={`${
+                            _idxx +
+                            Math.floor(Math.random() * (583486438 - 9698 + 1)) +
+                            9698
+                          }`}
                           p="xs"
                           onClick={() => onLocationChange(theData)}
                         >

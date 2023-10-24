@@ -6,6 +6,9 @@ import CardLoacation from "../components/CardLocation/CardLoacation";
 import { checkCoordinatesWithinRadius } from "../utils/checkCoordinatesWithinRadius";
 import Calendar from "../components/Calendar/Calendar";
 import { ListRappel } from "./../components/ListRappel/ListRappel";
+import { checkType } from "../utils/checkType";
+import { isChecked } from "../utils/isChecked";
+import { getCheckId } from "./../utils/getCheckId";
 
 interface LocationCardListProps {
   tag: string;
@@ -19,6 +22,10 @@ interface LocationCardListProps {
   km: string | null;
   onViewportChange?: (newViewport: TViewport) => void;
   onCoordinateClick?: (coordinate: TCoordinate | undefined) => void;
+  insertCheck: (id: string) => void;
+  unChecked: (id: string) => void;
+  checkList: checkType[];
+  checkLoading: boolean;
 }
 
 const LocationCardList = (props: LocationCardListProps) => {
@@ -31,9 +38,13 @@ const LocationCardList = (props: LocationCardListProps) => {
     currentPosition,
     viewport,
     km,
+    checkList,
+    checkLoading,
     onViewportChange,
+    unChecked,
     onCoordinateClick,
     onLocationChange,
+    insertCheck,
   } = props;
 
   let filterList = japanData.filter((japanLocation) =>
@@ -66,6 +77,7 @@ const LocationCardList = (props: LocationCardListProps) => {
           onViewportChange={onViewportChange}
           onCoordinateClick={onCoordinateClick}
           list={filterList}
+          checkList={checkList}
           onLocationChange={onLocationChange}
           km={km}
         />
@@ -75,8 +87,23 @@ const LocationCardList = (props: LocationCardListProps) => {
         <Grid mt={20}>
           {filterList.map((japanLocation, key) => {
             return (
-              <Grid.Col key={key} sm={12} md={4}>
-                <CardLoacation data={japanLocation} />
+              <Grid.Col
+                key={`${
+                  key +
+                  Math.floor(Math.random() * (583486438 - 9698 + 1)) +
+                  9698
+                }`}
+                sm={12}
+                md={4}
+              >
+                <CardLoacation
+                  data={japanLocation}
+                  insertCheck={insertCheck}
+                  checked={isChecked(checkList, japanLocation.id)}
+                  checkLoading={checkLoading}
+                  unChecked={unChecked}
+                  checkId={getCheckId(checkList, japanLocation.id)}
+                />
               </Grid.Col>
             );
           })}

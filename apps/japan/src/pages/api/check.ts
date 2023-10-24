@@ -1,5 +1,5 @@
 // pages/api/mongodb.js
-import { MongoClient, ObjectId } from "mongodb";
+import { MongoClient } from "mongodb";
 
 const uri = process.env.NEXT_PUBLIC_MONGODB_URI || "";
 
@@ -14,9 +14,11 @@ export default async function handler(req: any, res: any) {
     try {
       await client.connect();
       const database = client.db("japan");
-      const collection = database.collection("spot");
+      const collection = database.collection("check");
 
-      const data = await collection.deleteOne({ _id: new ObjectId(id) });
+      const data = await collection.insertOne({
+        checkId: id
+      });
 
       res.status(200).json({ data });
     } catch (err) {

@@ -23,3 +23,4 @@ export * from "./MapPinNintendo";
 export * from "./MapPinCableCar";
 export * from "./MapPinVelo";
 export * from "./MapPinFestival";
+export * from "./MapPinChecked"

@@ -35,7 +35,7 @@ const LinkList = ({ value, onChange }: LinkListProps) => {
     <Stack mt="md">
       <Button onClick={handleAdd}>Add Link</Button>
       {links.map((link: any, index: any) => (
-        <Group key={index} grow>
+        <Group key={`group-${index}`} grow>
           <TextInput
             type="text"
             placeholder="Label"

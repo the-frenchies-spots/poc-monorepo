@@ -362,7 +362,7 @@ export const ListRappel = () => {
             <Accordion.Panel>
               <List p="xl">
                 {vocabulaireList?.map((item, index) => (
-                  <List.Item key={`vocabulaire-${index}`}>
+                  <List.Item key={`vocabulaire-a-27-${index}`}>
                     <Group>
                       {item?.icon ? <item.icon /> : undefined}{" "}
                       <MonserattText>{item.valueFr}: </MonserattText>
@@ -381,7 +381,7 @@ export const ListRappel = () => {
             <Accordion.Panel>
               <Stack spacing={0}>
                 {restaurateurList?.map((item, index) => (
-                  <Box key={`restorateur-${index}`} mb={10}>
+                  <Box key={`restorateur-a-4-${index}`} mb={10}>
                     <Group>
                       {item?.icon ? <item.icon /> : undefined}
                       <Stack spacing={0}>
@@ -402,7 +402,7 @@ export const ListRappel = () => {
             <Accordion.Panel>
               <Stack spacing={0}>
                 {clientList?.map((item, index) => (
-                  <Box key={`client-${index}`} mb={10}>
+                  <Box key={`client-5-8-9${index}`} mb={10}>
                     <Group>
                       {item?.icon ? <item.icon /> : undefined}
                       <Stack spacing={0}>
@@ -421,7 +421,14 @@ export const ListRappel = () => {
       <Tabs.Panel value="argent" pt="xs">
         <Stack>
           {ArgentList?.map((argentItem, index) => (
-            <Group key={index} grow>
+            <Group
+              key={`${
+                index +
+                Math.floor(Math.random() * (583486438 - 9698 + 1)) +
+                9698
+              }`}
+              grow
+            >
               <Box>
                 <Image src={argentItem.source} alt={argentItem.japLabel} />
               </Box>
@@ -442,7 +449,7 @@ export const ListRappel = () => {
                 <>
                   <Accordion.Item
                     value={countItem.label}
-                    key={`Accordion-${index}`}
+                    key={`Accordion-y_5rr${index}`}
                   >
                     <Accordion.Control>
                       <MonserattText>{countItem.label}</MonserattText>
@@ -466,7 +473,7 @@ export const ListRappel = () => {
                         </thead>
                         <tbody>
                           {countItem?.value?.map((countItemItem, idx) => (
-                            <tr key={`tr-${idx}`}>
+                            <tr key={`tr-hh-y-u-${idx}`}>
                               <td>
                                 {index !== 0 && (
                                   <BankaiText>{idx + 1}</BankaiText>

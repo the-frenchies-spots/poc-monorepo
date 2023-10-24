@@ -14,6 +14,9 @@ import React from "react";
 import { JapanLocation } from "../../assets/japanData";
 import CardLoacation from "../CardLocation/CardLoacation";
 import { tagList } from "../../utils/tagList";
+import { checkType } from "../../utils/checkType";
+import { isChecked } from "../../utils/isChecked";
+import { getCheckId } from "../../utils/getCheckId";
 
 interface DrawerProps {
   onTagChange: (val: string) => void;
@@ -24,6 +27,10 @@ interface DrawerProps {
   km: string | null;
   onKmChange: (km: string | null) => void;
   currentLocation?: JapanLocation | null;
+  insertCheck: (id: string) => void;
+  unChecked: (id: string) => void;
+  checkList: checkType[];
+  checkLoading: boolean;
 }
 
 export const Drawer = (props: DrawerProps) => {
@@ -34,8 +41,12 @@ export const Drawer = (props: DrawerProps) => {
     tag,
     km,
     onKmChange,
+    checkLoading,
     currentLocation = null,
     onCurrentLocationChange,
+    insertCheck,
+    unChecked,
+    checkList,
   } = props;
 
   const [opened, { open, close }] = useDisclosure(false);
@@ -64,7 +75,14 @@ export const Drawer = (props: DrawerProps) => {
           p="xl"
         >
           {currentLocation !== null ? (
-            <CardLoacation data={currentLocation} />
+            <CardLoacation
+              data={currentLocation}
+              insertCheck={insertCheck}
+              unChecked={unChecked}
+              checked={isChecked(checkList, currentLocation.id)}
+              checkLoading={checkLoading}
+              checkId={getCheckId(checkList, currentLocation.id)}
+            />
           ) : (
             <>
               <Flex justify="center">

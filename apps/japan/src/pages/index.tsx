@@ -5,7 +5,7 @@ import { Drawer } from "../components/Drawer/Drawer";
 import { JapanLocation } from "../assets/japanData";
 import neighborhoods from "./api/tokyo.json";
 import japan from "./api/japan.json";
-import { useMapBox } from "@jf/material";
+import { LoadingOverlay, useMapBox } from "@jf/material";
 import { useGeoloc } from "@jf/hooks";
 import { RecenterViewport } from "../components/RecenterViewport/RecenterViewport";
 import React from "react";
@@ -14,6 +14,8 @@ import {
   getFromLocalStorage,
   saveToLocalStorage,
 } from "../utils/locale-storage";
+import { callLambdaInNext } from "../utils/fetcher";
+import { checkType } from "../utils/checkType";
 
 const zoomKm: Record<number, number> = {
   1: 13,
@@ -35,6 +37,8 @@ export default function Home({
   neighborhoodsData: any;
   japanData: any;
 }) {
+  const [checkList, setCheckList] = useState<checkType[]>([]);
+  const [checkLoading, setCheckLoading] = useState<boolean>(false);
   const [currentTag, setCuurentTag] = useState<string | null>("");
   const [view, setView] = useState<string>("map");
   const [km, setKm] = useState<string | null>("5");
@@ -44,7 +48,7 @@ export default function Home({
 
   const { location: currentPosition, getLocation } = useGeoloc();
 
-  const [fetch, { viewport, onViewportChange, coordinate, onCoordinateClick }] =
+  const [_, { viewport, onViewportChange, coordinate, onCoordinateClick }] =
     useMapBox();
 
   useEffect(() => {
@@ -96,6 +100,32 @@ export default function Home({
     setCuurentTag(value);
   };
 
+  const refetchCheck = () => {
+    setCheckLoading(true);
+    callLambdaInNext("/check-list", "GET", null).then((result) => {
+      setCheckList(result.data);
+    });
+    setCheckLoading(false);
+  };
+
+  const insertCheck = (id: string) => {
+    setCheckLoading(true);
+    callLambdaInNext("/check", "POST", { id }).then((result) => {
+      refetchCheck();
+    });
+  };
+
+  const unChecked = (id: string) => {
+    setCheckLoading(true);
+    callLambdaInNext("/unchecked", "POST", { id }).then((result) => {
+      refetchCheck();
+    });
+  };
+
+  useEffect(() => {
+    refetchCheck();
+  }, []);
+
   return (
     <>
       <Head>
@@ -105,6 +135,11 @@ export default function Home({
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main style={{ ...fonts["Montserrat-Regular"].style }}>
+        <LoadingOverlay
+          visible={checkLoading}
+          overlayBlur={2}
+          sx={{ zIndex: 1000000 }}
+        />
         <Drawer
           onTagChange={handleTagChange}
           tag={currentTag || ""}
@@ -114,13 +149,19 @@ export default function Home({
           onCurrentLocationChange={setCurrentLocation}
           km={km}
           onKmChange={handleKmChange}
+          insertCheck={insertCheck}
+          unChecked={unChecked}
+          checkList={checkList}
+          checkLoading={checkLoading}
         />
 
         <LocationCardList
           tag={currentTag || ""}
           view={view}
           viewport={viewport}
+          insertCheck={insertCheck}
           km={km}
+          unChecked={unChecked}
           currentPosition={currentPosition}
           onViewportChange={onViewportChange}
           onCoordinateClick={onCoordinateClick}
@@ -128,6 +169,8 @@ export default function Home({
           currentLocation={currentLocation}
           neighborhoods={neighborhoodsData}
           japanData={japanData}
+          checkList={checkList}
+          checkLoading={checkLoading}
         />
 
         {currentPosition && (

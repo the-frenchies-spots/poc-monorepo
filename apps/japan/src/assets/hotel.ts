@@ -134,26 +134,4 @@ export const hotel: JapanLocation[] = [
     lat: 35.710864,
     lng: 139.768059,
   },
-
-  // to delete
-
-  {
-    id: "4011ae97-5c3b-4d96-a8c2-7458c04863ded",
-    name: "Capsule Inn Hamamatsucho",
-    description: `Non loin de Tour de Tokyo. Wi-Fi haut débit gratuit
-    Réception 24 h/24`,
-    city: "Tokyo",
-    tag: "hotel",
-    picture: `https://content.r9cdn.net/rimg/himg/c4/09/18/expediav2-2417717-1f46fc-629703.jpg?width=500&height=350&xhint=540&yhint=333&crop=true`,
-    links: [
-      {
-        label: "Réserver une chambre",
-        link: "https://fr.hotels.com/ho545858/capsule-inn-hamamatsucho-tokyo-japon/?chkin=2023-10-19&chkout=2023-10-20&x_pwa=1&rfrr=HSR&pwa_ts=1689443932417&referrerUrl=aHR0cHM6Ly9mci5ob3RlbHMuY29tL0hvdGVsLVNlYXJjaA%3D%3D&useRewards=false&rm1=a1&regionId=3593&destination=Tokyo%2C+Tokyo+%28pr%C3%A9fecture%29%2C+Japon&destType=MARKET&neighborhoodId=553248635976382250&latLong=35.681143%2C139.767208&sort=PRICE_LOW_TO_HIGH&top_dp=22&top_cur=EUR&userIntent=&selectedRoomType=201259133&selectedRatePlan=206100650&expediaPropertyId=12248152&searchId=dbf1f2d0-25aa-4299-abca-bfa17e070754",
-      },
-    ],
-    price: "22€",
-    address: `1 Chome-16-6 Shibadaimon, Minato, Tokyo, 105-0012`,
-    lat: 44.93787946053396,
-    lng: -0.6331513018550368,
-  },
 ];

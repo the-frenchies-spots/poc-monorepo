@@ -9,7 +9,7 @@ import {
   TViewport,
   useDisclosure,
 } from "@jf/material";
-import { MapPinDefault } from "@jf/icons";
+import { MapPinDefault, MapPinChecked } from "@jf/icons";
 
 import { JapanLocation } from "../../assets/japanData";
 import { CurrentLocationMarker } from "./CurrentLocationMarker/CurrentLocationMarker";
@@ -19,6 +19,8 @@ import SpotForm from "../SpotForm/SpotForm";
 import ListCustom from "../ListCustom/ListCustom";
 import { spotType } from "../../utils/spotCustomType";
 import { callLambdaInNext } from "../../utils/fetcher";
+import { checkType } from "../../utils/checkType";
+import { isChecked } from "../../utils/isChecked";
 
 interface MapViewerProps {
   list: JapanLocation[];
@@ -27,6 +29,7 @@ interface MapViewerProps {
   viewport: TViewport;
   japanData: any;
   km: string | null;
+  checkList: checkType[];
   currentPosition: TCoordinate | null;
   onViewportChange?: (newViewport: TViewport) => void;
   onCoordinateClick?: (coordinate: TCoordinate | undefined) => void;
@@ -43,7 +46,7 @@ const MapViewer = (props: MapViewerProps) => {
     japanData,
     km,
     onViewportChange,
-    onCoordinateClick,
+    checkList,
     onLocationChange,
   } = props;
 
@@ -99,7 +102,11 @@ const MapViewer = (props: MapViewerProps) => {
           />
         )}
 
-        <ListCustom data={data} onLocationChange={onLocationChange} />
+        <ListCustom
+          data={data}
+          onLocationChange={onLocationChange}
+          checkList={checkList}
+        />
         {currentPosition && currentPosition.lat && currentPosition.lng && (
           <MapBoxMarker
             lat={currentPosition.lat}
@@ -122,9 +129,17 @@ const MapViewer = (props: MapViewerProps) => {
             Icon = tagExist.icon;
           }
 
+          if (isChecked(checkList, location.id)) {
+            Icon = MapPinChecked;
+          }
+
           return (
             <MapBoxMarker
-              key={index}
+              key={`${
+                index +
+                Math.floor(Math.random() * (583486438 - 9698 + 1)) +
+                9698
+              }`}
               lat={location?.lat || 0}
               lng={location?.lng || 0}
               onPress={() => onLocationChange(location)}
