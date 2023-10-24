@@ -290,7 +290,7 @@ const clientList: NoteVocal[] = [
   },
 ];
 
-export const ListRappel = () => {
+export const ListRappel = React.memo(function ListRappelCompo() {
   return (
     <Tabs defaultValue="resto">
       <Tabs.List>
@@ -421,14 +421,7 @@ export const ListRappel = () => {
       <Tabs.Panel value="argent" pt="xs">
         <Stack>
           {ArgentList?.map((argentItem, index) => (
-            <Group
-              key={`${
-                index +
-                Math.floor(Math.random() * (583486438 - 9698 + 1)) +
-                9698
-              }`}
-              grow
-            >
+            <Group key={`group-55-69ml-l-${index}`} grow>
               <Box>
                 <Image src={argentItem.source} alt={argentItem.japLabel} />
               </Box>
@@ -612,6 +605,6 @@ export const ListRappel = () => {
       </Tabs.Panel>
     </Tabs>
   );
-};
+});
 
 export default ListRappel;

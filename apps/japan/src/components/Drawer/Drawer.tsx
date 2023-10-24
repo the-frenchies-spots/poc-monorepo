@@ -33,7 +33,7 @@ interface DrawerProps {
   checkLoading: boolean;
 }
 
-export const Drawer = (props: DrawerProps) => {
+export const Drawer = React.memo(function DrawerComponent(props: DrawerProps) {
   const {
     onTagChange,
     onViewChange,
@@ -161,4 +161,4 @@ export const Drawer = (props: DrawerProps) => {
       </Box>
     </>
   );
-};
+});

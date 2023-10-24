@@ -13,7 +13,7 @@ import {
 import React from "react";
 import { JapanLocation } from "../../assets/japanData";
 
-const CardLoacation = ({
+const CardLoacation = React.memo(function CardLoacationCompo({
   data,
   insertCheck,
   unChecked,
@@ -27,7 +27,7 @@ const CardLoacation = ({
   unChecked: (id: string) => void;
   checked: boolean;
   checkLoading: boolean;
-}) => {
+}) {
   const handleCheck = () => {
     if (!checkLoading) {
       if (!checked) {
@@ -80,9 +80,7 @@ const CardLoacation = ({
       </Text>
       {data.links?.map((dataLink, index) => (
         <Button
-          key={`${
-            index + Math.floor(Math.random() * (583486438 - 9698 + 1)) + 9698
-          }`}
+          key={`buton-j-8-o-${index}`}
           component="a"
           variant="light"
           color="blue"
@@ -110,6 +108,6 @@ const CardLoacation = ({
       </Button>
     </Card>
   );
-};
+});
 
 export default CardLoacation;

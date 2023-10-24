@@ -28,7 +28,9 @@ interface LocationCardListProps {
   checkLoading: boolean;
 }
 
-const LocationCardList = (props: LocationCardListProps) => {
+const LocationCardList = React.memo(function LocationCardListCompo(
+  props: LocationCardListProps
+) {
   const {
     tag,
     view,
@@ -87,15 +89,7 @@ const LocationCardList = (props: LocationCardListProps) => {
         <Grid mt={20}>
           {filterList.map((japanLocation, key) => {
             return (
-              <Grid.Col
-                key={`${
-                  key +
-                  Math.floor(Math.random() * (583486438 - 9698 + 1)) +
-                  9698
-                }`}
-                sm={12}
-                md={4}
-              >
+              <Grid.Col key={`grid-col-5o5o9o8ommmm${key}`} sm={12} md={4}>
                 <CardLoacation
                   data={japanLocation}
                   insertCheck={insertCheck}
@@ -111,5 +105,6 @@ const LocationCardList = (props: LocationCardListProps) => {
       )}
     </>
   );
-};
+});
+
 export default LocationCardList;

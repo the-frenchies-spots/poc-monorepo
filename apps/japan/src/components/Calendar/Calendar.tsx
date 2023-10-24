@@ -137,11 +137,7 @@ const DateDivs: React.FC<DateDivsProps> = ({
                           />
                         </Box>
                         <Stack
-                          key={`${
-                            _idxx +
-                            Math.floor(Math.random() * (583486438 - 9698 + 1)) +
-                            9698
-                          }`}
+                          key={`stack-12-${_idxx}`}
                           p="xs"
                           onClick={() => onLocationChange(theData)}
                         >
@@ -178,7 +174,7 @@ interface CalendarProps {
   onLocationChange: (data: JapanLocation) => void;
 }
 
-const Calendar = (props: CalendarProps) => {
+const Calendar = React.memo(function CalendarCompo(props: CalendarProps) {
   const { onLocationChange } = props;
   const startDate = new Date("2023-10-20");
   const endDate = new Date("2023-11-23");
@@ -189,6 +185,6 @@ const Calendar = (props: CalendarProps) => {
       onLocationChange={onLocationChange}
     />
   );
-};
+});
 
 export default Calendar;

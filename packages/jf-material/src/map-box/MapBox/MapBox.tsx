@@ -83,8 +83,12 @@ export const MapBox = (props: MapBoxProps) => {
         />
       )}
 
-      {labels.map((label) => (
-        <Marker key={label.id} latitude={label.lat} longitude={label.lng}>
+      {labels.map((label, index) => (
+        <Marker
+          key={`Marker-u-i-ppp---po-iu${index}`}
+          latitude={label.lat}
+          longitude={label.lng}
+        >
           <Text
             tt="uppercase"
             sx={{

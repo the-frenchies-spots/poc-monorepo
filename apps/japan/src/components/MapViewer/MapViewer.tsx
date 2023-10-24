@@ -36,7 +36,7 @@ interface MapViewerProps {
   onLocationChange: (data: JapanLocation) => void;
 }
 
-const MapViewer = (props: MapViewerProps) => {
+const MapViewer = React.memo(function MapViewerCompo(props: MapViewerProps) {
   const {
     list,
     neighborhoods,
@@ -135,11 +135,7 @@ const MapViewer = (props: MapViewerProps) => {
 
           return (
             <MapBoxMarker
-              key={`${
-                index +
-                Math.floor(Math.random() * (583486438 - 9698 + 1)) +
-                9698
-              }`}
+              key={`t-rt-te-528t-r${index}`}
               lat={location?.lat || 0}
               lng={location?.lng || 0}
               onPress={() => onLocationChange(location)}
@@ -155,6 +151,6 @@ const MapViewer = (props: MapViewerProps) => {
       </MapBox>
     </Box>
   );
-};
+});
 
 export default MapViewer;
