@@ -5,6 +5,7 @@ import {
   IconBatteryAutomotive,
   IconBike,
   IconBook,
+  IconBook2,
   IconChefHat,
   IconCoinYen,
   IconCreditCard,
@@ -65,6 +66,7 @@ import MonserattText from "../Text/MonserattText";
 import { countList } from "../../assets/count/count";
 import ByceCycleList from "../ByceCycleList/ByceCycleList";
 import { byceCycleStation } from "../../utils/bike-cycle";
+import JapanSurvie from "../JapanSurvie/JapanSurvie";
 
 type TArgent = {
   source: string;
@@ -292,11 +294,8 @@ const clientList: NoteVocal[] = [
 
 export const ListRappel = React.memo(function ListRappelCompo() {
   return (
-    <Tabs defaultValue="resto">
+    <Tabs defaultValue="memo">
       <Tabs.List>
-        <Tabs.Tab value="rappel" icon={<IconPhoto />}>
-          <MonserattText> Rappel</MonserattText>
-        </Tabs.Tab>
         <Tabs.Tab value="resto" icon={<IconChefHat />}>
           <MonserattText>Restaurant</MonserattText>
         </Tabs.Tab>
@@ -309,7 +308,14 @@ export const ListRappel = React.memo(function ListRappelCompo() {
         <Tabs.Tab value="velo" icon={<IconBike />}>
           <MonserattText>Vélos</MonserattText>
         </Tabs.Tab>
+        <Tabs.Tab value="memo" icon={<IconBook2 />}>
+          <MonserattText>Mémo</MonserattText>
+        </Tabs.Tab>
       </Tabs.List>
+
+      <Tabs.Panel value="memo" pt="xs">
+        <JapanSurvie />
+      </Tabs.Panel>
 
       <Tabs.Panel value="velo" pt="xs">
         <ByceCycleList row={byceCycleStation} />
