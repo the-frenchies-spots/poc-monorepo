@@ -41,7 +41,7 @@ export default function Home({
   const [checkLoading, setCheckLoading] = useState<boolean>(false);
   const [currentTag, setCuurentTag] = useState<string | null>("");
   const [view, setView] = useState<string>("map");
-  const [km, setKm] = useState<string | null>("5");
+  const [km, setKm] = useState<string | null>("");
   const [currentLocation, setCurrentLocation] = useState<JapanLocation | null>(
     null
   );
